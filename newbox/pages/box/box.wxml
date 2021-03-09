@@ -1,0 +1,132 @@
+<!-- pages/box/box.wxml -->
+<import src="../../template/template.wxml" />
+<view class="mh_pop" style="display: none;">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_01">请先去首页抽一个盲盒吧</view>
+        <view class="mh_pop_nr_02">
+            <text>立即抽一个盲盒</text>
+            <span><image src="../../img/14.png" mode="aspectFill"></image></span>
+        </view>
+    </view>
+</view>
+<!--<template is="tabBar" data="{{tabBar}}" />-->
+<view class="mh_pop" style="display: none;">
+  <view class="mh_pop_nr">
+    <view class="mh_pop_nr_no">
+      <image src="../../img/15.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_nr_01">
+      <view class="mh_pop_nr_01_01">XX说明</view>
+      <view class="mh_pop_nr_01_06">
+        <rich-text>
+          <p>第一段文字描述第一段文字描述第一段文字描述第一段文字描述</p>
+          <p>第一段文字描述第一段文字描述第一段文字描述第一段文字描述</p>
+          <p>第一段文字描述第一段文字描述第一段文字描述第一段文字描述</p>
+          <p>第一段文字描述第一段文字描述第一段文字描述第一段文字描述</p>
+          <p>第一段文字描述第一段文字描述第一段文字描述第一段文字描述</p>
+        </rich-text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="mh_box">
+  <view class="mh_me_aanimation mh_box_aanimation_01" style="display: ;">
+    <image src="../../img/22-01.png" mode="aspectFill"></image>
+  </view>
+ 
+  <view class="mh_box_nr">
+    <view class="mh_box_nr_01 mh_box_nr_nopo" style=' background-image: url(../../img/37.png);'>
+      <view class="mh_box_nr_01_01">
+        <text>幸运值</text>
+        <progress percent="60" color="#3d62ad" backgroundColor="#CCCCCC" stroke-width="12" border-radius="12" />
+        <view class='mh_box_nr_sz'>10%</view>
+      </view>
+      <view class="mh_box_nr_01_no">?</view>
+      <view class="mh_box_nr_01_03">
+        <image src="../../img/46.png" mode="aspectFill" class="mh_box_nr_aanimation"></image>
+      </view>
+      <view class="mh_box_nr_01_03_04">
+        <image src="../../img/aanimation_18.png" mode="aspectFill"></image>
+      </view>
+      <view class="mh_box_nr_01_01_ms">
+        <text>再开*个盲盒，可以额外抽奖</text>
+      </view>
+       <view class="mh_box_nr_01_01_ts">
+        <text>快来打开我</text>
+      </view>
+      <view class="mh_box_nr_01_01_bh">
+        <image src="../../img/90.png" mode="aspectFill"></image>
+      </view>
+      <view class="mh_box_nr_01_01_bhbs">
+         <image src="../../img/92.png" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="mh_index_03_03">
+      <view class="mh_box_prompt" style="display: none;">
+        <image src="../../img/52.png" mode="aspectFill"></image>
+      </view>
+      <view class="mh_index_03_03_nr">
+        <view class="mh_index_03_03_nr_01 mh_index_03_03_nr_01_no" >
+          <image src="../../img/57.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称产品名称产称</view>
+          <view class="mh_index_03_03_nr_01_04">正在开盒</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/46.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">产品名称</view>
+          <view class="mh_index_03_03_nr_01_03">快来点我</view>
+        </view>
+      </view>
+     
+    </view>
+  </view>
+</view>

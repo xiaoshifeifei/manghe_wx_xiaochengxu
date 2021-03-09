@@ -1,0 +1,201 @@
+<!--pages/task/task.wxml-->
+
+<view class="mh_task" >
+  
+    <view class="mh_guide_pop" style="display: none;">
+        <view class="mh_guide_pop_nr" style=' background-image: url(../../img/55.png);'>
+          <view class="mh_pop_nr_no"><image src="../../img/15.png" mode="aspectFill"></image></view>
+            <view class="mh_guide_pop_nr_01">
+                <p>111111111111111111111111111111111111111111111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+                <p>11111111</p>
+            </view>
+        </view>   
+     </view>   
+   <view class="mh_task_top">
+       <view class="mh_box_nr_01_no mh_guide_animation" >?</view>
+       <view class="mh_task_top_jd">
+           <text style="width: 30%;"></text>
+       </view>
+       <view class="mh_task_top_01">
+           <view class="mh_task_top_01_01" style=' background-image: url(../../img/30.png);'></view>
+           <view class="mh_task_top_01_02">
+               <text class="mh_task_top_01_02_hover">今日活跃</text>
+                <text class="mh_task_top_01_02_no">30/30</text>
+           </view>
+       </view>
+       <view class="mh_task_top_02">
+           <view class="mh_task_top_02_01"><image src="../../img/31.png" mode="aspectFill"></image></view>
+           <view class="mh_task_top_01_02">
+               <text>宝箱名称A</text>
+               <text class="mh_task_top_01_02_no">30/30</text>
+           </view>
+       </view>
+       <view class="mh_task_top_03">
+                <view class="mh_task_top_02_01"><image src="../../img/32.png" mode="aspectFill"></image></view>
+           <view class="mh_task_top_01_02">
+               <text>宝箱名称A</text>
+               <text class="mh_task_top_01_02_no">30/30</text>
+           </view>
+       </view>
+       <view class="mh_task_top_04">
+            <view class="mh_task_top_02_01"><image src="../../img/33.png" mode="aspectFill"></image></view>
+           <view class="mh_task_top_01_02">
+               <text>宝箱名称A</text>
+               <text class="mh_task_top_01_02_no">30/30</text>
+           </view>
+       </view>
+   </view>
+   <scroll-view scroll-y  class="mh_task_nr" >
+        <view class="mh_task_nr_tab">
+            <view class="mh_task_nr_tab_hover"><text>每日任务</text></view>
+            <view><text>成长任务</text></view>
+        </view>
+        <view class="mh_task_nr_height"></view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_02">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_03">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+       <view class="mh_task_nr_01">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="../../img/demo-08.png" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>每日签到</text>
+                    <rich-text> 
+                        <p>积分<span>+1</span></p>
+                        <p>活跃度<span>+10</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <view class="mh_task_nr_01_01_r_01">去完成</view>
+                   <rich-text> 进度 <span>0/1</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">在每日签到处完成1次签到</view>
+       </view>
+   </scroll-view >
+</view>

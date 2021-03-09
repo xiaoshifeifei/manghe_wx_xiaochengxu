@@ -1,0 +1,6 @@
+/* pages/topup/topup.wxss */
+.mh_topup_01_02 rich-text image {
+    width: 26rpx;
+    height: 26rpx;
+    margin-left: 10rpx;
+}

@@ -1,0 +1,31 @@
+<!--pages/buyinterests/buyinterests.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_index_personalpage_05">
+        <view class="mh_index_personalpage_05_01">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_index_personalpage_05_04">
+            <text>xxx购买权益</text>
+            <text class="mh_index_personalpage_zy">xxx购买权益</text>
+            <text class="mh_index_personalpage_sj">开始：2020/04/08 18:00 - 19:00</text>
+            <text>结束：2020/04/08 18:00 - 19:00</text>
+        </view>
+        <view class="mh_index_personalpage_05_03">
+            <text>待用</text>
+        </view>
+    </view>
+    <view class="mh_index_personalpage_05">
+        <view class="mh_index_personalpage_05_01">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_index_personalpage_05_04">
+            <text>xxx购买权益</text>
+            <text class="mh_index_personalpage_zy">xxx购买权益</text>
+            <text class="mh_index_personalpage_sj">开始：2020/04/08 18:00 - 19:00</text>
+            <text>结束：2020/04/08 18:00 - 19:00</text>
+        </view>
+        <view class="mh_index_personalpage_05_03 mh_index_personalpage_jx">
+            <text>可用</text>
+        </view>
+    </view>
+</scroll-view>

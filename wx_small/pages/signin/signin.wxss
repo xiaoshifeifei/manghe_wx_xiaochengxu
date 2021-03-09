@@ -1,0 +1,20 @@
+/* pages/Signin/Signin.wxss */
+page{
+    background: #FFFEF2;
+}
+
+.mh_my_note_content{
+    width: 520rpx;
+    height: 630rpx;
+    overflow: auto;
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+}
+.mh_Signin_nr{
+    overflow: hidden;
+}
+
+.mh_Signin_01_blue button {
+    background: #7F7F7F;
+    color: #fff;
+}

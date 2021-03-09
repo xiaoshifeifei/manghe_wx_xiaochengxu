@@ -1,0 +1,41 @@
+
+ 
+  <scroll-view scroll-y class="mh_index mh_stores_list mh_welfare_details" >
+   <view class="mh_shopping_nav ">
+    <view class="mh_shopping_nav_hover">
+      <text>附近</text>
+    </view>
+    <view>
+      <text>全部</text>
+    </view>
+  </view>
+  <view class="mh_height"></view>
+    <view class="mh_index_spnr mh_index_spnr_new">
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%'>
+          <view class="mh_index_spnr_nr_01_01">
+            <image src="../../img/83.png"></image>
+          </view>
+          <view class="mh_index_spnr_nr_01_02">
+            <text>浏览量：888888</text>
+          </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_04">
+          <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%'>
+          <view class="mh_index_spnr_nr_01_01">
+            <image src="../../img/83.png"></image>
+          </view>
+          <view class="mh_index_spnr_nr_01_02">
+            <text>浏览量：888888</text>
+          </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_04">
+          <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>

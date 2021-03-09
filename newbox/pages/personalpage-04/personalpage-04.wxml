@@ -1,0 +1,39 @@
+<!-- pages/personalpage-04/personalpage-04.wxml -->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_index_top">
+        <view class="mh_index_nav">
+            <text>设置</text>
+            <text class="mh_index_nav_hover">活动</text>
+            <text>明细</text>
+        </view>
+    </view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_personalpage_05">
+        <view class="mh_index_personalpage_05_01">
+            <text>减</text>
+        </view>
+        <view class="mh_index_personalpage_05_02">
+            <text>随机立减活动（1随机立减活动（1-3元）</text>
+            <text>2020/04/08 18:00 - 19:00</text>
+        </view>
+        <view class="mh_index_personalpage_05_03">
+            <text>预告中</text>
+        </view>
+    </view>
+    <view class="mh_index_personalpage_05">
+        <view class="mh_index_personalpage_05_01">
+            <text>减</text>
+        </view>
+        <view class="mh_index_personalpage_05_02">
+            <text>随机立减活动（（1-3元）</text>
+            <text>2020/04/08 18:00 - 19:00</text>
+        </view>
+        <view class="mh_index_personalpage_05_03 mh_index_personalpage_jx">
+            <text>进行中</text>
+        </view>
+    </view>
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+        <button>添加活动</button>
+    </view>
+</scroll-view>

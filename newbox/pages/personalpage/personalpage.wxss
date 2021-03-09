@@ -1,0 +1,10 @@
+/* pages/personalpage/personalpage.wxss */
+@keyframes kf-marque-animation{ 0% { transform: translateX(5%); } 100% { transform: translateX(-38.3%); } }
+.marquee{
+    white-space: nowrap;
+    text-overflow: clip;
+}
+.marquee .content{
+    animation: kf-marque-animation 6s linear infinite;
+    white-space: nowrap;
+}

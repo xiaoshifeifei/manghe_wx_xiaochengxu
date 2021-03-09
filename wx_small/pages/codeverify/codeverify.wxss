@@ -1,0 +1,23 @@
+/* pages/codeverify/codeverify.wxss */
+.mh_new_choose_index text{
+    width: 60rpx;
+    font-size: 22rpx;
+    text-align: center;
+    position: fixed;
+    top: 130rpx;
+    left: 66rpx;
+}
+
+.mh_new_choose_nr_left {
+    margin: 20rpx 0 0 66rpx;
+}
+
+.mh_new_choose_nr_09_01{
+    background: #3d62ad;
+    color: #fff;
+}
+
+.mh_publicity_05{
+    margin: 20rpx 0 20rpx 0;
+}
+

@@ -1,0 +1,6 @@
+{
+  "navigationBarBackgroundColor": "#EEEEEE",
+  "navigationBarTitleText": "",
+  "usingComponents": {},
+  "onReachBottomDistance" : 50 
+}

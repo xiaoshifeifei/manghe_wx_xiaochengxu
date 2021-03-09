@@ -1,0 +1,4 @@
+/* pages/shop/shop.wxss */
+page{
+    background: #eeeeee;
+}

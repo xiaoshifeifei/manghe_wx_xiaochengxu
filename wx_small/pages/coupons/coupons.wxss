@@ -1,0 +1,8 @@
+/* pages/coupons/coupons.wxss */
+.mh_coupons {
+    background: #eeeeee;
+}
+
+.mh_coupons_01_03_02 {
+    width: 340rpx;
+}

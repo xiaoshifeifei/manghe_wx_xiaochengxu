@@ -1,0 +1,242 @@
+<!--pages/shoppingmore/shoppingmore.wxml-->
+<!-- 选择支付方式 -->
+<view class="mh_pop" hidden="{{payWin}}" bindtap="close_pay">
+  <view class="mh_details_pop ">
+    <view class="mh_xzzf_top">
+      <view class="mh_xzzf_top_01">
+        <view class="mh_xzzf_top_01_01">选择支付方式</view>
+        <view class="mh_xzzf_top_01_02">余额详情请查看个人中心</view>
+      </view>
+      <view class="mh_xzzf_top_02">
+        <view class="mh_xzzf_top_02_01" data-id="2" hidden="{{wxPay==1?false:true}}" catchtap="{{!wClicked?'_chooseType':'_doNothing'}}">
+          <view class="mh_xzzf_top_02_01_01"><image src="../../img/98.png" ></image></view>
+          <view class="mh_xzzf_top_02_01_02">微信支付</view>
+          <view class="mh_xzzf_top_02_01_03"><image src="{{wxStyle?'../../img/100-01.png':'../../img/100.png'}}"></image></view>
+        </view>
+        <view class="mh_xzzf_top_02_01" hidden="{{blPay==1?false:true}}" data-id="1" catchtap="{{!wClicked?'_chooseType':'_doNothing'}}">
+          <view class="mh_xzzf_top_02_01_01"><image src="../../img/99.png" ></image></view>
+          <view class="mh_xzzf_top_02_01_02">无疆盒子余额：¥{{money}}</view>
+          <view class="mh_xzzf_top_02_01_03"><image src="{{blStyle?'../../img/100-01.png':'../../img/100.png'}}" ></image></view>
+        </view>
+      </view>
+    </view>
+    <view class="mh_xzzf_bottom" catchtap="{{!wClicked?'_goPay':''}}">
+      <view class="mh_order_bottom_01">
+        <text>运费总计：¥{{totalPostage}}</text>
+      </view>
+      <view class="mh_order_bottom_02">确认支付</view>
+    </view>
+  </view>
+</view>
+        <!-- 选择支付方式 end -->
+
+<!-- 选择支付方式 -->
+<!--<view class="mh_pop" hidden="{{payWin}}" bindtap="close_pay">
+  <view class="mh_details_pop">
+    <view class="mh_xzzf">
+      <view class="mh_xzzf_02">
+        <view class="mh_xzzf_02_01">选择支付方式</view>
+        <view class="{{blStyle?'mh_xzzf_02_02 mh_xzzf_02_02_h':'mh_xzzf_02_02'}}" hidden="{{blPay==1?false:true}}" data-id="1" catchtap="{{!wClicked?'_chooseType':'_doNothing'}}">
+          <view class="mh_xzzf_02_02_l">
+            <image src="../../img/82.png" mode="aspectFill"></image>
+            <text>账户余额</text>
+          </view>
+          <view class="mh_xzzf_02_02_r">¥{{money}}</view>
+        </view>
+        <view class="{{wxStyle?'mh_xzzf_02_02 mh_xzzf_02_02_h':'mh_xzzf_02_02'}}" data-id="2" hidden="{{wxPay==1?false:true}}" catchtap="{{!wClicked?'_chooseType':'_doNothing'}}">
+          <view class="mh_xzzf_02_02_l">
+            <image src="../../img/81.png" mode="aspectFill"></image>
+            <text>微信支付</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="mh_xzzf_bottom" catchtap="{{!wClicked?'_goPay':''}}">
+      <view class="mh_order_bottom_01">
+        <text>运费总计：¥{{totalPostage}}</text>
+        <text></text>
+      </view>
+      <view class="mh_order_bottom_02">立即支付</view>
+    </view>
+  </view>
+</view>-->
+<!-- 选择支付方式 end -->
+
+<view class="mh_pop" hidden="{{hideWindow}}">
+  <view class="mh_pop_nr">
+    <view class="mh_pop_nr_01">下单成功，请等待发货</view>
+    <view class="mh_pop_nr_02" bindtap="goOrder">
+      <text>可在我的订单中查看物流信息</text>
+      <span>
+        <image src="../../img/14.png" mode="aspectFill"></image>
+      </span>
+    </view>
+  </view>
+</view>
+<view class="mh_shoppingmore">
+  <view class="mh_shoppingmore_01" bindtap="getAddressList">
+    <rich-text wx:if="{{addressInfo}}">
+      {{addressInfo.recipient}}：{{addressInfo.phone}}
+    </rich-text>
+    <rich-text wx:else>
+      添加收货地址
+    </rich-text>
+    <rich-text>
+      <p>
+        <image src="../../img/41.png" mode="aspectFill"></image>
+      </p>
+      <text wx:if="{{addressInfo}}">收货地址：{{addressInfo.province}}{{addressInfo.city}}{{addressInfo.area}}{{addressInfo.address}}</text>
+      <text wx:else>添加收货地址</text>
+      <span>
+        <image src="../../img/03.png" mode="aspectFill"></image>
+      </span>
+    </rich-text>
+  </view>
+  <view class="mh_shoppingmore_02">
+
+    <!--店铺商品列表-->
+    <view class="mh_order_list" wx:for="{{shopData}}" wx:key="id">
+      <view class="mh_order_list_01">
+        <text>{{item.sname}}</text>
+        <!-- <text>订单号：888888888888</text> -->
+      </view>
+      <view class="mh_order_list_02" wx:for="{{item.cache}}" wx:key="id">
+        <view class="mh_order_list_02_01">
+          <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_order_list_02_02">
+          <rich-text>[{{item.type_name}}]{{item.cache.pname}}{{item.cache.scsi_name}}</rich-text>
+          <rich-text>
+            {{item.dtime}}
+            <span>￥{{item.money}}</span>
+          </rich-text>
+        </view>
+      </view>
+      <view class="mh_order_list_03">
+        <rich-text>
+          运费
+          <span wx:if="{{item.postage>0}}">￥{{item.postage}}</span>
+          <span wx:else>包邮费</span>
+
+        </rich-text>
+        <rich-text>备注：{{item.remark}}</rich-text>
+      </view>
+    </view>
+
+    <!--积分商品列表-->
+    <view class="mh_order_list" wx:if="{{scoreData.cache}}">
+      <view class="mh_order_list_01">
+        <text>积分商城</text>
+        <!-- <text>订单号：888888888888</text> -->
+      </view>
+      <view class="mh_order_list_02" wx:for="{{scoreData.cache}}" wx:key="id">
+        <view class="mh_order_list_02_01">
+          <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_order_list_02_02">
+          <rich-text>[{{item.type_name}}]{{item.cache.pname}}{{item.cache.scsi_name}}</rich-text>
+          <rich-text>
+            {{item.dtime}}
+            <span>¥{{item.money}}</span>
+          </rich-text>
+        </view>
+      </view>
+      <view class="mh_order_list_03">
+        <rich-text>运费
+          <span wx:if="{{scoreData.postage>0}}">￥{{scoreData.postage}}</span>
+          <span wx:else>包邮费</span>
+        </rich-text>
+        <rich-text>备注：{{scoreData.remark}}</rich-text>
+      </view>
+    </view>
+
+    <!--奖励商品列表-->
+    <view class="mh_order_list" wx:if="{{rewardData.cache}}">
+      <view class="mh_order_list_01">
+        <text>奖励商品</text>
+      </view>
+      <view class="mh_order_list_02" wx:for="{{rewardData.cache}}" wx:key="id">
+        <view class="mh_order_list_02_01">
+          <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_order_list_02_02">
+          <rich-text>[{{item.type_name}}]{{item.cache.pname}}{{item.cache.scsi_name}}</rich-text>
+          <rich-text>
+            {{item.dtime}}
+            <span>¥{{item.money}}</span>
+          </rich-text>
+        </view>
+      </view>
+      <view class="mh_order_list_03">
+        <rich-text>运费
+          <span wx:if="{{rewardData.postage>0}}">￥{{rewardData.postage}}</span>
+          <span wx:else>包邮费</span>
+        </rich-text>
+        <rich-text>备注：{{rewardData.remark}}</rich-text>
+      </view>
+    </view>
+
+
+  <!--砍价商品列表-->
+  <view class="mh_order_list" wx:if="{{inviteData.cache}}">
+    <view class="mh_order_list_01">
+      <text>砍价商品</text>
+      <!-- <text>订单号：888888888888</text> -->
+    </view>
+    <view class="mh_order_list_02" wx:for="{{inviteData.cache}}" wx:key="id">
+      <view class="mh_order_list_02_01">
+        <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+      </view>
+      <view class="mh_order_list_02_02">
+        <rich-text>[{{item.type_name}}]{{item.cache.pname}}{{item.cache.scsi_name}}</rich-text>
+        <rich-text>
+          {{item.dtime}}
+          <span>¥{{item.money}}</span>
+        </rich-text>
+      </view>
+    </view>
+    <view class="mh_order_list_03">
+      <rich-text>运费
+        <span wx:if="{{inviteData.postage>0}}">￥{{inviteData.postage}}</span>
+        <span wx:else>包邮费</span>
+      </rich-text>
+      <rich-text>备注：{{inviteData.remark}}</rich-text>
+    </view>
+  </view>
+
+  <!--艺术家商品列表-->
+  <view class="mh_order_list" wx:for="{{artData}}" wx:key="id">
+    <view class="mh_order_list_01">
+      <text>{{item.sname}}</text>
+    </view>
+    <view class="mh_order_list_02" wx:for="{{item.cache}}" wx:key="id">
+      <view class="mh_order_list_02_01">
+        <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+      </view>
+      <view class="mh_order_list_02_02">
+        <rich-text>[{{item.type_name}}]{{item.cache.pname}}{{item.cache.scsi_name}}</rich-text>
+        <rich-text>
+          {{item.dtime}}
+          <span>¥{{item.money}}</span>
+        </rich-text>
+      </view>
+    </view>
+    <view class="mh_order_list_03">
+      <rich-text>运费
+        <span wx:if="{{item.postage>0}}">￥{{item.postage}}</span>
+        <span wx:else>包邮费</span>
+      </rich-text>
+      <rich-text>备注：{{item.remark}}</rich-text>
+    </view>
+  </view>
+  </view>
+  <view class="mh_shoppingmore_bottom">
+    <rich-text>数量：
+      <span>{{totalData}}</span>
+    </rich-text>
+    <button ontap="{{!wClicked?'payPostage':''}}">确认发货</button>
+    <view wx:if="{{isIphoneX==true}}" class="button-group fix-iphonex-button">
+      ..
+    </view>
+  </view>
+</view>

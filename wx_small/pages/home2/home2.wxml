@@ -1,0 +1,35 @@
+<!--pages/home2/home2.wxml-->
+<view wx:if="{{showhome==1}}">
+    <view class="mh_Integralmall">
+        <view class="mh_Integralmall_01">
+            <view class="mh_Integralmall_01_01">积分余额：{{score}}</view>
+            <view class="mh_Integralmall_01_02" bind:tap="goscorelist">积分账单<image src="../../img/80.png" mode="aspectFill"></image></view>
+        </view>
+    </view>
+    <!-- <view  class="mh_new_choose" id="mh_index" >
+            <view class="mh_index_spnr"  wx:if="{{listData.length>0}}">
+                <view class="mh_index_bt">
+                    <view class="mh_index_bt_01">{{m_name}}</view>
+                </view> -->
+            <view class="mh_index_spnr" wx:if="{{listData.length>0}}">
+                <block  wx:key="unique" wx:for="{{listData}}">
+                    <view class="mh_index_spnr_nr" data-p_id="{{item.p_id}}"  data-whr="jf" data-s_id="0"  bindtap="toproductdetail">
+                        <view wx:if="{{item.icon_type >= 1}}"  class="mh_index_03_03_01_icon" style=' background-image: url({{item.icon_img}});'>
+                            <rich-text >{{item.icon}}</rich-text>
+                        </view>
+                        <view wx:else class="mh_index_03_03_01_icon" >
+                            <rich-text ></rich-text>
+                        </view>
+                        <view class="mh_index_spnr_nr_01" style=' background-image: url({{imgurl3}}); background-repeat: repeat-x; background-size:auto 100%' >
+                            <view class="mh_index_spnr_nr_01_01">{{item.price}}积分</view>
+                            <view class="mh_index_spnr_nr_01_02">
+                                <text space="nbsp">{{item.pname}} {{item.series}}</text>
+                            </view>
+                        </view>
+                        <view class="{{index == prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"> <image src="{{index == prosty?item.pic2:item.img}}" mode="aspectFill"></image></view>
+                    </view>
+                </block> 
+            </view>       
+            <!-- </view>  
+    </view> -->
+</view>

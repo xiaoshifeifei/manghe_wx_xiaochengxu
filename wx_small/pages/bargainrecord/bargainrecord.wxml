@@ -1,0 +1,28 @@
+<!--pages/record/record.wxml-->
+<view class="mh_record">
+    <view class="mh_shiopping_prompt" hidden="{{imageHide}}"><image src="{{NullImg}}" mode="aspectFill" ></image></view>
+
+    <view class="mh_record_nr">
+        <view class="mh_record_nr_list">
+            <view class="mh_record_nr_list_nr" wx:for="{{BargainData}}" wx:key data-id="{{item.icode}}" bindtap="goBargain">
+                <rich-text >
+                    <p>{{item.pname}}</p>
+                    <p>{{item.b_status}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>最低价￥{{item.min_price}}</p>
+                    <p>最高价￥{{item.max_price}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>砍价人数 {{item.cut_num}}人</p>
+                    <p>已砍价格￥{{item.price}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>{{item.formate_date}}</p>
+                    <p><font style="color: #ED1C24"><strong>查看详情</strong></font></p>
+                </rich-text>
+            </view>
+        </view>
+
+    </view>
+</view>

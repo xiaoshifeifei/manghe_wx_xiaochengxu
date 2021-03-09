@@ -1,0 +1,4 @@
+/* pages/speclist/speclist.wxss */
+page{
+    background: #EEEEEE;
+}

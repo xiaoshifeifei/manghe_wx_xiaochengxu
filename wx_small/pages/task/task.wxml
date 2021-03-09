@@ -1,0 +1,162 @@
+<!--pages/task/task.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<view class="mh_task">
+<!--引导弹窗-->
+<!--
+<view class="mh_guide_pop" hidden="{{guideHide}}">
+    <view class="mh_guide_pop_nr" style=' background-image: url({{guideImg}});'>
+        <view class="mh_pop_nr_no" bindtap="_hideGuideWin"><image src="../../img/15.png" mode="aspectFill"></image></view>
+        <view class="mh_guide_pop_nr_01">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view>
+    </view>
+</view>
+-->
+
+<view class="mh_pop mh_index_pop" hidden="{{guideHide}}">
+    <view class="mh_pop_fxlb">
+        <view class="mh_pop_fxlb_01"><image src="{{WinImg}}" mode="aspectFill"></image></view>
+        <view class="mh_my_note_content">
+            <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+        </view>
+        <view class="mh_pop_fxlb_gb" bindtap="_hideGuideWin">X</view>
+    </view>
+</view>
+
+<!--任务奖励分享弹窗start-->
+<!--开盒弹窗分享-->
+<view class="mh_pop mh_index_pop" hidden="{{hideTask}}">
+    <!--<view class="mh_pop mh_index_pop">-->
+    <view class="mh_pop_fxlb">
+        <view class="mh_pop_fxlb_01"><image src="{{WinImg}}" mode="aspectFill"></image></view>
+        <view class="mh_pop_fxlb_02">恭喜获得以下奖励</view>
+        <view class="mh_pop_fxlb_03"><image src="{{taskImg}}" mode="aspectFill"></image></view>
+        <view class="mh_pop_fxlb_04">
+            <text>{{taskText1}}</text>
+        </view>
+        <view class="mh_pop_fxlb_05">
+            <button open-type='share' data-id="1">立即分享</button>
+        </view>
+        <view class="mh_pop_fxlb_gb" bindtap="closeTaskWin">X</view>
+    </view>
+</view>
+<!--任务奖励分享弹窗end-->
+
+   <view class="mh_task_top">
+       <view bindtap="_newGuideWin" animation="{{animationHelp}}" class="mh_box_nr_01_no">?</view>
+       <view class="mh_task_top_jd">
+           <text style="{{percent}}"></text>
+       </view>
+       <view class="mh_task_top_01">
+           <view class="mh_task_top_01_01" style=' background-image: url({{imgurl1}});'></view>
+           <view class="mh_task_top_01_02">
+               <text class="mh_task_top_01_02_hover">今日活跃</text>
+               <text class="mh_task_top_01_02_no">{{alog.value?alog.value:0}}</text>
+           </view>
+       </view>
+       <view class="mh_task_top_02" data-id="0" bindtap="{{!wClicked?'getBox':''}}">
+
+           <view wx:if="{{box[0].gstatus == 0}}" class="mh_task_top_02_01">
+               <image src="{{box[0].images.pic1}}" mode="aspectFill"></image>
+           </view>
+           <view wx:elif="{{box[0].gstatus == 1}}" class="mh_task_top_02_01">
+               <image src="{{box[0].images.pic2}}" mode="aspectFill"></image>
+           </view>
+           <view wx:elif="{{box[0].gstatus == 2}}" class="mh_task_top_02_01">
+               <image src="{{box[0].images.pic3}}" mode="aspectFill"></image>
+           </view>
+
+           <view class="mh_task_top_01_02">
+               <text>{{box[0].title}}</text>
+               <text class="mh_task_top_01_02_no">{{box[0].svalue}}/{{box[0].value}}</text>
+           </view>
+       </view>
+       <view class="mh_task_top_03" data-id="1" bindtap="{{!wClicked?'getBox':''}}">
+
+           <view wx:if="{{box[1].gstatus == 0}}" class="mh_task_top_02_01">
+               <image src="{{box[1].images.pic1}}" mode="aspectFill"></image>
+           </view>
+           <view wx:elif="{{box[1].gstatus == 1}}" class="mh_task_top_02_01">
+               <image src="{{box[1].images.pic2}}" mode="aspectFill"></image>
+           </view>
+           <view wx:elif="{{box[1].gstatus == 2}}" class="mh_task_top_02_01">
+               <image src="{{box[1].images.pic3}}" mode="aspectFill"></image>
+           </view>
+
+           <view class="mh_task_top_01_02">
+               <text>{{box[1].title}}</text>
+               <text class="mh_task_top_01_02_no">{{box[1].svalue}}/{{box[1].value}}</text>
+           </view>
+       </view>
+       <view class="mh_task_top_04" data-id="2" bindtap="{{!wClicked?'getBox':''}}">
+
+            <view  wx:if="{{box[2].gstatus == 0}}" class="mh_task_top_02_01">
+                <image src="{{box[2].images.pic1}}" mode="aspectFill"></image>
+            </view>
+           <view  wx:if="{{box[2].gstatus == 1}}" class="mh_task_top_02_01">
+               <image src="{{box[2].images.pic2}}" mode="aspectFill"></image>
+           </view>
+           <view wx:elif="{{box[2].gstatus == 2}}" class="mh_task_top_02_01">
+               <image src="{{box[2].images.pic3}}" mode="aspectFill"></image>
+           </view>
+
+           <view class="mh_task_top_01_02">
+               <text>{{box[2].title}}</text>
+               <text class="mh_task_top_01_02_no">{{box[2].svalue}}/{{box[2].value}}</text>
+           </view>
+       </view>
+   </view>
+    <!--任务开始-->
+   <scroll-view scroll-y class="mh_task_nr">
+       <view class="mh_task_nr_tab">
+           <view wx:for="{{taskBar}}" wx:key class="{{nowId==item.id?'mh_task_nr_tab_hover':''}}" bindtap="_switchBar" data-id="{{item.id}}"><text>{{item.name}}</text></view>
+       </view>
+
+       <view class="mh_task_nr_height"></view>
+
+       <!--每日任务 start-->
+       <view class="mh_task_nr_01" wx:for="{{taskData}}" wx:key hidden="{{hideDay}}">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="{{item.images}}" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>{{item.title}}</text>
+                    <rich-text> 
+                        <p wx:for="{{item.award}}" wx:for-item="itemAward" wx:key class="{{itemAward.award_type==6?'active':''}}">{{itemAward.name}}<span>+{{itemAward.value}}</span></p>
+                    </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                  <!--完成按钮-->
+                   <view wx:if="{{item.status == 0}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_01" bindtap="{{!wClicked?'goGet':''}}">去领取</view>
+                   <view wx:elif="{{item.status == 1}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_03" bindtap="goComplete">去完成</view>
+                   <view wx:elif="{{item.status == 2}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_02" bindtap="noGo">已领取</view>
+                   <rich-text> 进度 <span>{{item.num}}/{{item.value}}</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">{{item.intro}}</view>
+       </view>
+       <!--end 每日任务-->
+
+
+       <!--成长任务 start-->
+       <view class="mh_task_nr_01" wx:for="{{growData}}" wx:key hidden="{{hideGrow}}">
+           <view class="mh_task_nr_01_01">
+               <view class="mh_task_nr_01_01_l"><image src="{{item.images}}" mode="aspectFill"></image></view>
+               <view class="mh_task_nr_01_01_m">
+                   <text>{{item.title}}</text>
+                   <rich-text>
+                       <p wx:for="{{item.award}}" wx:key wx:for-item="itemAward">{{itemAward.name}}<span>+{{itemAward.value}}</span></p>
+                   </rich-text>
+               </view>
+               <view class="mh_task_nr_01_01_r">
+                   <!--完成按钮-->
+                   <view wx:if="{{item.status == 0}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_01" bindtap="{{!wClicked?'goGetGrow':''}}">去领取</view>
+                   <view wx:elif="{{item.status == 1}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_03" bindtap="goGrowComplete">去完成</view>
+                   <view wx:elif="{{item.status == 2}}" data-type="{{item.task_type}}" data-id="{{item.id}}" class="mh_task_nr_01_01_r_02" bindtap="noGo">已领取</view>
+                   <rich-text> 进度 <span>{{item.num}}/{{item.value}}</span></rich-text>
+               </view>
+           </view>
+           <view class="mh_task_nr_01_02">{{item.intro}}</view>
+       </view>
+       <!--end 成长任务-->
+   </scroll-view>
+</view>

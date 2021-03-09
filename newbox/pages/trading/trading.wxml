@@ -1,0 +1,158 @@
+<!--pages/trading/trading.wxml-->
+<template is="tabBar" data="{{tabBar}}"/>
+<scroll-view scroll-y  class="mh_index">
+    <view class="mh_index_search mh_trading_search">
+        <view class="mh_trading_search_01" style="display:;"><text>选择玩具</text></view>
+        <view class="mh_trading_search_01" style="display:none;"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+        <view class="mh_index_search_01">
+            <input type='text' placeholder='搜索玩具品牌/系列名称' confirm-type='search' bindinput='inputBind' bindconfirm='query'></input>
+            <image src="../../img/104.png" mode="aspectFill"></image>
+        </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <!--选择系列-->
+    <view class="mh_series_height"></view>
+    <view class="mh_series_fixed">
+        <view class="mh_series_fixed_nr">
+            <view class="mh_series_fixed_nr_01">
+                <text class="mh_series_fixed_nr_01_hover">系列一</text>
+                <text>系列二</text>
+                <text>系列三</text>
+            </view>
+            <view class="mh_series_fixed_nr_02">
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+                <view class="mh_series_fixed_nr_02_nr">
+                    <view class="mh_series_fixed_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_series_fixed_nr_02_nr_02">商品名称</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--选择系列 end-->
+    <view  class="mh_index_top mh_index_fixed">
+        <view class="mh_index_nav">
+            <text class="mh_index_nav_hover">二手</text>
+            <text>寄卖</text>
+        </view>
+        <view class="mh_trading_nav">
+            <text>192 人在卖</text>
+        </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_trading_nr">
+        <view class="mh_trading_nr_list">
+            <view class="mh_trading_nr_list_01">
+                <view class="mh_trading_nr_list_01_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_trading_nr_list_01_02">
+                    <text>用户名称</text>
+                    <text>交易说明，在交易商品管理界面配置...</text>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_04">
+                        <text>简单描述，不超过10个字</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_05">
+                        <text class="mh_index_personalpage_02_01_02_05_01">已发货</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_trading_nr_list_02">¥50</view>
+        </view>
+         <view class="mh_trading_nr_list">
+            <view class="mh_trading_nr_list_01">
+                <view class="mh_trading_nr_list_01_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_trading_nr_list_01_02">
+                    <text>用户名称</text>
+                    <text>交易说明，在交易商品管理界面配置...</text>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_04">
+                        <text>简单描述，不超过10个字</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_05">
+                        <text class="mh_index_personalpage_02_01_02_05_02">盒囤直发</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_trading_nr_list_02">¥50</view>
+        </view>
+         <view class="mh_trading_nr_list">
+            <view class="mh_trading_nr_list_01">
+                <view class="mh_trading_nr_list_01_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_trading_nr_list_01_02">
+                    <text>用户名称</text>
+                    <text>交易说明，在交易商品管理界面配置...</text>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_04">
+                        <text>简单描述，不超过10个字</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_05">
+                        <text class="mh_index_personalpage_02_01_02_05_03">过期/下架</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_trading_nr_list_02">¥50</view>
+        </view>
+
+        
+    </view>
+
+
+
+   <view class="mh_index_right"></view>
+
+ 
+</scroll-view >
+

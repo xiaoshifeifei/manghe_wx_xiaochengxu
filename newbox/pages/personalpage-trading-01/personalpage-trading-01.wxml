@@ -1,0 +1,99 @@
+<!--pages/personalpage-trading-01/personalpage-trading-01.wxml-->
+<view class="mh_shoppingmore">
+    <view class="personalpage-trading-set-01">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>邮费设置:</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                标准邮费/包邮
+                <image src="../../img/03.png"></image>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_05">
+           <textarea class="detailText" placeholder="输入交易说明信息，比如：购买注意，优惠信息等（选填，最多30个字）" bindblur="bindTextAreaBlur">
+            </textarea>
+        </view>
+    </view>
+    <view class="personalpage-trading-set-02">
+        <view class="personalpage-trading-set-02-bt">交易商品</view>
+        <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生毕业生毕业生毕业生毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+         <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+         <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+         <view class="personalpage-trading-set-02-bt">交易商品</view>
+          <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生毕业生毕业生毕业生毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+         <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+         <view class="personalpage-trading-set-02-list">
+            <view class="personalpage-trading-set-02-list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_02">
+                <text>毕业生毕业生</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_03">
+                <text class="personalpage-trading-set-02-list_03_01">已拆盒</text>
+            </view>
+            <view class="personalpage-trading-set-02-list_04"><image src="../../img/107.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_05"><image src="../../img/108.png" mode="aspectFill"></image></view>
+            <view class="personalpage-trading-set-02-list_06">¥55</view>
+        </view>
+    </view>
+    <view class="personalpage_height_01"></view>
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">添加商品</text>
+        
+   </view>
+</view>

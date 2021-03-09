@@ -1,0 +1,17 @@
+/* pages/aftersale/aftersale.wxss */
+.cb_switch{
+    width: 50rpx;
+    float: right;
+    margin-right: 80rpx;
+}
+
+.mh_shopping_nr_01_nr {
+    border-bottom: 0.5px solid #ececec;
+    padding: 30rpx 0;
+    float: left;
+    width: 560rpx;
+    display: table;
+    height: 150rpx;
+    position: relative;
+}
+

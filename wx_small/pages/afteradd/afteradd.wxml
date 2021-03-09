@@ -1,0 +1,22 @@
+<!--pages/addresssave/addresssave.wxml-->
+<view class="mh_address">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="mh_mh_address_nr">
+            <view class="mh_mh_address_nr_list">
+                <view class="mh_mh_address_nr_list_01"><input type="text" maxlength="10" name="receiver" value="{{receiver}}" placeholder="请输入收货人姓名" /></view>
+                <view class="mh_mh_address_nr_list_01"><input type="number" maxlength="15" name="rphone" value="{{rphone}}" placeholder="请输入手机号" /></view>
+                <view class="mh_mh_address_nr_list_01 f_class">
+                    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                        <view class="picker">
+                            {{region[0]}} {{region[1]}} {{region[2]}}
+                        </view>
+                    </picker>
+                </view>
+                <view class="mh_mh_address_nr_list_02"><textarea name="address_buyer" value="{{address_buyer}}"  auto-height placeholder="详细地址" /></view>
+            </view>
+        </view>
+        <view class="mh_mh_address_bottom">
+            <button class="mh_mh_address_bottom_01" formType="submit">提交</button>
+        </view>
+    </form>
+</view>

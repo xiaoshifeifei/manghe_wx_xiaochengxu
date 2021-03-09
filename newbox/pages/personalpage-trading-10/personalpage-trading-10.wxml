@@ -1,0 +1,44 @@
+<!--pages/personalpage-trading-10/personalpage-trading-10.wxml-->
+<view class="mh_shoppingmore">
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>发货方式：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_05">
+              <text class="mh_shoppingsq_02_01_05_01">自发/代发快递</text>
+              <text>无需快递</text>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>快递公司</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                选择快递公司
+                <image src="../../img/03.png"></image>
+            </view>
+        </view>
+          <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>快递单号</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                888888888888888
+            </view>
+        </view>
+    </view>
+      <view class="mh_shoppingsq_03">
+        <view class="mh_shoppingsq_03_01">图片或视频证明</view>
+        <view class="mh_shoppingsq_03_02">
+            <view class="mh_shoppingsq_03_02_01">+</view>
+        </view>
+    </view>
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">确认</text>
+   </view>
+</view>
+
+

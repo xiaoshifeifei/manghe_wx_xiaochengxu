@@ -1,0 +1,22 @@
+<!--pages/news-01/news-01.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view scroll-y class="mh_index mh_stores_details" >
+    <view class="stores-01">
+        <view class="stores-top">
+            <view class="stores-01-01">{{news.title}}</view>
+            <view class="stores-01-02">
+                <text>{{news.ptime_txt}}
+                </text>
+            </view>
+            <view class="stores-01-03" style="margin-bottom: 120rpx;">
+                <view><template is="wxParse" data="{{wxParseData:content.nodes}}"/></view>
+            </view>
+        </view>
+        <view class="stores-bottom">
+            <!--<button><image src="../../img/84.png"></image></button>-->
+            <text>浏览量：{{news.total_num}}</text>
+        </view>
+    </view>
+</scroll-view>
+
+

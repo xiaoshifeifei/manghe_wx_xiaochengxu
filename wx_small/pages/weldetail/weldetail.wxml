@@ -1,0 +1,273 @@
+<!--pages/welfare-01/welfare-01.wxml-->
+<!--中奖弹窗 start-->
+<!--开盒弹窗分享-->
+<view class="mh_pop mh_index_pop" hidden="{{hideBox}}">
+    <!--<view class="mh_pop mh_index_pop">-->
+    <view class="mh_pop_fxlb">
+        <view class="mh_pop_fxlb_01"><image src="{{WinImg}}" mode="aspectFill"></image></view>
+        <view class="mh_pop_fxlb_02">恭喜您中奖喽~</view>
+        <view class="mh_pop_fxlb_03"><image src="{{Lottery.images.pic1}}" mode="aspectFill"></image></view>
+        <view class="mh_pop_fxlb_04">
+            <text>{{congText}}</text>
+        </view>
+        <view class="mh_pop_fxlb_05">
+            <button open-type='share' data-id="1">立即分享</button>
+        </view>
+        <view class="mh_pop_fxlb_gb" data-id="1" bindtap="closeShareWin">X</view>
+    </view>
+</view>
+<!--end中奖弹窗-->
+
+<!--非中奖弹窗 star-->
+<view class="mh_pop" hidden="{{noAward}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_zj">
+            <view class="mh_pop_nr_zj_01"><image src="../../img/89.png" mode="aspectFill"></image></view>
+            <view class="mh_pop_nr_zj_02">谢谢参与</view>
+            <button class="btn1" bindtap="moreList">
+                查看其他活动
+            </button>
+            <button class="btn2" bindtap="closeNoAward">
+                确定
+            </button>
+        </view>
+
+    </view>
+</view>
+<!--end 非中奖弹窗-->
+
+<!--海报start-->
+<view class="mh_pop mh_index_pop" hidden="{{popHide}}">
+    <image src="{{imagePath}}" class='shengcheng'></image>
+    <view bindtap="closeShare" class="mh_pop_fxlb_gba">X</view>
+</view>
+<view hidden="{{popHide}}" class="mask"></view>
+<view class="canvas-box">
+<canvas  style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas"/>
+</view>
+<!--end 海报-->
+<view class="cb_bottom" hidden="{{bottomHide}}">
+    <button open-type='share' data-id="2">
+        <image class="cb_imgs" src="../../img/w_02.png"></image>
+    </button>
+    <button bindtap="{{!WClicked?'baocun':''}}">
+        <image class="cb_imgs" src="../../img/w_01.png"></image>
+    </button>
+    <view class="cb_text">
+        <text>转发给好友</text>
+        <text>保存图片</text>
+    </view>
+</view>
+
+<scroll-view scroll-y class="mh_welfare_details">
+    <view class="mh_welfare_details_01">
+        <image src="{{Lottery.images.pic1}}" mode="aspectFill"></image>
+
+        <view wx:if="{{Lottery.rstatus == 2}}" class="mh_welfare_details_01_01">
+            已开奖
+        </view>
+        <view wx:if="{{Lottery.rstatus == 1}}" class="mh_welfare_details_01_01">
+            开奖中
+        </view>
+        <view wx:if="{{Lottery.rstatus == 0}}" class="mh_welfare_details_01_01">
+            <block wx:if="{{SelfData.self_status ==0}}">
+                未参与
+            </block>
+            <block wx:if="{{SelfData.self_status == 1}}">
+                已参与
+            </block>
+        </view>
+    </view>
+    <view class="mh_welfare_details_02">
+        <view class="mh_welfare_details_02_01">{{Lottery.title}}</view>
+        <view class="mh_welfare_details_02_02">{{Lottery.title_txt}}</view>
+        <block wx:if="{{Lottery.type == 1}}">
+            <block wx:if="{{Lottery.rstatus == 0}}">
+            <view class="cb_left" wx:if="{{Lottery.type == 1}}">
+                <text class="cb_text1">{{Lottery.left_num}}</text>
+                <text class="cb_text2">人剩余</text>
+            </view>
+            </block>
+        </block>
+    </view>
+    <!--倒计时 start-->
+    <view class="mh_welfare_details_03" wx:if="{{Lottery.type == 0}}">
+        <block wx:if="{{Lottery.rstatus == 0}}">
+            <view class="mh_welfare_details_03_01">
+                <span></span>
+                <view class="mh_welfare_details_03_02">
+                    <text>{{day}}</text>
+                    <text>天</text>
+                </view>
+            </view>
+            <view class="mh_welfare_details_03_01">
+                <span></span>
+                <view class="mh_welfare_details_03_02">
+                    <text>{{hour}}</text>
+                    <text>时</text>
+                </view>
+            </view>
+            <view class="mh_welfare_details_03_01">
+                <span></span>
+                <view class="mh_welfare_details_03_02">
+                    <text>{{minute}}</text>
+                    <text>分</text>
+                </view>
+            </view>
+            <view class="mh_welfare_details_03_01">
+                <span></span>
+                <view class="mh_welfare_details_03_02">
+                    <text>{{second}}</text>
+                    <text>秒</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <!--end 倒计时-->
+
+    <!--活动详情 start -->
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">活动详情</view>
+            <view class="mh_welfare_details_04_01_02">玩法说明</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <rich-text  nodes="{{Lottery.content}}"></rich-text>
+        </view>
+
+        <button bindtap="{{!WClicked?'goPartin':''}}" wx:if="{{SelfData.self_status ==0}}" class="mh_welfare_details_04_03">
+            立即参与
+        </button>
+        <block wx:if="{{Lottery.close_share == 0}}">
+            <view wx:if="{{SelfData.self_status ==1}}" class="mh_welfare_details_04_04">
+                <button bindtap="moreList">更多抽奖</button>
+                <!--<button style="line-height: 100rpx" bindtap="{{!WClicked?'goCanvas':''}}">去分享</button>-->
+                <button wx:if="{{Lottery.close_share == 0}}" style="line-height: 100rpx" open-type='share' data-id="2">去分享</button>
+            </view>
+        </block>
+        <block wx:if="{{Lottery.close_share == 1}}">
+            <button wx:if="{{SelfData.self_status ==1}}" bindtap="moreList" class="mh_welfare_details_04_03">
+                更多抽奖
+            </button>
+        </block>
+      <!--  <view wx:if="{{SelfData.self_status ==1}}" class="mh_welfare_details_04_04">
+            <button bindtap="moreList">更多抽奖</button>
+            &lt;!&ndash;<button style="line-height: 100rpx" bindtap="{{!WClicked?'goCanvas':''}}">去分享</button>&ndash;&gt;
+            <button wx:if="{{Lottery.close_share == 0}}" style="line-height: 100rpx" open-type='share' data-id="2">去分享</button>
+        </view>-->
+    </view>
+    <!--end 活动详情-->
+    <!--中奖名单-->
+    <view class="mh_welfare_details_04" wx:if="{{Lottery.rstatus == 2}}">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">中奖名单</view>
+        </view>
+        <view class="mh_welfare_details_04_05">
+            <block wx:for="{{Award}}" wx:key>
+                <view class="mh_welfare_details_04_05_01">{{item.name}}{{item.num1_txt}}</view>
+                <view class="mh_welfare_details_04_05_02">
+                    <view wx:for="{{item.minfo}}" wx:key>
+                        <p><image src="{{item.face_wx}}" mode="aspectFill"></image></p>
+                        <text>{{item.nickname_wx}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <!--end 中奖名单-->
+    <!--奖励列表-->
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">活动奖品</view>
+        </view>
+        <block wx:for="{{Award}}" wx:key>
+            <view class="mh_welfare_details_04_06">
+                <view class="mh_welfare_details_04_06_01"> <image src="{{item.img}}" mode="aspectFill"></image></view>
+                <view class="mh_welfare_details_04_06_02">{{item.name}}{{item.num_txt}}</view>
+            </view>
+            <view class="mh_welfare_details_04_07" wx:if="{{item.type ==3 || item.type==4}}">
+                <block wx:if="{{item.is_show == 0}}">
+                    <button class="mh_welfare_details_04_03" data-link="{{item.link}}" bindtap="goLink">
+                        立即购买
+                    </button>
+                </block>
+            </view>
+        </block>
+    </view>
+    <!--end 奖励列表-->
+    <view class="mh_welfare_details_05" wx:if="{{Lottery.minfo}}">
+        <view class="mh_welfare_details_05_02">
+            <p wx:for="{{Lottery.minfo}}" wx:key>
+                <image src="{{item.face_wx}}" mode="aspectFill"></image>
+            </p>
+        </view>
+        <view class="mh_welfare_details_05_01">有{{Lottery.now_num}}位娃友已参与</view>
+        <!--<view class="mh_welfare_details_08_01">有{{Lottery.now_num}}位娃友已参与</view>-->
+        <view class="mh_welfare_details_08_02" bindtap="{{!WClicked?'_getRank':''}}"><button>查看榜单 ></button></view>
+    </view>
+    <!--更多抽奖 start-->
+    <view class="mh_welfare_details_06" wx:if="{{More}}">
+        <view class="mh_index_bt">
+            <view class="mh_index_bt_01">更多抽奖</view>
+            <view class="mh_index_bt_02" bindtap="moreList">发现更多<image src="../../img/80.png" mode="aspectFill"></image></view>
+        </view>
+
+        <view class="mh_index_spnr_nr" wx:for="{{More}}" wx:key>
+           <!-- <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-02.png);'>
+                <rich-text >参与</rich-text>
+            </view>-->
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+                <view class="mh_index_spnr_nr_01_01">{{item.type_txt}}</view>
+                <view class="mh_index_spnr_nr_01_02">
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+            <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03" data-id="{{item.id}}" bindtap="goDetail"> <image src="{{item.images.pic1}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+    <!--end 更多抽奖-->
+
+    <!--热卖推荐 start-->
+    <view class="mh_welfare_details_06" wx:if="{{Hot.length>0}}">
+        <view class="mh_index_bt">
+            <view class="mh_index_bt_01">热卖推荐</view>
+        </view>
+        <view class="mh_index_spnr_nr" wx:for="{{Hot}}" wx:key>
+            <view class="mh_index_03_03_01_icon" style=' background-image: url({{item.icon_new_img}});'>
+                <rich-text >{{item.icon_text}}</rich-text>
+            </view>
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+                <view class="mh_index_spnr_nr_01_01">¥{{item.price}}</view>
+                <view class="mh_index_spnr_nr_01_02">
+                    <text>{{item.series}}</text>
+                    <text>{{item.pname}}</text>
+                </view>
+            </view>
+            <view data-link="{{item.url}}" bindtap="goLink" class="{{index == HotIndex?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"> <image src="{{index == HotIndex?item.pic2:item.img}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+    <!--end 热卖推荐-->
+<!--助力榜-->
+    <view class="mh_pop" hidden="{{hideRank}}" bindtap="_closeRank">
+        <view class="mh_zldrb" catchtap="_doNothing">
+            <view class="mh_zldrb_01">
+                <view class="mh_zldrb_01_01">助力达人榜</view>
+                <view class="mh_zldrb_01_02">{{rankData.self_txt}}</view>
+            </view>
+            <view class="mh_zldrb_02">
+                <view class="mh_zldrb_02_01">
+                    <text>参与者</text>
+                    <text>助力数</text>
+                </view>
+                <view class="mh_zldrb_02_02" wx:for="{{rankData.rank}}" wx:key="id">
+                    <view class="mh_zldrb_02_02_list">
+                        <view class="mh_zldrb_02_02_list_01"><image src="{{item.face_wx}}" mode="aspectFill"></image></view>
+                        <view class="mh_zldrb_02_02_list_02">{{item.nickname_wx}}</view>
+                        <view class="mh_zldrb_02_02_list_03">{{item.num}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_zldrb_03">{{rankData.remark}}</view>
+        </view>
+    </view>
+</scroll-view >

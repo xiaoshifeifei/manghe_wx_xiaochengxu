@@ -1,0 +1,12 @@
+/* pages/shoppingmore/shoppingmore.wxss */
+.mh_shoppingmore_01 {
+    width: 100%;
+    height: 170rpx;
+    background: #fdfdfd;
+    box-shadow: 0 3rpx 5rpx 0 rgba(0, 0, 0, 0.06);
+
+}
+
+.mh_shoppingmore_02{
+    background: #eeeeee;
+}

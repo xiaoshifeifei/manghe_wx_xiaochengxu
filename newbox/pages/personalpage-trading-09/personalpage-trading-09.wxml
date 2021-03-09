@@ -1,0 +1,49 @@
+<!--pages/personalpage-trading-09/personalpage-trading-09.wxml-->
+<view class="mh_shoppingmore">
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>货物状态：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_05">
+              <text class="mh_shoppingsq_02_01_05_01">未收到货款</text>
+              <text>已收到货</text>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>退款方式：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_05">
+              <text class="mh_shoppingsq_02_01_05_01">仅退货</text>
+              <text>退货退款</text>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>退款原因</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                请选择
+                <image src="../../img/03.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>实付</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                <icon>¥20.00</icon>
+            </view>
+        </view>
+    </view>
+   <view class="mh_shoppingsq_ms">不可修改，最多¥20.00，含邮费¥5.00</view>
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01 mh_order_bottom_opacity">申请退款</text>
+   </view>
+</view>
+

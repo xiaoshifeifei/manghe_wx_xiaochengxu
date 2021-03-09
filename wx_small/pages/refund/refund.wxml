@@ -1,0 +1,4 @@
+<!--pages/refund/refund.wxml-->
+<text>pages/refund/refund.wxml</text>
+<button bindtap="_bindChooseImg">选择图片</button>
+<button bindtap="_bindApply">上传图片</button>

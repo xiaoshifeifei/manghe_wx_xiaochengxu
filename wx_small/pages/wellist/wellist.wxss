@@ -1,0 +1,4 @@
+/* pages/wellist/wellist.wxss */
+.mh_welfare{
+    background: #eeeeee;
+}

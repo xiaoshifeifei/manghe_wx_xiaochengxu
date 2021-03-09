@@ -1,0 +1,18 @@
+<!--pages/shops/shops.wxml-->
+<view class="mh_welfare mh_shops mh_shopslist">
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' ></view>
+         <view class="mh_index_spnr_nr_01_04"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+         <view class="mh_index_spnr_nr_01_05">店铺名称</view>
+         <view class="mh_index_spnr_nr_01_06">商品数量：12</view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+     <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' ></view>
+         <view class="mh_index_spnr_nr_01_04"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+         <view class="mh_index_spnr_nr_01_05">店铺名称</view>
+         <view class="mh_index_spnr_nr_01_06">商品数量：12</view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+</view>
+

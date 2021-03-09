@@ -1,0 +1,22 @@
+/* pages/specdetail/specdetail.wxss */
+
+.mh_preview_0w {
+    position: fixed;
+    bottom: 0;
+    height: 120rpx;
+    width: 100%;
+    background: #fff;
+    z-index: 15;
+}
+
+.mh_preview_0w button {
+    width: 315rpx;
+    height: 80rpx;
+    border-radius: 80rpx;
+    background: #3a63a8;
+    color: #fff;
+    text-align: center;
+    line-height: 80rpx;
+    margin-top: 20rpx;
+    font-size: 34rpx;
+}

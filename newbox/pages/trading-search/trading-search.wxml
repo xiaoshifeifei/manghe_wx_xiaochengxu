@@ -1,0 +1,110 @@
+<!--pages/trading-search/trading-search.wxml-->
+<scroll-view scroll-y  class="mh_index"  >
+     <view class='mh_index_search'>
+      <view class="mh_index_search_01">
+          <input type='text' placeholder='搜索IP，系列，玩具名称' confirm-type='search' bindinput='inputBind' bindconfirm='query'></input>
+          <image src="../../img/104.png" mode="aspectFill"></image>
+          <image src="../../img/106.png" mode="aspectFill" class="mh_index_search_qk"></image>
+      </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_preview_height"></view>
+   <view  class="mh_index_top mh_index_fixed">
+        <view class="mh_index_nav">
+            <text class="mh_index_nav_hover">商品</text>
+            <text>玩具</text>
+            <text>用户</text>
+        </view>
+    </view>
+    <view class="mh_trading_search">
+        <view class="mh_trading_search_nr">
+            <view class="mh_trading_search_nr_01">为您找到1个玩具品牌</view>
+             <view class="mh_trading_search_nr_02">
+                <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_02">商品名称</view>
+                </view>
+               
+            </view>
+        </view>
+        <view class="mh_trading_search_nr">
+            <view class="mh_trading_search_nr_01">为您找到5个玩具系列</view>
+             <view class="mh_trading_search_nr_02">
+                <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_02">商品名称</view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_02">商品名称</view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_02">商品名称</view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_02">商品名称</view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+            </view>
+        </view>
+         <view class="mh_trading_search_nr">
+            <view class="mh_trading_search_nr_01">为您找到32个玩具款式</view>
+             <view class="mh_trading_search_nr_02">
+                <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+                 <view class="mh_trading_search_nr_02_nr">
+                    <view class="mh_trading_search_nr_02_nr_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                    <view class="mh_trading_search_nr_02_nr_03">系列名称最多2行</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    </scroll-view >
+

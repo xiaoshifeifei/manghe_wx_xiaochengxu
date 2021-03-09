@@ -1,0 +1,8 @@
+/* pages/mylog/mylog.wxss */
+.mh_record {
+    padding-bottom: 40rpx;
+}
+
+.mh_allorder_nav view {
+    width: 33.33%;
+}

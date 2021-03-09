@@ -1,0 +1,4 @@
+<!--pages/paradise/paradise.wxml-->
+ <!--<import src="../../template/template.wxml"/> -->
+<template is="tabBar" data="{{tabBar}}"/>
+111

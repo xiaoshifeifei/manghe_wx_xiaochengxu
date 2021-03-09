@@ -1,0 +1,15 @@
+<!-- pages/authorization/authorization.wxml -->
+<view class="mh_authorization">
+    <view class="mh_authorization_01">
+        <view class="mh_authorization_01_01">
+            <image src="{{headImg}}" mode="aspectFill" ></image>
+        </view>
+        <view class="mh_authorization_01_02">无疆盒子</view>
+    </view>
+    <!--<view class="mh_authorization_02" style=" display:block;">-->
+        <!--<text>授权登录</text>-->
+    <!--</view>-->
+    <view class="mh_authorization_03" style=" display: block;">
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="mh_authorization_03_01">{{showText}}</button>
+    </view>
+</view>

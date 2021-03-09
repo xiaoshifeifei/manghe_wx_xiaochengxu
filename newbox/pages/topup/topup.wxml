@@ -1,0 +1,67 @@
+<!-- pages/topup/topup.wxml -->
+<view class="mh_pop" style="display: none;">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no"><image src="../../img/15.png" mode="aspectFill"></image></view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">支付</view>
+            <view class="mh_pop_nr_01_02">
+                <text>¥999</text>
+                <text>商品名称</text>
+            </view>
+            <view class="mh_pop_nr_01_03">
+                默认支付方式<span><image src="../../img/03.png" mode="aspectFill"></image></span>
+            </view>
+        </view>
+        <view class="mh_pop_nr_02">
+            <text>确认支付</text>
+        </view>
+    </view>
+</view>
+<scroll-view scroll-y  class="mh_topup">
+    <view class="mh_topup_01">
+        <view class="mh_topup_01_01">
+            <text>999</text>
+            <rich-text>我的明细(¥)<image src="../../img/50.png" mode="aspectFill"></image></rich-text>
+        </view>
+        <view class="mh_topup_01_02">
+            <text>99999</text>
+            <text>我的积分</text>
+        </view>
+    </view>
+    <view class="mh_topup_02"><image src="../../img/demo-06.png" mode="aspectFill"></image></view>
+    <view class="mh_topup_03">
+        <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>6<span>¥</span></rich-text>
+            <rich-text>60积分<span>+赠10积分</span></rich-text>
+        </view>
+         <view class="mh_topup_03_01">
+            <rich-text>3000<span>¥</span></rich-text>
+            <rich-text>30000积分<span>+赠1000积分</span></rich-text>
+        </view>
+    </view>
+    <view class="mh_topup_04">*账户余额不可提取</view>
+</scroll-view>

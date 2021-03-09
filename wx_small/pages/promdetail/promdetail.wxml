@@ -1,0 +1,43 @@
+<!-- pages/details/details.wxml -->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view scroll-y class="mh_details" wx:if="{{detail}}">
+    <view class="mh_details_01">
+        <image src="{{detail.images.pic4}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_02">
+
+    </view>
+    <view class="mh_details_04">
+        <view class="mh_details_04_01">
+            <view class="mh_details_04_01_02">{{detail.title}}</view>
+            <view class="mh_details_04_01_03"></view>
+            <view class="mh_details_04_01_04">
+
+            </view>
+            <view class="mh_details_04_01_05">
+                <image src="{{detail.images.pic2}}" mode="aspectFill"></image>
+            </view>
+            <view class='mh_xzxh'>
+                <view class="mh_details_pop_02">
+                    <rich-text>
+
+                    </rich-text>
+                </view>
+                <view class="mh_details_pop_03">
+
+                </view>
+            </view>
+        </view>
+        <view class="mh_details_04_02">
+            <view class="mh_details_04_02_bt">门店详情</view>
+            <view class="mh_details_04_02_nr">
+                <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+            </view>
+        </view>
+    </view>
+    <view class="stores-bottom">
+        <button open-type='share'><image src="../../img/84.png"></image></button>
+        <text>浏览量：{{detail.all_num}}</text>
+    </view>
+</scroll-view>
+

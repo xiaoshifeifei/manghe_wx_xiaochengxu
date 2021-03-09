@@ -1,0 +1,41 @@
+<!-- pages/topup/topup.wxml -->
+<view wx:if="{{is_show ==1}}" class="mh_pop" hidden="{{popFlag? true : false}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no" ontap="closeWindow"><image src="../../img/15.png" mode="aspectFill"></image></view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">支付</view>
+            <view class="mh_pop_nr_01_02">
+                <text>¥{{cMoney}}</text>
+                <text>无疆盒子充值</text>
+            </view>
+            <!--<view class="mh_pop_nr_01_03">-->
+                <!--默认支付方式<span><image src="../../img/03.png" mode="aspectFill"></image></span>-->
+            <!--</view>-->
+        </view>
+        <view ontap="{{!wClicked?'goPay':''}}" class="mh_pop_nr_02">
+            <text>确认支付</text>
+        </view>
+    </view>
+</view>
+<scroll-view  wx:if="{{is_show ==1}}"  scroll-y class="mh_topup">
+    <view class="mh_topup_01">
+        <view class="mh_topup_01_01" bindtap="moneyLog">
+            <text>{{mMoney}}</text>
+            <!--<text>余额¥（查看明细）</text>-->
+            <rich-text>余额明细(￥)<image src="../../img/50.png" mode="aspectFill"></image></rich-text>
+        </view>
+        <view class="mh_topup_01_02" bindtap="scoreLog">
+            <text>{{mScore}}</text>
+            <!--<text>积分（查看明细）</text>-->
+            <rich-text>积分明细<image src="../../img/50.png" mode="aspectFill"></image></rich-text>
+        </view>
+    </view>
+    <view class="mh_topup_02"><image src="{{imgurl1}}" mode="aspectFill"></image></view>
+    <view class="mh_topup_03">
+        <view class="mh_topup_03_01" bindtap="goCharge" wx:for="{{payConfig}}" data-id="{{item.id}}" data-money="{{item.money}}" wx:key>
+            <rich-text>{{item.money}}<span>¥</span></rich-text>
+            <rich-text>{{item.score}}积分<span>+{{item.content}}</span></rich-text>
+        </view>
+    </view>
+    <view class="mh_topup_04">*账户余额不可提取</view>
+</scroll-view>

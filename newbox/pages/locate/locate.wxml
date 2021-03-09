@@ -1,0 +1,13 @@
+<view class="mh_authorization">
+    <view class="mh_authorization_01">
+        <view class="mh_authorization_01_01">
+             <image src="../../img/86.jpg" mode="aspectFill" ></image>
+        </view>
+        <view class="mh_authorization_01_02">你未开定位权限，部分功能无法使用</view>
+        <view class="mh_authorization_01_03">若您已开通定位权限依然无法正常使用，请尝试打开【微信】定位</view>
+    </view>
+    <view class="mh_authorization_03" style=" display: block;">
+         <text class="mh_authorization_03_01">开通权限</text>
+    </view>
+   
+</view>

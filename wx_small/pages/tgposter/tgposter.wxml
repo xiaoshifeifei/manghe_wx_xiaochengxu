@@ -1,0 +1,43 @@
+<!-- pages/preview/preview.wxml -->
+ <view class="mh_pop" style="display:none;">
+      <view class="mh_pop_screening">
+        <view class="mh_pop_screening_01">显示方式：</view>
+        <view class="mh_pop_screening_02">
+            <view class="mh_pop_screening_hover">带货海报</view>
+        </view>
+        <view class="mh_pop_screening_01">小程序码：</view>
+        <view class="mh_pop_screening_02">
+            <view>微信</view>
+        </view>
+        <view class="mh_pop_screening_01">主题模版：</view>
+        <view class="mh_pop_screening_02">
+            <view>简约</view>
+        </view>
+        <view class="mh_pop_screening_01">排列方式：</view>
+         <view class="mh_pop_screening_02">
+            <view>4列</view>
+        </view>
+      </view>
+  </view>
+<scroll-view scroll-y class="mh_me" >
+    <view class="mh_preview_01" style="display:none;">
+        <text>带货海报 ></text>
+        <text>小程序码 ></text>
+        <text>简约 ></text>
+        <text>4列 ></text>
+    </view>
+    <view class="mh_preview_height" style="display:none;"></view>
+    <view class="mh_preview_posters">
+        <!--<view class="mh_preview_02">-->
+        <image style="width:100%;height: 960rpx;" src="{{imagePath}}" mode="widthFix"></image>
+        <!--</view>-->
+    </view>
+    <view class="canvas-box">
+        <canvas style="width: 750px;height: 960px;position:fixed;top:9999px" canvas-id="canvas"/>
+    </view>
+    <view class="mh_preview_height_01"></view>
+    <view class="mh_preview_03" hidden="{{hideBtn}}">
+        <button open-type='share'>分享给好友</button>
+        <button bindtap="save">保存至相册</button>
+    </view>
+</scroll-view>

@@ -1,0 +1,94 @@
+<!-- pages/personalpage/personalpage.wxml -->
+<view class="mh_me">
+    <!-- 限时活动 -->
+    <view class="mh_limitactivities_01" style="background:#FF5F6F;"  wx:if="{{info.show_activity == true && info.activity_status==1}}">
+        <view class="mh_limitactivities_01_01">
+            <!-- <open-data type="userAvatarUrl"></open-data> -->
+        </view>
+        <view class="mh_limitactivities_02">
+            <text style="color:#fff;">{{info.activity_title}}</text>
+            <text style="color:#fff;">{{info.activity_content}}</text>
+        </view>
+    </view>
+    <view class="mh_limitactivities_01"  wx:if="{{info.show_activity == true && info.activity_status==2}}">
+        <view class="mh_limitactivities_01_01">
+            <!-- <open-data type="userAvatarUrl"></open-data> -->
+        </view>
+        <view class="mh_limitactivities_02">
+            <text>{{info.activity_title}}</text>
+            <text style="color:#FF0000;">{{info.activity_content}}</text>
+        </view>
+    </view>
+    <!-- 限时活动 end -->
+    <view class="personalpage_01">
+        <view class="mh_me_01_02_01">
+            <view class="mh_me_01_02_01_05">
+                <image src="{{info.head}}" mode="aspectFill"></image>
+            </view>
+            <view class="mh_me_01_02_01_01">
+                <text>{{info.name}}</text>
+                <text>{{info.time_txt}}</text>
+            </view>
+            <view class="mh_me_01_02_01_02" wx:if="{{info.self == 1}}" bindtap="goMySet">
+                <image src="../../img/103.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_me_01_02_01_03">
+                <image src="../../img/95.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_me_01_02_01_04" wx:if="{{info.show == true}}">
+                <button bindtap="_goPoster">生成海报</button>
+            </view>
+            <view class="mh_me_01_02_01_06" wx:if="{{info.self == 0}}" bindtap="goOrder">
+                <view class="mh_me_fhdd_icon" wx:if="{{self_data.order_count>0}}">{{self_data.order_count}}</view>
+                <image src="../../img/39.png" mode="aspectFill"></image>
+                <text>购买记录</text>
+            </view>
+        </view>
+    </view>
+    <view class="personalpage_nav">
+        <text wx:for="{{tgBar}}" wx:key="id" data-id="{{item.id}}" class="personalpage_nav_hover">{{item.name}}</text>
+        <!-- <text>交易</text> -->
+        <!-- <text>心愿</text> -->
+    </view>
+    <view class="personalpage_height"></view>
+    <view class="personalpage_notice">
+        <image src="../../img/96.png" mode="aspectFill"></image>
+        <view class="personalpage_notice_01 marquee">
+            <block wx:if="{{info.notice}}">
+                <text class="content">{{info.notice}}</text>
+            </block>
+            <block wx:else>
+                <text class="content">暂未设置公告~</text>
+            </block>
+        </view>
+    </view>
+    <view class="mh_index_spnr">
+        <view class="mh_index_spnr_nr" wx:for="{{product}}" wx:key="id">
+            <view class="mh_index_03_03_01_icon" style=' background-image: url({{item.info.iconImg}});'>
+                <rich-text>{{item.info.icon}}</rich-text>
+            </view>
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%'>
+                <view class="mh_index_spnr_nr_01_01">¥{{item.info.price1}}</view>
+                <view class="mh_index_spnr_nr_01_02">
+                    <text>{{item.info.pname}} {{item.info.series}}</text>
+                    <p class="{{item.info.sell_way==0?'mh_bq_02':'mh_bq_01'}}"  style="padding: 2rpx 8rpx;" wx:if="{{show_reduce==1 && item.info.is_reduce==1}}">
+                        {{item.info.typeName}}{{item.info.cardName}}/立减
+                    </p>
+                    <p class="{{item.info.sell_way==0?'mh_bq_02':'mh_bq_01'}}" style="padding: 2rpx 8rpx;" wx:else>
+                        {{item.info.typeName}}{{item.info.cardName}}
+                    </p>
+                </view>
+            </view>
+            <view data-status="{{item.info.status}}" data-link="{{item.info.url}}" bindtap="goLink" class="{{index==prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}">
+                <image src="{{index==prosty?item.info.img_pic2:item.info.img_pic1}}" mode="aspectFill"></image>
+            </view>
+        </view>
+    </view>
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom" wx:if="{{info.show == true}}">
+        <button bindtap="goAllPro">带货管理</button>
+    </view>
+    <view class="canvas-box">
+        <canvas style="width: 375px;height: 300px;position:fixed;top:9999px" canvas-id="canvas" />
+    </view>
+</view>

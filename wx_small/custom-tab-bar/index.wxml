@@ -1,0 +1,11 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<cover-view class="tab-bar" style="{{isIphoneX?'padding-bottom:38rpx;':''}}">
+  
+  <block wx:for="{{list}}" wx:key="index">
+      <cover-view class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+        <cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+        <cover-view style="color: {{selected === index ? selectedColor : color}}">{{item.text}}</cover-view>
+      </cover-view>
+  </block>   
+</cover-view>
+

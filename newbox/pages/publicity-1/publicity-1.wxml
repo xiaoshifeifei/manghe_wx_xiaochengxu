@@ -1,0 +1,35 @@
+<!-- pages/publicity-1/publicity-1.wxml -->
+<scroll-view scroll-y class="mh_new_choose">
+    <view class="mh_new_choose_index">
+        <image src="../../img/76.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_publicity">
+        <view class="mh_publicity_01">正品验证结果</view>
+        <view class="mh_publicity_02">
+            <text>恭喜你！你购买的xxxxx是正品</text>
+            <text>验证结果是：正品</text>
+            </view>
+        <view class="mh_publicity_03">
+            <view class="mh_index_spnr_nr">
+                 <view class="mh_index_spnr_zp"> <image src="../../img/77.png" mode="aspectFill"></image></view>
+                <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%'>
+                    <view class="mh_index_spnr_nr_01_02">
+                        <text>Tokidoki</text>
+                        <text>圣地亚哥系列</text>
+                    </view>
+                </view>
+                <view class="mh_index_spnr_nr_02">
+                    <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+                </view>
+            </view>
+        </view>
+        <view class="mh_publicity_04">
+             <text>恭喜你！获得正品验证奖励</text>
+            <text>普通碎片*1 代金券*5</text>
+        </view>
+        <view class="mh_publicity_05">
+            <text>可至个人中心“正品验证”查看验证记录</text>
+            <text>“盒屯宝-宝库”查收奖励</text>
+        </view>
+    </view>
+</scroll-view>

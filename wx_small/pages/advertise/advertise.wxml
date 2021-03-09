@@ -1,0 +1,13 @@
+<!--pages/advertise/advertise.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view scroll-y class="mh_advertise_03">
+    <view class="mh_advertise_01_01">
+        <image src="{{image}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_advertise_01_02">
+        <template is="wxParse" data="{{wxParseData:activity.nodes}}" />
+    </view>
+</scroll-view>
+
+
+

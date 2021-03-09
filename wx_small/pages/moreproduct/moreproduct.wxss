@@ -1,0 +1,6 @@
+/* new.wxss */
+.mh_index {
+    height: 1500rpx;
+}
+
+

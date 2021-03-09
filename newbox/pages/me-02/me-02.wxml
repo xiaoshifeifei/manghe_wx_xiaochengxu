@@ -1,0 +1,21 @@
+<!--pages/me-02/me-02.wxml-->
+<scroll-view scroll-y class="mh_me01">
+     <view class="mh_me_03">
+            <button class="mh_me_list mh_me02">
+                <text>收货地址</text>
+                <text>昵称显示在这里</text>
+                <image src="../../img/03.png"></image>
+            </button>
+        </view>
+    <view class="mh_me_03">
+            <view class="mh_me_list">
+                <text>显示交易信息</text><switch checked bindchange="switch1Change" color="#F9E000"/>
+            </view>
+             <view class="mh_me_list">
+                <text>显示心愿信息</text><switch checked bindchange="switch1Change" color="#F9E000"/>
+            </view>
+            <view class="mh_me_list">
+                <text>显示带货信息</text><switch checked bindchange="switch1Change" color="#F9E000"/>
+            </view>
+        </view>
+    </scroll-view>

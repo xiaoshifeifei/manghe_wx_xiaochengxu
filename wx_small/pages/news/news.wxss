@@ -1,0 +1,4 @@
+/* pages/news/news.wxss */
+.mh_new_choose{
+    height: 150vh;
+}

@@ -1,0 +1,132 @@
+<!-- pages/order/order.wxml -->
+<!-- 选择支付方式 -->
+ <view class="mh_pop" style="display:none;">
+    <view class="mh_details_pop ">
+        <view class="mh_xzzf_top">
+            <view class="mh_xzzf_top_01">
+                <view class="mh_xzzf_top_01_01">选择支付方式</view>
+                <view class="mh_xzzf_top_01_02">余额详情请查看个人中心</view>
+            </view>
+            <view class="mh_xzzf_top_02">
+                <view class="mh_xzzf_top_02_01">
+                    <view class="mh_xzzf_top_02_01_01"><image src="../../img/98.png" ></image></view>
+                    <view class="mh_xzzf_top_02_01_02">微信支付</view>
+                    <view class="mh_xzzf_top_02_01_03"><image src="../../img/100.png" ></image></view>
+                </view>
+                <view class="mh_xzzf_top_02_01">
+                    <view class="mh_xzzf_top_02_01_01"><image src="../../img/99.png" ></image></view>
+                    <view class="mh_xzzf_top_02_01_02">盒屯余额：¥99.99</view>
+                    <view class="mh_xzzf_top_02_01_03"><image src="../../img/100-01.png" ></image></view>
+                </view>
+            </view>
+        </view>
+       <view class="mh_xzzf_bottom">
+             <view class="mh_order_bottom_01">
+            <text>总计：¥999.00</text>
+            <text>已优惠¥99，不含运费</text>
+              </view>
+            <view class="mh_order_bottom_02">确认支付</view>
+       </view>
+    </view>
+</view>
+<!-- 选择支付方式 end -->
+<!-- 扣款成功 -->
+<view class="mh_pop" style="display: none;">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_05">
+            <text>扣款成功，订单已完成</text>
+<text >我的余额：¥999.00</text></view>
+        <view class="mh_pop_nr_02">
+            <button>回首页</button>
+            <button>回店铺</button>
+            <button>去拆盒</button>
+        </view>
+    </view>
+</view>
+<!-- 扣款成功 end -->
+
+<!-- 余额不足 -->
+<view class="mh_pop" style="display: none">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no"><image src="../../img/15.png" ></image></view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">RMB不足，请充值</view>
+            <view class="mh_pop_nr_01_04">
+                <rich-text><span>还需</span>¥999</rich-text>
+                <text>我的余额：¥999.00</text>
+            </view>
+        </view>
+        <view class="mh_pop_nr_02">
+            <text>立即充值</text>
+        </view>
+    </view>
+</view>
+<!-- 余额不足 end -->
+<!-- 选择优惠券 -->
+ <view class="mh_pop" style="display: none;">
+    <view class="mh_details_pop mh_coupons">
+       
+        <view class="mh_details_pop_02">
+                <rich-text> 
+                    <text>选择优惠券</text>
+                </rich-text>
+        </view>
+       <view class="mh_coupons_01">
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+            <rich-text>优惠券名称<span>¥9</span></rich-text>
+       </view>
+    </view>
+</view>
+<!-- 选择优惠券 end -->
+<view class="mh_order">
+    <view class="mh_order_top">
+        <view class="mh_order_top_01"><image src="../../img/97.png" mode="aspectFill"></image></view>
+        <view class="mh_order_top_02">
+            <text>订单已生成，请在3分钟内付款，详情请查看个人中心！</text>
+        </view>
+    </view>
+    <view class="mh_order_02">
+        <view class="mh_order_02_01"><image src="../../img/demo-11.png" mode="aspectFill"></image></view>
+        <view class="mh_order_02_02">
+            <text class="mh_order_02_01_01">bububu小天使</text>
+            <text class="mh_order_02_01_01">¥39</text>
+            <text class="mh_order_02_01_01">库存299</text>
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           订单号<span>0000000000</span>
+        </view>
+         <view class="mh_order_03_01">
+           订单时间<span>2910-08-08 12:12:12</span>
+        </view>
+         <view class="mh_order_03_01">
+           入库方式<span>购物车</span>
+        </view>
+         <view class="mh_order_03_01">
+           购买数量<span>1</span>
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           优惠券<span>99元<image src="../../img/03.png" ></image></span>
+        </view>
+    </view>
+     <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           优惠券<span class="mh_order_03_01_jq">-1元/-2元/-3元</span>
+        </view>
+    </view>
+    <view class="mh_new_choose_bz">描述的文字标红</view>     
+    <view class="mh_order_bottom">
+        <view class="mh_order_bottom_01">
+            <text>总计：¥999.00</text>
+            <text>已优惠¥99，不含运费</text>
+        </view>
+        <view class="mh_order_bottom_02">立即购买</view>
+    </view>
+</view>

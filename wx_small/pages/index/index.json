@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "无疆盒子",
+    "usingComponents": {},
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+}

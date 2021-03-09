@@ -1,0 +1,74 @@
+<!--pages/personalpage-trading-06/personalpage-trading-06.wxml-->
+<scroll-view scroll-y class="mh_me">
+    <view class="personalpage-trading-set-01">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>心愿说明</text>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_05">
+           <textarea class="detailText" placeholder="输入交易说明信息，比如：购买注意，优惠信息等（选填，最多30个字）" bindblur="bindTextAreaBlur">
+            </textarea>
+        </view>
+    </view>
+    <view class="mh_buyinterests_bt">
+        心愿商品
+        <view class="mh_buyinterests_bt_01">
+            <image mode="aspectFill"src="../../img/107.png"role="img"></image>
+            编辑
+        </view>
+        
+
+    </view>
+    <view class="mh_trading_spnr mh_buyinterests_xq">
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生毕业生毕业生毕业生毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+             <view class="mh_trading_spnr_list_08">
+                <image src="../../img/109.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        
+    </view>
+  <view class="personalpage_height_01"></view>
+  <view class="personalpagee_bottom">
+       <button>添加商品</button>
+   </view>
+ 
+   
+</scroll-view>

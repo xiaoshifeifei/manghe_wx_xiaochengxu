@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#ececec",
+  "navigationBarTitleText": "购买权列表",
+  "usingComponents": {},
+  "enablePullDownRefresh":true 
+}

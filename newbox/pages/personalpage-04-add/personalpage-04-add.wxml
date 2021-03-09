@@ -1,0 +1,22 @@
+<!--pages/personalpage-04-add/personalpage-04-add.wxml-->
+<view class="mh_order">
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           活动类型<span>随机立减（1-3元）<image src="../../img/03.png" ></image></span>
+        </view>
+    </view>
+   <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           活动日期<span>2020/04/05<image src="../../img/03.png" ></image></span>
+        </view>
+    </view>
+   <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           活动时间段<span>18:00-19:00<image src="../../img/03.png" ></image></span>
+        </view>
+    </view>
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+       <button>保存活动</button>
+   </view>
+</view>

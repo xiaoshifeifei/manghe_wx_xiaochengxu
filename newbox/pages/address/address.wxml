@@ -1,0 +1,48 @@
+<!--pages/address/address.wxml-->
+<view class="mh_address">
+   <view class="mh_mh_address_nr">   
+       <view class="mh_order_list">
+            <view class="mh_order_list_01">
+                <text>用户名称</text>
+                <text>159****2022</text>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>收货地址：已填写地址某某某某某</rich-text>
+                <rich-text><image src="../../img/36.png"></image>设为默认</rich-text>
+            </view>
+        </view>
+         <view class="mh_order_list">
+            <view class="mh_order_list_01">
+                <text>用户名称</text>
+                <text>159****2022</text>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>收货地址：已填写地址某某某某某</rich-text>
+                <rich-text><image src="../../img/36.png"></image>设为默认</rich-text>
+            </view>
+        </view>
+         <view class="mh_order_list">
+            <view class="mh_order_list_01">
+                <text>用户名称</text>
+                <text>159****2022</text>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>收货地址：已填写地址某某某某某</rich-text>
+                <rich-text><image src="../../img/36.png"></image>设为默认</rich-text>
+            </view>
+        </view>
+         <view class="mh_order_list">
+            <view class="mh_order_list_01">
+                <text>用户名称</text>
+                <text>159****2022</text>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>收货地址：已填写地址某某某某某</rich-text>
+                <rich-text><image src="../../img/36.png"></image>设为默认</rich-text>
+            </view>
+        </view>
+   </view>
+    <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">新增地址</text>
+   </view>
+</view>

@@ -1,0 +1,18 @@
+<!--pages/addresssave/addresssave.wxml-->
+<view class="mh_address">
+   <view class="mh_mh_address_nr">
+       <view class="mh_mh_address_nr_list">
+           <view class="mh_mh_address_nr_list_01"><input placeholder="请输入收货人" auto-focus/></view>
+           <view class="mh_mh_address_nr_list_01"><input placeholder="请输入联系方式" auto-focus/></view>
+           <view class="mh_mh_address_nr_list_01"><input placeholder="请输入所在地区" auto-focus/></view>
+           <view class="mh_mh_address_nr_list_02"><textarea bindblur="bindTextAreaBlur" auto-height placeholder="详细地址" /></view>
+       </view>
+       <view class="mh_mh_address_nr_list">
+          <text class="mh_mh_address_nr_list_botton">从微信导入</text>
+       </view>
+   </view>
+    <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">保存</text>
+   </view>
+</view>
+

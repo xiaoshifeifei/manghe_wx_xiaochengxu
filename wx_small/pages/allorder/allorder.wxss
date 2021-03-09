@@ -1,0 +1,27 @@
+/* pages/allorder/allorder.wxss */
+.mh_shopping_nr_03 view{
+    margin-left: 20rpx;
+}
+
+.mh_shopping_nav_hover text {
+    padding: 0 5rpx;
+    border-bottom: 6rpx solid #3a63a8;
+    height: 80rpx;
+    display: inline-block;
+}
+.mh_shopping_shops_bt image{
+    border-radius: 50%;
+}
+
+.mh_shopping_nr_04_hui {
+    width: 630rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #ececec;
+    color: #232323;
+    font-size: 26rpx;
+    text-align: center;
+    margin-left: 30rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}

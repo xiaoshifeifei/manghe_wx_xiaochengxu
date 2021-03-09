@@ -1,0 +1,194 @@
+<!-- pages/orderkj/orderkj.wxml -->
+<view class="mh_pop" style="{{pay_status}}" bindtap="cloose_pay">
+    <view class="mh_details_pop ">
+        <view class="mh_xzzf_top">
+            <view class="mh_xzzf_top_01">
+                <view class="mh_xzzf_top_01_01">选择支付方式</view>
+                <view class="mh_xzzf_top_01_02">余额详情请查看个人中心</view>
+            </view>
+            <view class="mh_xzzf_top_02">
+                <view class="mh_xzzf_top_02_01" wx:if="{{wxpay}}" data-id="2" catchtap="chooseway">
+                    <view class="mh_xzzf_top_02_01_01">
+                        <image src="../../img/98.png"></image>
+                    </view>
+                    <view class="mh_xzzf_top_02_01_02">微信支付</view>
+                    <view class="mh_xzzf_top_02_01_03">
+                        <image wx:if="{{paytype==2}}" src="../../img/100-01.png"></image>
+                        <image wx:else src="../../img/100.png"></image>
+                    </view>
+                </view>
+                <view class="mh_xzzf_top_02_01" wx:if="{{blpay}}" data-id="1" catchtap="chooseway">
+                    <view class="mh_xzzf_top_02_01_01">
+                        <image src="../../img/99.png"></image>
+                    </view>
+                    <view class="mh_xzzf_top_02_01_02">无疆盒子余额：¥{{account_money}}</view>
+                    <view class="mh_xzzf_top_02_01_03">
+                        <image wx:if="{{paytype==1}}" src="../../img/100-01.png"></image>
+                        <image wx:else src="../../img/100.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="mh_xzzf_bottom">
+            <view class="mh_order_bottom_01">
+                <text>总计：¥{{order_arr.act_money}}</text>
+                <text>已优惠¥{{order_arr.diff_money}}，不含运费</text>
+            </view>
+            <view class="mh_order_bottom_02" bindtap="{{!buttonClicked?'gopay':''}}">确认支付</view>
+        </view>
+    </view>
+</view>
+<!-- 选择支付方式 -->
+<!-- <view class="mh_pop" style="{{pay_status}}" bindtap="cloose_pay"> 
+    <view class="mh_details_pop">
+        <view class="mh_xzzf">
+            <view class="mh_xzzf_02">
+                <view class="mh_xzzf_02_01">选择支付</view>
+                <view wx:if="{{wxpay}}" class="mh_xzzf_02_02 {{class_name2}}" data-id="2" catchtap="chooseway">
+                    <view class="mh_xzzf_02_02_l">
+                        <image src="../../img/81.png" mode="aspectFill"></image>
+                        <text>微信支付</text>
+                    </view>
+                </view>
+                <view wx:if="{{blpay}}" class="mh_xzzf_02_02 {{class_name1}}"  data-id="1" catchtap="chooseway">
+                    <view class="mh_xzzf_02_02_l">
+                        <image src="../../img/82.png" mode="aspectFill"></image>
+                        <text>账户余额</text>
+                    </view>
+                    <view class="mh_xzzf_02_02_r">¥{{account_money}}</view>    
+                </view>
+                
+            </view>
+        </view>
+       <view class="mh_xzzf_bottom">
+             <view class="mh_order_bottom_01">
+            <text>总计：¥{{order_arr.act_money}}</text>
+            <text>已优惠¥{{order_arr.diff_money}}，不含运费</text>
+              </view>
+            <view class="mh_order_bottom_02"  bindtap="{{!buttonClicked?'gopay':''}}">确认支付</view>
+       </view>
+    </view>
+</view> -->
+<!-- 选择支付方式 end -->
+<!-- 扣款成功 -->
+<view class="mh_pop" style="{{pay_success}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_05">
+            <text>购买成功，已放入盒柜！</text>
+            <text>我的余额：¥{{balance}}</text>
+        </view>
+        <view class="mh_pop_nr_02" id="tocart" data-detail="tocart" bindtap="tocart">
+            <!-- <text>立即去发货</text>
+            <span><image src="../../img/14.png" mode="aspectFill"></image></span> -->
+            <button data-jumptype="1" bindtap="tocart">回首页</button>
+            <!-- <button  data-jumptype="2" data-s_id="{{s_id}}" bindtap="tocart">回店铺</button> -->
+            <button data-jumptype="3" bindtap="tocart">去盒柜</button>
+        </view>
+    </view>
+</view>
+<!-- 扣款成功 end -->
+<!-- 微信支付扣款成功 -->
+<view class="mh_pop" style="{{pay_success1}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_05">
+            <text>购买成功，已放入盒柜！</text>
+        </view>
+        <view class="mh_pop_nr_02" id="tobox" data-detail="tobox" bindtap="tocart">
+            <button data-jumptype="1" bindtap="tocart">回首页</button>
+            <!-- <button  data-jumptype="2" data-s_id="{{s_id}}" bindtap="tocart">回店铺</button> -->
+            <button data-jumptype="3" bindtap="tocart">去盒柜</button>
+        </view>
+    </view>
+</view>
+<!-- 微信支付扣款成功 end -->
+<!-- 余额不足 -->
+<view class="mh_pop" style="{{pay_fail}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no" bindtap="close">
+            <image src="../../img/15.png"></image>
+        </view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">RMB不足，请充值</view>
+            <view class="mh_pop_nr_01_04">
+                <rich-text>
+                    <span>还需</span>
+                    ¥{{short_money}}
+                </rich-text>
+                <text>我的余额：¥{{balance}}</text>
+            </view>
+        </view>
+        <view class="mh_pop_nr_02" id="topup" data-detail="topup" bindtap="topup">
+            <text>立即充值</text>
+        </view>
+    </view>
+</view>
+<!-- 余额不足 end -->
+<!-- 选择优惠券 -->
+<view class="mh_pop" style="{{c_style}}">
+    <view class="mh_details_pop">
+        <view class="mh_details_pop_02">
+            <rich-text>
+                <text>选择优惠券</text>
+            </rich-text>
+        </view>
+        <view wx:key wx:for="{{order_arr.str_coupon}}" class="mh_coupons_01">
+            <rich-text data-id="{{item.id}}" data-cmoney="{{item.money}}" bindtap="choose_coupon">
+                {{item.name}}
+                <span>¥{{item.money}}</span>
+            </rich-text>
+        </view>
+    </view>
+</view>
+<!-- 选择优惠券 end -->
+<view class="mh_order">
+    <view class="mh_order_top">
+        <view class="mh_order_top_01">
+            <image src="../../img/97.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_order_top_02">
+            <text>订单已生成，请在3分钟内付款，详情请查看个人中心！</text>
+        </view>
+    </view>
+    <!-- <view class="mh_order_01" style=' background-image: url({{imgurl1}});'>
+        <text class="mh_order_01_01">订单已生成，请在3分钟内付款</text>
+        <text class="mh_order_01_02">订单详情可在个人中心查看</text>
+    </view> -->
+    <view class="mh_order_02">
+        <view class="mh_order_02_01">
+            <image src="{{order_arr.top_img}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_order_02_02">
+            <text class="mh_order_02_01_01">{{order_arr.pname}}</text>
+            <text class="mh_order_02_01_01">¥{{order_arr.price}}</text>
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+            订单号
+            <span>{{order_arr.order_id}}</span>
+        </view>
+        <view class="mh_order_03_01">
+            订单时间
+            <span>{{order_arr.otime}}</span>
+        </view>
+        <view class="mh_order_03_01">
+            入库方式
+            <span>发货车</span>
+        </view>
+        <view class="mh_order_03_01">
+            单个价格
+            <span>{{order_arr.price}}</span>
+        </view>
+        <view class="mh_order_03_01">
+            购买数量
+            <span>{{order_arr.num}}</span>
+        </view>
+    </view>
+    <view class="mh_order_bottom">
+        <view class="mh_order_bottom_01">
+            <text>总计：¥{{order_arr.act_money}}</text>
+            <text>已优惠¥{{order_arr.diff_money}}，不含运费</text>
+        </view>
+        <view class="mh_order_bottom_02" bindtap="openway">立即付款</view>
+    </view>
+</view>

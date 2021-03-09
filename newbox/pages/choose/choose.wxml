@@ -1,0 +1,56 @@
+<!-- pages/choose/choose.wxml -->
+<scroll-view scroll-y  class="mh_choose" style=' background-image: url(../../img/16.png) ;'>
+    <view class="mh_task_01" style=' background-image: url(../../img/17.png) ;'>
+        <view class="mh_task_01_01">
+            <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+            <rich-text><image src="../../img/60.png" mode="aspectFill"></image></rich-text>
+        </view>
+         <view class="mh_task_01_03">No.123456789 </view>
+        <view class="mh_task_01_02">
+            <view class="mh_task_01_02_01">
+                <view class="mh_task_01_02_01_01" style=' background-image: url(../../img/20.png) ;'> <image src="../../img/demo-07.png" mode="aspectFill"></image></view>
+                <view class="mh_task_01_02_01_02" style=' background-image: url(../../img/21.png) ;'>
+                    <text >X 999人</text>
+                </view>
+            </view>
+             <view class="mh_task_01_02_01">
+                <view class="mh_task_01_02_01_01" style=' background-image: url(../../img/20.png) ;'> <image src="../../img/demo-07.png" mode="aspectFill"></image></view>
+
+            </view>
+             <view class="mh_task_01_02_01">
+                <view class="mh_task_01_02_01_01" style=' background-image: url(../../img/20.png) ;'> <image src="../../img/demo-07.png" mode="aspectFill"></image></view>
+  
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+             <view class="mh_task_01_02_01">
+                 <image src="../../img/19.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_task_01_04">
+             <image src="../../img/18.png" mode="aspectFill"></image>
+        </view>
+    </view>
+</scroll-view>

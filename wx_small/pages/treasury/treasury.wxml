@@ -1,0 +1,115 @@
+<import src="../../assets/wxParse/wxParse/wxParse.wxml"/>
+<scroll-view  scroll-y class="mh_box">
+    <!--碎片合成弹窗分享start-->
+    <view class="mh_pop mh_index_pop" hidden="{{hideCvtBox}}">
+        <!--<view class="mh_pop mh_index_pop">-->
+        <view class="mh_pop_fxlb">
+            <view class="mh_pop_fxlb_01"><image src="{{WinImg}}" mode="aspectFill"></image></view>
+            <view class="mh_pop_fxlb_02">{{cvtText}}</view>
+            <view class="mh_pop_fxlb_03"><image src="{{cvtImg}}" mode="aspectFill"></image></view>
+            <view class="mh_pop_fxlb_04">
+                <text>{{cvtText1}}</text>
+            </view>
+            <view class="mh_pop_fxlb_05">
+                <button open-type='share'>去分享</button>
+                <button bindtap="goCart">去发货</button>
+            </view>
+            <view class="mh_pop_fxlb_gb" data-id="2" bindtap="closeShareWin">X</view>
+        </view>
+    </view>
+    <!--碎片合成弹窗分享end-->
+
+    <!--盲盒引导弹窗-->
+    <view class="mh_pop mh_index_pop" hidden="{{guideHide}}">
+        <view class="mh_pop_fxlb">
+            <view class="mh_pop_fxlb_01"><image src="{{WinImg}}" mode="aspectFill"></image></view>
+            <view class="mh_my_note_content">
+                <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+            </view>
+            <view class="mh_pop_fxlb_gb" bindtap="_hideGuideWin">X</view>
+        </view>
+    </view>
+
+    <!--宝库开始-->
+    <view class="mh_box_nr" hidden="{{boxHide2}}">
+        <!--碎片弹出层start-->
+        <view class="mh_pop" hidden="{{hideChip}}">
+            <view class="mh_box_nr_01 mh_chip_wcb" >
+                <!--<view class="mh_box_nr_01_02">?</view>-->
+                <view class="mh_box_nr_01_no" bindtap="closeChip">X</view>
+                <view class="mh_box_nr_01_04">
+                    <view class="mh_box_nr_01_04_01" style=' background-image: url({{ImgAward1}});'>
+                        <p>
+                            <image src="{{typeImg}}" mode="aspectFill"></image>
+                        </p>
+                        <text>{{convertText}}</text>
+                    </view>
+                    <view class="mh_box_nr_01_04_02">
+                        <text>{{tips.tip1}}</text>
+                    </view>
+                    <view class="mh_box_nr_01_04_02" wx:for="{{productInfo}}" wx:key>
+                        <text>{{item.pname}}</text>
+                    </view>
+                    <view class="mh_box_nr_01_04_03" data-id="{{typeId}}" bindtap="{{!wClicked?'convertData':''}}">立即合成</view>
+                </view>
+            </view>
+        </view>
+        <!--碎片弹出层end-->
+
+        <!--奖券弹出层start-->
+        <view class="mh_pop" hidden="{{hideTicket}}">
+            <view class="mh_box_nr_01 mh_chip_wcb" >
+                <view class="mh_box_nr_01_no" bindtap="closeReward">X</view>
+                <view class="mh_box_nr_01_04">
+                    <view class="mh_box_nr_01_04_01" style=' background-image: url({{ImgAward1}});'>
+                        <p>
+                            <image src="{{ticketImg}}" mode="aspectFill"></image>
+                        </p>
+                        <text></text>
+                    </view>
+                    <view class="mh_box_nr_01_04_02">
+                        <text>{{ticketInfo}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!--奖券弹出层end-->
+
+        <!--<view class="mh_box_list">-->
+        <!--顶部提示-->
+        <view class="mh_box_list_bt" style=' background-image: url({{HeadBox}});'>
+            {{tips.tip2}}
+            <view bindtap="_newGuideWin" animation="{{animationHelpAward}}" class="mh_box_nr_01_no" style="color: #becbe4">?</view>
+        </view>
+
+        <view class="mh_index_03_03">
+            <view class="mh_index_03_03_nr mh_index_03_03_nr_box">
+                <!--碎片数据-->
+                <view wx:for="{{chipData}}" wx:key class="mh_index_03_03_nr_01 " style='background-image: url({{boxBackImg}});'>
+                    <view class="mh_index_03_03_nr_01_01" bindtap="rewardInfo" data-id="{{item.type}}">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_index_03_03_nr_01_02">
+                        <text>{{item.name}}</text>
+                        <text>（{{item.num}}/{{item.rate}}）</text>
+                    </view>
+                </view>
+
+                <!--奖券数据-->
+                <view wx:for="{{ticketData}}" wx:key class="mh_index_03_03_nr_01 " style=' background-image: url({{boxBackImg}});'>
+                    <view class="mh_index_03_03_nr_01_01" bindtap="ticketInfo" data-id="{{item.id}}">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_index_03_03_nr_01_02">
+                        <text>{{item.name}}</text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+    </view>
+    <!--</view>-->
+    <!--宝库结束-->
+
+</scroll-view>

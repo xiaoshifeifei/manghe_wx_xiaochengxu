@@ -1,0 +1,54 @@
+<scroll-view scroll-y class="mh_new_choose">
+    <view class="mh_new_choose_index" bindtap="goHome">
+        <image src="../../img/76.png" mode="aspectFill"></image>
+        <text bindtap="goHome">首页</text>
+    </view>
+    <!--验证失败-->
+    <view class="mh_publicity" hidden="{{hideFalse}}">
+        <view class="mh_publicity_01">正品验证结果</view>
+        <view class="mh_publicity_02">
+            <text>{{errMsg}}</text>
+        </view>
+        <view class="mh_publicity_06">
+            <image src="../../img/78.png" mode="aspectFill"></image>
+        </view>
+    </view>
+
+    <!--验证成功-->
+    <view class="mh_publicity" hidden="{{hideTrue}}">
+        <view class="mh_publicity_01">正品验证结果</view>
+        <view class="mh_publicity_02">
+            <text>恭喜您！您购买的“{{codeVer.product.tpname}}”</text>
+            <text>验证结果为：正品！</text>
+        </view>
+        <view class="mh_publicity_03">
+            <view class="mh_index_spnr_nr">
+                <view class="mh_index_spnr_zp">
+                    <image src="../../img/77.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_spnr_nr_01"
+                      style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%'>
+                    <view class="mh_index_spnr_nr_01_02">
+                        <text>{{codeVer.product.series}}</text>
+                        <text>{{codeVer.product.pname}}</text>
+                    </view>
+                </view>
+                <view class="mh_index_spnr_nr_02">
+                    <image src="{{codeVer.product.pimage}}" mode="aspectFill"></image>
+                </view>
+            </view>
+        </view>
+        <view class="mh_publicity_04">
+            <text>恭喜您！获得以下正品验证奖励</text>
+            <text wx:for="{{codeVer.award}}" wx:key>{{item.str}}</text>
+        </view>
+        <view class="mh_new_choose_nr_left">
+            <view class="mh_new_choose_nr_09_01" bindtap="goLog">验证记录</view>
+            <view class="mh_new_choose_nr_09_02" bindtap="goHome">发现更多</view>
+        </view>
+        <view class="mh_publicity_05">
+            <text>可至个人中心“正品验证”查看验证记录</text>
+            <text>“无疆盒子宝-宝库”查收奖励</text>
+        </view>
+    </view>
+</scroll-view>

@@ -1,0 +1,21 @@
+<!--pages/record/record.wxml-->
+<view class="mh_record">
+    <view class="mh_shiopping_prompt" hidden="{{imageHide}}"><image src="{{NullImg}}" mode="aspectFill" ></image></view>
+
+    <view class="mh_record_nr">
+        <view class="mh_record_nr_list" >
+            <view  wx:for="{{ScoreData}}" class="mh_record_nr_list_nr" wx:key>
+                <rich-text >
+                    <p>{{item.type_name}}</p>
+                    <p wx:if="{{item.action == 0}}">增加</p>
+                    <p wx:else>扣减</p>
+                </rich-text>
+                <rich-text >
+                    <p>积分 {{item.score}}</p>
+                    <p>{{item.formate_date}}</p>
+                </rich-text>
+            </view>
+        </view>
+
+    </view>
+</view>

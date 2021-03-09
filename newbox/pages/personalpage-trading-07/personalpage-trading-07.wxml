@@ -1,0 +1,61 @@
+<!--pages/personalpage-trading-07/personalpage-trading-07.wxml-->
+<view class="mh_order">
+   <view class="mh_shoppingmore_04">
+        <view class="mh_shopping_list_more">
+            <view class="mh_shopping_shops">
+                <view class="mh_shopping_nr_05">
+                    <view class="mh_shopping_nr_05_01">订单状态：等待卖家发货</view>
+                    <view class="mh_shopping_nr_05_02">待发货</view>
+                    <view class="mh_shopping_nr_05_03">钱款已在平台担保账户</view>
+                </view>
+                <view class="mh_shopping_nr_03">
+                    <view class="mh_shopping_nr_03_01">申请退款</view>
+                </view>
+            </view>
+        </view>
+    </view>
+   <view class="mh_shoppingsq_04">
+        <view class="mh_shoppingsq_04_01">收货地址：与取件地址保持一致</view>
+        <view class="mh_shoppingsq_04_02">
+            <view class="mh_shoppingsq_04_02_01">
+                <image mode="aspectFill"src="../../img/41.png"role="img"></image>
+                收获地址：已填写地址某某某某某已填写地址某某某某某已填写地址某某某某某
+            </view>
+            <view class="mh_shoppingsq_04_02_02"><image src="../../img/03.png"></image></view>
+        </view>
+    </view>
+   <view class="personalpage_trading_buy_02">
+       <view class="personalpage_trading_buy_02_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+       <view class="personalpage_trading_buy_02_02">
+           <view class="personalpage_trading_buy_02_02_01">商品名称</view>
+           <view class="personalpage_trading_buy_02_02_02">
+               <text class="personalpage-trading-set-02-list_03_01">已拆袋</text>
+           </view>
+           <view class="personalpage_trading_buy_02_02_03">天天系列</view>
+           <view class="personalpage_trading_buy_02_02_03">快来买</view>
+       </view>
+       <view class="personalpage_trading_buy_02_03">¥50.00</view>
+   </view>
+    <view class="personalpage_trading_buy_03">
+        <view class="personalpage_trading_buy_03_01">
+           邮费<span>99元</span>
+        </view>
+    </view>
+    <view class="mh_shoppingmore_06">
+       <view>备注：</view>
+       <view>备注内容</view>
+   </view> 
+     <view class="mh_shoppingmore_06">
+       <view>订单号：1239817231723917391</view>
+       <view>创建时间： 2020-02-01 17:18:12</view>
+       <view>发货时间： 2020-02-01 17:18:12</view>
+       <view>成交时间： 2020-02-01 17:18:12</view>
+   </view>
+   <view class="personalpage_height_01"></view>
+   <!-- 待付款 -->
+    <view class="mh_order_bottom">
+       <view class="mh_order_bottom_03 mh_order_bottom_opacity">等待卖家发货</view>
+    </view>
+    <!-- 待付款 end -->
+</view>
+

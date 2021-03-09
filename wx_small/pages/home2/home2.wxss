@@ -1,0 +1,9 @@
+/* pages/home2/home2.wxss */
+page{
+    background: #eeeeee;
+}
+.mh_index_spnr{
+    margin: 0rpx 0 30rpx 0;
+}
+
+

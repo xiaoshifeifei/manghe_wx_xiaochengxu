@@ -1,0 +1,50 @@
+<!--pages/record/record.wxml-->
+<view class="mh_record">
+    <view class="mh_record_nr">
+        <view class="mh_record_nr_list">
+            <view class="mh_record_nr_list_nr" bindtap="goorder">
+                   <rich-text >
+                        <p>商品名</p>
+                        <p>砍价中</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>目标价格</p>
+                        <p>日期</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>砍价人数</p>
+                        <p>库存</p>
+                    </rich-text>
+            </view>
+            <view class="mh_record_nr_list_nr">
+                   <rich-text >
+                        <p>商品名</p>
+                        <p>砍价中</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>目标价格</p>
+                        <p>日期</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>砍价人数</p>
+                        <p>库存</p>
+                    </rich-text>
+            </view>
+            <view class="mh_record_nr_list_nr">
+                   <rich-text >
+                        <p>商品名</p>
+                        <p>砍价中</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>目标价格</p>
+                        <p>日期</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>砍价人数</p>
+                        <p>库存</p>
+                    </rich-text>
+            </view>
+        </view>
+         
+    </view>
+</view>

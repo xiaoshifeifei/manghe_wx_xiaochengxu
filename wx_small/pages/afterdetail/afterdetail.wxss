@@ -1,0 +1,13 @@
+/* pages/afterdetail/afterdetail.wxss */
+.mh_mh_address_bottom {
+    bottom: 0rpx;
+    position: fixed;
+    z-index: 1;
+}
+.mh_shoppingmore_tuih {
+    width: 750rpx;
+    background: #fff;
+    height: 100rpx;
+    overflow: hidden;
+    padding-bottom: 10rpx;
+}

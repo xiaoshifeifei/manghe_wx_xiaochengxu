@@ -1,0 +1,22 @@
+page{
+    background: #eeeeee;
+}
+.search_no{
+    margin: 600rpx 30rpx 0 30rpx;
+    font-size: 23rpx;
+    text-align: center;
+
+}
+
+.mh_index_search_01 input {
+    width: 490rpx;
+}
+
+.mh_index_search_02_01 button::after{
+    border: none;
+}
+
+
+.mh_index_search_02_01 button {
+    border: 1rpx solid #fff;
+}

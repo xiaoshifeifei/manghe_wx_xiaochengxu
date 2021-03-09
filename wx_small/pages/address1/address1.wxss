@@ -1,0 +1,53 @@
+/* pages/address/address.wxss */
+.mh_mh_address_bottom {
+    width: 100%;
+    bottom: 20rpx;
+    position: fixed;
+    z-index: 1;
+}
+
+.mh_mh_address_bottom_01 {
+    width: 80%;
+    height: 90rpx;
+    background: #fff;
+    text-align: center;
+    line-height: 90rpx;
+    color: #939393;
+    font-size: 32rpx;
+    display: inline-block;
+    margin-left:10%;
+    border-radius: 20rpx;
+}
+
+.mh_mh_address_top {
+    height: 130rpx;
+    top: 20rpx;
+    z-index: 1;
+    display:flex;
+    background: #fff;
+    margin: 0 30rpx 0 30rpx;
+    border-radius: 20rpx;
+}
+
+.mh_mh_address_top_01{
+    width:40%;
+    height: 130rpx;
+    text-align: right;
+    line-height: 164rpx;
+}
+.mh_mh_address_top_01 image{
+    width:60rpx;
+    height:60rpx;
+    
+}
+.mh_mh_address_top_02{
+    width:40%;
+    height: 130rpx;    
+    text-align: center;
+    line-height: 130rpx;
+    color: #939393;
+    font-size: 32rpx;
+    display: inline-block;
+    margin:0 30rpx 0 30rpx;
+    border-radius: 20rpx;
+}

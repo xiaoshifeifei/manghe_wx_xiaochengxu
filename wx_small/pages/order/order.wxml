@@ -1,0 +1,198 @@
+<!-- pages/order/order.wxml -->
+<!-- 选择支付方式 -->
+ <view class="mh_pop" style="{{pay_status}}" bindtap="cloose_pay">
+    <view class="mh_details_pop ">
+        <view class="mh_xzzf_top">
+            <view class="mh_xzzf_top_01">
+                <view class="mh_xzzf_top_01_01">选择支付方式</view>
+                <view class="mh_xzzf_top_01_02">余额详情请查看个人中心</view>
+            </view>
+            <view class="mh_xzzf_top_02">
+                <view class="mh_xzzf_top_02_01" wx:if="{{wxpay}}" data-id="2" catchtap="chooseway">
+                    <view class="mh_xzzf_top_02_01_01"><image src="../../img/98.png" ></image> </view>
+                    <view class="mh_xzzf_top_02_01_02">微信支付</view>
+                    <view class="mh_xzzf_top_02_01_03"><image wx:if="{{paytype==2}}" src="../../img/100-01.png" ></image><image wx:else src="../../img/100.png" ></image></view>
+                </view>
+                <view class="mh_xzzf_top_02_01" wx:if="{{blpay}}" data-id="1" catchtap="chooseway">
+                    <view class="mh_xzzf_top_02_01_01"><image src="../../img/99.png" ></image></view>
+                    <view class="mh_xzzf_top_02_01_02">无疆盒子余额：¥{{account_money}}</view>
+                    <view class="mh_xzzf_top_02_01_03"><image wx:if="{{paytype==1}}" src="../../img/100-01.png" ></image><image wx:else src="../../img/100.png" ></image></view>
+                </view>
+            </view>
+        </view>
+       <view class="mh_xzzf_bottom">
+             <view class="mh_order_bottom_01">
+            <text>总计：¥{{money}}</text>
+            <text>已优惠¥{{coupon}}，不含运费</text>
+              </view>
+            <view class="mh_order_bottom_02" bindtap="{{!buttonClicked?'gopay':''}}">确认支付</view>
+       </view>
+    </view>
+</view>
+<!-- 选择支付方式 end -->
+<!-- 选择支付方式 -->
+ <!-- <view class="mh_pop" style="{{pay_status}}" bindtap="cloose_pay"> 
+    <view class="mh_details_pop">
+        <view class="mh_xzzf">
+            <view class="mh_xzzf_02">
+                <view class="mh_xzzf_02_01">选择支付</view>
+
+                <view wx:if="{{wxpay}}" class="mh_xzzf_02_02 {{class_name2}}" data-id="2" catchtap="chooseway">
+                    <view class="mh_xzzf_02_02_l">
+                        <image src="../../img/81.png" mode="aspectFill"></image>
+                        <text>微信支付</text>
+                    </view>
+                </view>
+                <view wx:if="{{blpay}}" class="mh_xzzf_02_02 {{class_name1}}"  data-id="1" catchtap="chooseway">
+                    <view class="mh_xzzf_02_02_l">
+                        <image src="../../img/82.png" mode="aspectFill"></image>
+                        <text>账户余额</text>                      
+                    </view>
+                    <view class="mh_xzzf_02_02_r">¥{{account_money}}</view>
+                </view>               
+            </view>
+        </view>
+       <view class="mh_xzzf_bottom">
+             <view class="mh_order_bottom_01">
+            <text>总计：¥{{money}}</text>
+            <text>已优惠¥{{coupon}}，不含运费</text>
+              </view>
+            <view class="mh_order_bottom_02"  bindtap="{{!buttonClicked?'gopay':''}}">确认支付</view>
+       </view>
+    </view>
+</view> -->
+<!-- 选择支付方式 end -->
+<!-- 扣款成功 -->
+<view class="mh_pop" style="{{pay_success}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_05">
+            <text>购买成功，已放入拆盒台！</text>
+            <text style="color:red;font-size:18px">21天内如未拆盒申请发货，系统会自动拆盒申请发货哦！</text>
+            <text>我的余额：¥{{balance}}</text></view>
+        <view class="mh_pop_nr_02">
+
+            <button wx:if="{{tm_key != 0}}" data-jumptype="1" bindtap="tobox">回主页</button>
+            <button wx:else data-jumptype="1" bindtap="tobox">回首页</button>
+            <button  wx:if="{{from==0}}" data-jumptype="2" data-s_id="{{s_id}}"  bindtap="tobox">继续买</button>
+            <button  data-jumptype="3" bindtap="tobox">去拆盒</button>
+        </view>
+    </view>
+</view>
+<!-- 扣款成功 end -->
+
+<!-- 微信支付扣款成功 -->
+<view class="mh_pop" style="{{pay_success1}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_05">
+            <text>购买成功，已放入拆盒台！</text>
+            <text style="color:red;font-size:18px">21天内如未拆盒申请发货，系统会自动拆盒申请发货哦！</text>
+        </view>
+        <view class="mh_pop_nr_02">
+            <button  data-jumptype="1" bindtap="tobox">回首页</button>
+            <button  wx:if="{{from==0}}" data-jumptype="2" data-s_id="{{s_id}}"  bindtap="tobox">继续买</button>
+            <button  data-jumptype="3" bindtap="tobox">去拆盒</button>
+        </view>
+    </view>
+</view>
+<!-- 微信支付扣款成功 end -->
+
+<!-- 余额不足 -->
+<!-- <view class="mh_pop" style="{{pay_fail}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no" bindtap="close" ><image src="../../img/15.png" ></image></view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">RMB不足，请充值</view>
+            <view class="mh_pop_nr_01_04">
+                <rich-text><span>还需</span>¥{{short_money}}</rich-text>
+                <text>我的余额：¥{{balance}}</text>
+            </view>
+        </view>
+        <view class="mh_pop_nr_02"  id="topup" data-detail="topup" bindtap="topup">
+            <text>立即充值</text>
+        </view>
+    </view>
+</view> -->
+<!-- 余额不足 end -->
+
+
+
+<view class="mh_order">
+    <view class="mh_order_top">
+        <view class="mh_order_top_01"><image src="../../img/97.png" mode="aspectFill"></image></view>
+        <view class="mh_order_top_02">
+            <text>订单已生成，请在3分钟内付款，详情请查看个人中心！</text>
+        </view>
+    </view>
+    <!-- <view class="mh_order_01" style=' background-image: url({{imgurl1}});'>
+        <text class="mh_order_01_01">订单已生成，请在3分钟内付款</text>
+        <text class="mh_order_01_02">订单详情可在个人中心查看</text>
+    </view> -->
+    <view class="mh_order_02">
+        <view class="mh_order_02_01"><image src="{{order_arr.top_img}}" mode="aspectFill"></image></view>
+        <view class="mh_order_02_02">
+            <text class="mh_order_02_01_01">{{order_arr.pname}}</text>
+            <text class="mh_order_02_01_01">¥{{order_arr.price}}</text>
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+           订单号<span>{{order_arr.order_id}}</span>
+        </view>
+         <view class="mh_order_03_01">
+           订单时间<span>{{order_arr.otime}}</span>
+        </view>
+         <!-- <view class="mh_order_03_01">
+           入库方式<span>无疆盒子</span>
+        </view> -->
+        <view class="mh_order_03_01" >
+           单个价格<span class="mh_order_03_01_jq">¥{{order_arr.price}}</span>
+        </view>
+        <view class="mh_order_03_01">
+           购买数量<span>{{order_arr.num}} </span>
+        </view>
+    </view>
+    <view  class="mh_order_03" wx:if="{{order_arr.is_reduce==1}}">
+        <view class="mh_order_03_01">
+            随机立减(订单购买成功后,立减金额才会刷新)<span class="mh_order_03_01_jq">-¥{{order_arr.reduce_money}}</span>
+        </view>
+    </view>
+    <block wx:if="{{ticket_status==0}}">
+        <view wx:if="{{order_arr.is_use==1}}" class="mh_order_03">
+            <picker bindchange="points_" name="picker1"  value="{{pindex}}" range="{{order_arr.new_ticket_list}}" range-key="{{'name'}}" >
+                <view class="mh_order_03_01">
+                    优惠券 <span wx:if="{{is_fit==1}}">不使用优惠券<image src="../../img/03.png" ></image></span> 
+                    <span wx:else>{{order_arr.new_ticket_list[pindex].name}}<image src="../../img/03.png" ></image></span>
+                </view>    
+            </picker>         
+        </view>  
+        <view wx:else class="mh_order_03" >
+            <view class="mh_order_03_01">
+               优惠券<span>该商品暂无可用代金券<image src="../../img/03.png" ></image></span>
+            </view>
+        </view>
+    </block>
+    <block wx:if="{{ticket_status==1 && coupon_money>0}}">
+        <view wx:if="{{order_arr.is_use==1 }}" class="mh_order_03">
+            <view class="mh_order_03_01">
+               优惠券<span>¥{{coupon_money}}</span>
+            </view>
+        </view>
+        <view wx:else class="mh_order_03" >
+            <view class="mh_order_03_01">
+               优惠券<span>该商品暂无可用代金券</span>
+            </view>
+        </view>
+    </block>
+
+    
+    
+    <view class="mh_new_choose_bz"><rich-text nodes="{{tips}}"></rich-text></view>
+    <view class="mh_order_bottom">
+        <view class="mh_order_bottom_01">
+            <text>总计：¥{{money}}</text>
+            <text>已优惠¥{{coupon}}，不含运费</text>
+        </view>
+        <view class="mh_order_bottom_02" bindtap="openway">立即付款</view>
+    </view>
+    
+</view>

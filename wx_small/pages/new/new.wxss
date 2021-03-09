@@ -1,0 +1,13 @@
+/* new.wxss */
+
+.mh_index_spnr_nr_01_02 {
+    position: absolute;
+    width: 250rpx;
+    overflow: hidden;
+    text-align: right;
+    line-height: 150%;
+    font-size: 22rpx;
+    top: 60%;
+    right: 11rpx;
+    transform: translateY(-50%)
+}

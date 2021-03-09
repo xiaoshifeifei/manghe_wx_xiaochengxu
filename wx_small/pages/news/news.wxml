@@ -1,0 +1,14 @@
+<!--pages/news/news.wxml-->
+<scroll-view scroll-y class=" mh_new_choose" >
+    <view class="news">
+        <view class="news_list" wx:for="{{allArt}}" wx:key="id" data-id="{{item.id}}" bindtap="goDetail">
+            <view class="news_list_l">
+                <view class="news_list_l_01">{{item.title}}</view>
+                <view class="news_list_l_02">{{item.ptime_txt}}</view>
+            </view>
+            <view class="news_list_r"><image src="{{item.images.pic1}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+</scroll-view>
+
+

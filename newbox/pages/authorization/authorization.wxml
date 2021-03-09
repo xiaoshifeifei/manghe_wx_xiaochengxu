@@ -1,0 +1,19 @@
+<!-- pages/authorization/authorization.wxml -->
+<view class="mh_authorization">
+    <view class="mh_authorization_01">
+        <view class="mh_authorization_01_01">
+             <image src="../../img/hetun.jpg" mode="aspectFill" ></image>
+        </view>
+        <view class="mh_authorization_01_02">盲盒宝</view>
+    </view>
+    <view class="mh_authorization_02" style=" display:block;">
+        <text>授权登录</text>
+    </view>
+    <view class="mh_authorization_03" style=" display: block;">
+         <text class="mh_authorization_03_01">微信用户快捷登录</text>
+         <text class="mh_authorization_03_02">手机号登录/注册</text>
+    </view>
+    <view class="mh_authorization_bottom">
+        <view>授权登录即视为同意<button>《盒屯用户协议》</button></view>
+    </view>
+</view>

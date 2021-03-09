@@ -1,0 +1,72 @@
+<!-- pages/allorder-03/allorder-03.wxml -->
+<view class="mh_shoppingmore">
+    <view class="mh_pop" hidden="{{hideInvoice}}">
+        <view class="mh_pop_nr mh_pop_nr_yy">
+            <view class="mh_pop_nr_no" bindtap="closeWin">
+                <image src="../../img/15.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">确认发货</view>
+                <view class="mh_pop_nr_01_08">
+                    <view class="mh_pop_nr_01_08_01">是否确认已经按照商家回复地址发货成功？</view>
+                    <view class="mh_pop_nr_01_08_02"> <input placeholder="请输入运单号" bindinput="orderInput">...</input></view>
+                </view>
+            </view>
+            <view class="mh_pop_nr_02" data-id="{{order.id}}" bindtap="submitOrder">
+                <text>确定</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="mh_shoppingmore_04">
+        <view class="mh_shopping_list_more">
+            <view class="mh_shopping_shops">
+                <view class="mh_shopping_nr_05">
+                    <view class="mh_shopping_nr_05_01">订单状态：{{order.status_txt}}</view>
+                    <view class="mh_shopping_nr_05_02" wx:if="{{order.status == 0}}">还剩 {{day}}天{{hour}}时{{minute}}分{{second}}秒</view>
+                    <view class="mh_shopping_nr_05_03">{{order.txt1}}</view>
+                    <view class="mh_shopping_nr_05_03">{{order.txt2}}</view>
+                </view>
+                <view class="mh_shopping_nr_03" wx:if="{{order.status==0}}">
+                    <view class="mh_shopping_nr_03_01"  bindtap="changeApply">修改申请</view>
+                    <view class="mh_shopping_nr_03_01" data-id="{{order.id}}" bindtap="removeApply">撤销申请</view>
+                </view>
+                <view class="mh_shopping_nr_03" wx:if="{{order.status==6}}">
+                    <view class="mh_shopping_nr_03_01"  bindtap="changeApply">修改申请</view>
+                    <!--<view class="mh_shopping_nr_03_01" data-id="{{order.id}}" bindtap="removeApply">撤销申请</view>-->
+                </view>
+                <view class="mh_shopping_nr_03" wx:if="{{order.status==5}}">
+                    <view class="mh_shopping_nr_03_01"  bindtap="changeApply">修改申请</view>
+                    <!--<view class="mh_shopping_nr_03_01" data-id="{{order.id}}" bindtap="removeApply">撤销申请</view>-->
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingmore_06">
+        <view>客服电话：<text selectable="true">{{shop.cs_phone}}</text></view>
+        <view>客服微信：<text selectable="true"></text>{{shop.cs_weixin}}</view>
+    </view>
+    <view class="mh_shoppingmore_07">
+        <view class="mh_shoppingmore_07_01">协商历史</view>
+        <view class="mh_shoppingmore_07_02" wx:for="{{track}}" wx:key="id">
+            <view class="mh_shoppingmore_07_02_01">
+                {{item.name}}
+                <view>{{item.dtime}}</view>
+            </view>
+            <view class="mh_shoppingmore_07_02_02"><text selectable="true">{{item.des}}</text></view>
+        </view>
+    </view>
+    <view class="mh_shops_height"></view>
+    <view class="mh_mh_address_bottom" wx:if="{{order.status == 1}}">
+        <!--等待买家发货-->
+        <view class="mh_shoppingmore_tuih">
+            <button data-id="{{order.id}}" bindtap="applyInvoice">确认发货</button>
+        </view>
+    </view>
+    <view class="mh_mh_address_bottom" wx:if="{{order.status == 3}}">
+        <!--等待买家验货-->
+        <view class="mh_shoppingmore_tuih">
+            <button data-id="{{order.id}}" bindtap="applyFinish">确认验货</button>
+        </view>
+    </view>
+</view>

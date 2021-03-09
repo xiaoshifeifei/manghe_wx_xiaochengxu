@@ -1,0 +1,5 @@
+<!--pages/hotactivities/hotactivities.wxml-->
+<scroll-view scroll-y class="mh_new_choose">
+   <view class="mh_hotactivities"><image src="../../img/demo-14.png" mode="aspectFill"></image></view>
+   <view class="mh_hotactivities"><image src="../../img/demo-15.jpg" mode="aspectFill"></image></view>
+</scroll-view>

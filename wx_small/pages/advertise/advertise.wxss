@@ -1,0 +1,4 @@
+/* pages/advertise/advertise.wxss */
+.mh_advertise_01_02 p{
+   display:block;  
+}

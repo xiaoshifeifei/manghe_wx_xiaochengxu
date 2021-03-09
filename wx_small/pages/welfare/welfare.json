@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "福利活动",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {},
+  "enablePullDownRefresh":true
+}

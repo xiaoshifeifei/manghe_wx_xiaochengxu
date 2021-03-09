@@ -1,0 +1,14 @@
+/* pages/allorderdetail/allorderdetail.wxss */
+page{
+    background: #eeeeee;
+}
+.cb_invoice{
+    height: 80rpx;
+}
+
+.mh_shoppingmore_01 {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding-bottom: 10rpx;
+}

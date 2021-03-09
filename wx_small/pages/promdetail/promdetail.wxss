@@ -1,0 +1,19 @@
+/* pages/promdetail/promdetail.wxss */
+.mh_details_04_01 {
+    border-bottom: 0.5px solid #ffffff;
+    padding-bottom: 40rpx;
+}
+
+.mh_details_04_01_05{
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.mh_details_04_01_02{
+    width: 80%;
+    overflow: auto;
+}
+
+.wxParse-img{
+    display: flex;
+}

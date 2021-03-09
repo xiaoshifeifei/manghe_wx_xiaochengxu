@@ -1,0 +1,4 @@
+/* pages/moneylog/moneylog.wxss */
+.mh_record{
+    padding-bottom: 40rpx;
+}

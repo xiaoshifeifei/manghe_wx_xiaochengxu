@@ -1,0 +1,42 @@
+<!--pages/payment-1/payment-1.wxml-->
+<view class="mh_shopping">
+    <view class="mh_shopping_nav mh_payment_nav">
+        <view>
+            <text>待支付</text>
+        </view>
+        <view class="mh_shopping_nav_hover">
+            <text>已支付</text>
+        </view>
+    </view>
+    <view class="mh_shopping_nr mh_payment_nav_01">
+        <view class="mh_order_list">
+            <view class="mh_order_list_01">
+                <text>新品商城</text>
+                <text>订单号：888888888888</text>
+            </view>
+            <view class="mh_order_list_02">
+                <view class="mh_order_list_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_order_list_02_02">
+                    <rich-text>[盲盒]盲盒名称如果过长支持换行</rich-text>
+                    <rich-text>
+                        下单时间：2019-05-19 18:16
+                        <span>X1</span>
+                    </rich-text>
+                     <rich-text>
+                        支付时间：2019-05-19 18:16
+                    </rich-text>
+                </view>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>¥999.99<span>已付款</span></rich-text>
+            </view>
+        </view>
+    </view>
+     <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+        <button>去盒柜发货</button>
+    </view>
+</view>
+

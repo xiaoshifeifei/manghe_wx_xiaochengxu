@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "修改地址",
+  "usingComponents": {},
+  "onReachBottomDistance":80
+}

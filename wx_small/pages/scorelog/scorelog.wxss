@@ -1,0 +1,4 @@
+/* pages/scorelog/scorelog.wxss */
+.mh_record{
+    padding-bottom: 40rpx;
+}

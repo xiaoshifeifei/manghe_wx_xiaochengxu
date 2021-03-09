@@ -1,0 +1,53 @@
+<!--pages/record/record.wxml-->
+<view class="mh_shopping_nav mh_allorder_nav">
+    <view wx:for="{{logBar}}" wx:key data-id="{{item.id}}" class="{{nowId==item.id?'mh_shopping_nav_hover':''}}" bindtap="switchTab">
+        <text>{{item.name}}</text>
+    </view>
+</view>
+<view style="height: 80rpx;">
+</view>
+<view class="mh_record">
+    <view class="mh_record_nr">
+        <!--活跃度列表-->
+        <view class="mh_record_nr_list" hidden="{{activeHide}}">
+            <view class="mh_record_nr_list_nr" wx:for="{{listData1}}" wx:key>
+                   <rich-text >
+                        <p>{{item.type_name}}</p>
+                        <p>{{item.action==0?'增加':'减少'}}</p>
+                    </rich-text>
+                    <rich-text >
+                        <p>活跃度 {{item.num}}</p>
+                        <p>{{item.formate_date}}</p>
+                    </rich-text>
+            </view>
+        </view>
+
+        <!--碎片列表-->
+        <view class="mh_record_nr_list" hidden="{{chipHide}}">
+            <view class="mh_record_nr_list_nr" wx:for="{{listData2}}" wx:key>
+                <rich-text >
+                    <p>{{item.type_name}}</p>
+                    <p>{{item.action==0?'增加':'减少'}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>{{item.chip_name}} {{item.num}}</p>
+                    <p>{{item.formate_date}}</p>
+                </rich-text>
+            </view>
+        </view>
+
+        <!--欧气列表-->
+        <view class="mh_record_nr_list" hidden="{{luckyHide}}">
+            <view class="mh_record_nr_list_nr" wx:for="{{listData3}}" wx:key>
+                <rich-text >
+                    <p>{{item.type_name}}</p>
+                    <p>{{item.action==0?'增加':'减少'}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>欧气 {{item.num}}</p>
+                    <p>{{item.formate_date}}</p>
+                </rich-text>
+            </view>
+        </view>
+    </view>
+</view>

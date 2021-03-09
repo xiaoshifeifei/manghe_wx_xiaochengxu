@@ -1,0 +1,4 @@
+/* pages/newchoose/newchoose.wxss */
+.mh_new_choose_03.mh_new_choose_3hang_06{
+  margin-top: 20rpx;
+}

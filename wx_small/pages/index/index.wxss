@@ -1,0 +1,171 @@
+/**index.wxss**/
+page{
+    background: #eeeeee;
+}
+.list{
+    overflow:auto;
+    margin:auto;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.mh_index_new {
+    width: 100%;
+    background-size: 100%;
+    background: #eeeeee;
+}
+
+
+/*砍价按钮*/
+.mh_index_spnr_nr_01_03 {
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background: #dd2a54;
+    padding: 0 13rpx;
+    display: inline-block;
+    border-radius: 18rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 20rpx;
+    border: 1px solid #fff;
+}
+
+.mh_index_01 {
+    width: 91%;
+    height: 260rpx;
+    overflow: hidden;
+    border-radius: 16rpx;
+    margin-left: 4.5%;
+    margin-bottom: 16rpx;
+}
+
+.mh_index_01 swiper {
+    height: 260rpx;
+    border-radius:16rpx;
+}
+
+.mh_index_01 image {
+    border-radius:16rpx;
+}
+
+swiper-item {
+    border-radius:16rpx;
+}
+
+swiper{
+  width: 100%;
+}
+ 
+.swiper-box{
+  position: relative;
+}
+.dots{ 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: -30rpx; 
+  display: flex; 
+  justify-content: center; 
+} 
+.dots .dot{ 
+  margin: 0 8rpx; 
+  width: 14rpx; 
+  height: 14rpx; 
+  background:#fff; 
+  border-radius: 50%; 
+  transition: all .6s; 
+} 
+.dots .dot.active{ 
+  width: 14rpx; 
+  background:#3d62ad;
+  border-radius: 50%;   
+}
+ 
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+.mh_index_05{
+    padding: 33rpx 0 0 0;
+}
+
+.mh_index_bt {
+    height: 13rpx;
+}
+
+.mh_pop_1 {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.mh_pop_new_nr {
+    width: 630rpx;
+    height: 740rpx;
+    border-radius: 20rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.mh_pop_new_01 {
+    width: 100%;
+    height: 100rpx;
+    background: #3d62ad;
+    border-radius: 20rpx 20rpx 0 0;
+    color: #fff;
+    line-height: 100rpx;
+    font-size: 34rpx;
+    text-align: center;
+}
+
+.mh_pop_new_02 {
+    margin:10rpx 30rpx 10rpx 30rpx;
+    height:70%;
+    overflow: auto;
+}
+.mh_pop_new_03{
+    width:100%;
+    height:70rpx;
+}
+
+.mh_pop_new_03 button{
+    height:70prx;
+    margin-left: 10%;
+    margin-right:10%;
+    box-sizing: border-box;
+    font-size: 25rpx;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70rpx;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    background: #3d62ad;
+}
+
+
+.mh_index_screening {
+    top: 150rpx;  
+}
+    
+
+
+
+
+

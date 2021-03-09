@@ -1,0 +1,102 @@
+<!--pages/matterdetails/matterdetails.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view wx:if="{{showdata}}" class="mh_details" scroll-y>
+    <!--没有购买权-->
+    <!-- <view class="mh_pop" style="{{style1}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">没有当前商品的购买权</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button>确认</button>
+                <button>取消</button>
+            </view>
+        </view>
+    </view> -->
+    <!--没有购买权-->
+    <!--有购买权-->
+        <view class="mh_pop" style="{{style2}}">
+            <view class="mh_pop_nr_zj">
+            <view class="mh_pop_nr_zj_05">系统提示</view>
+            <view class="mh_pop_nr_zj_02">
+                    <text>请您确认是否使用购买权</text>
+                    <text class="mh_pop_nr_zj_02_zy">序列号：{{res_bscode.code}}</text>
+            </view>
+            <button class="mh_pop_nr_zj_03" data-type="1" bindtap="gospec">
+                    确认
+            </button>
+            <button class="mh_pop_nr_zj_04" data-type="2" bindtap="gospec">
+                    取消
+            </button>
+            </view>
+        </view>
+    <!-- <view class="mh_pop" style="{{style2}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">请您确认是否使用购买权</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button data-type="1" bindtap="gospec" >确认</button>
+                <button data-type="2" bindtap="gospec">取消</button>
+            </view>
+        </view>
+    </view> -->
+    <!--有购买权 end-->
+
+    <view class="mh_new_choose_index" data-s_id="{{s_id}}"  bindtap="goshophome"> <image src="../../img/76.png" mode="aspectFill"></image></view>
+    <view class="mh_details_01">
+        <image src="{{showdata.images.pic2}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_02">
+         <image src="{{showdata.images.pic3}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_04">
+        <view class="mh_details_04_01">
+            <view class="mh_details_04_01_01" style=' background-image: url({{pic_url}}08.png);'>
+                <text>{{pic}}</text>
+            </view>
+            <view class="mh_details_04_01_02">{{showdata.title}}</view>
+            <view wx:if="{{showdata.type==1}}" class="mh_details_04_01_03">{{showdata.point_price}}积分</view>
+            <view wx:else class="mh_details_04_01_03">¥{{showdata.price}}</view>
+            <view class="mh_details_04_01_04">
+                <rich-text> <image src="../../img/11.png" mode="aspectFill"></image>库存{{showdata.stock}}</rich-text>
+            </view>
+            <view class="mh_details_04_01_05"><image src="{{showdata.images.pic1}}" mode="aspectFill"></image></view>
+            <view class='mh_xzxh'>
+                <view class="mh_details_pop_02">
+                    <rich-text> 
+                        <text>商品型号</text>
+                    </rich-text>
+                </view>
+                <view class="mh_details_pop_03">
+                    <block wx:key="unique" wx:for="{{showdata.models}}">
+                        <text data-sku_id="{{item.id}}" bindtap="choosemodel" wx:if="{{item.status==1}}" class="mh_details_pop_03_hover">{{item.name}}</text>
+                        <text data-sku_id="{{item.id}}" bindtap="choosemodel" wx:else>{{item.name}}</text>
+                    </block>
+                </view>
+            </view>    
+  
+        </view>
+        <view class="mh_details_04_02">
+            <view class="mh_details_04_02_bt">商品详情</view>
+            <view class="mh_details_04_02_nr">
+               <p><template is="wxParse" data="{{wxParseData:article.nodes}}" /></p>
+            </view>
+        </view>
+    </view>
+    <view class="mh_details_05" style="{{buy_style}}">
+        <view class="mh_details_05_01">
+            <view class="mh_details_05_01_01" data-type='1'  bindtap="changenum"><image src="../../img/06.png" mode="aspectFill"></image></view>
+            <view class="mh_details_05_01_02">{{num}}</view>
+            <view class="mh_details_05_01_03" data-type='2' bindtap="changenum"><image src="../../img/07.png" mode="aspectFill"></image></view>
+        </view>
+        <view wx:if="{{is_spec==1}}"   class="mh_details_05_03" id="toorder"  bindtap="{{!buttonClicked?'tospec':''}}" >立即付款</view>
+        <view wx:else class="mh_details_05_03" id="toorder"  bindtap="{{!buttonClicked?'toorder':''}}" >立即付款</view>
+        <view class="mh_details_05_02">
+             <rich-text>合计：<span>¥{{total_money}}</span></rich-text>
+        </view>
+    </view>
+</scroll-view>
+

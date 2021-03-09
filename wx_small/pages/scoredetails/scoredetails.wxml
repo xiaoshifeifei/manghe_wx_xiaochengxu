@@ -1,0 +1,57 @@
+<!--pages/scoredetails/scoredetails.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view wx:if="{{showdata}}" class="mh_details" scroll-y>
+    <!-- <view class="mh_new_choose_index" data-s_id="{{s_id}}"  bindtap="goshophome"> <image src="../../img/76.png" mode="aspectFill"></image></view> -->
+    <view class="mh_details_01">
+        <image src="{{showdata.images.pic2}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_02">
+         <image src="{{showdata.images.pic3}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_04">
+        <view class="mh_details_04_01">
+            <view class="mh_details_04_01_01" style=' background-image: url({{pic_url}}08.png);'>
+                <text>{{pic}}</text>
+            </view>
+            <view class="mh_details_04_01_02">{{showdata.title}}</view>
+            <view wx:if="{{showdata.type==1}}" class="mh_details_04_01_03">{{showdata.price}}积分</view>
+
+            <view class="mh_details_04_01_04">
+                <rich-text> <image src="../../img/11.png" mode="aspectFill"></image>库存{{showdata.stock}}</rich-text>
+            </view>
+            <view class="mh_details_04_01_05"><image src="{{showdata.images.pic1}}" mode="aspectFill"></image></view>
+            <view class='mh_xzxh'>
+                <view class="mh_details_pop_02">
+                    <rich-text> 
+                        <text>商品型号</text>
+                    </rich-text>
+                </view>
+                <view class="mh_details_pop_03">
+                    <block wx:key="unique" wx:for="{{showdata.models}}">
+                        <text data-sku_id="{{item.id}}" bindtap="choosemodel" wx:if="{{item.status==1}}" class="mh_details_pop_03_hover">{{item.name}}</text>
+                        <text data-sku_id="{{item.id}}" bindtap="choosemodel" wx:else>{{item.name}}</text>
+                    </block>
+                </view>
+            </view>    
+  
+        </view>
+        <view class="mh_details_04_02">
+            <view class="mh_details_04_02_bt">商品详情</view>
+            <view class="mh_details_04_02_nr">
+               <p><template is="wxParse" data="{{wxParseData:article.nodes}}" /></p>
+            </view>
+        </view>
+    </view>
+    <view class="mh_details_05" style="{{buy_style}}">
+        <view class="mh_details_05_01">
+            <view class="mh_details_05_01_01" data-type='1'  bindtap="changenum"><image src="../../img/06.png" mode="aspectFill"></image></view>
+            <view class="mh_details_05_01_02">{{num}}</view>
+            <view class="mh_details_05_01_03" data-type='2' bindtap="changenum"><image src="../../img/07.png" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_details_05_03" id="toorder"  bindtap="{{!buttonClicked?'toorder':''}}" >立即购买</view>
+         <view class="mh_details_05_02">
+             <rich-text>合计：<span>{{total_money}}积分</span></rich-text>
+        </view>
+    </view>
+</scroll-view>
+

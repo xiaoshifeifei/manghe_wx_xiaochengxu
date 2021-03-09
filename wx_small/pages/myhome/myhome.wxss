@@ -1,0 +1,24 @@
+/* pages/myhome/myhome.wxss */
+@keyframes kf-marque-animation{ 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+/*@keyframes kf-marque-animation{
+    0% {margin-left:750rpx;}
+    100% {margin-left:-750rpx;}
+}*/
+.marquee{
+    white-space: nowrap;
+    text-overflow: clip;
+}
+.marquee .content{
+    animation: kf-marque-animation 12s linear infinite;
+    white-space: nowrap;
+}
+
+page{
+    background: #EEEEEE;
+}
+
+.mh_me{
+    height: 115vh;
+}
+
+    

@@ -1,0 +1,12 @@
+/* pages/order/order.wxss */
+
+.mh_order_03{
+    margin-top:10rpx;
+}
+
+
+.mh_new_choose_bz{
+    margin-top: 15rpx;
+}
+
+

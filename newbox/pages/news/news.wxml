@@ -1,0 +1,28 @@
+<!--pages/news/news.wxml-->
+ <scroll-view scroll-y class=" mh_new_choose" >
+   <view class="news">
+       <view class="news_list">
+           <view class="news_list_l">
+               <view class="news_list_l_01">标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，</view>
+               <view class="news_list_l_02">刚刚</view>
+           </view>
+           <view class="news_list_r"><image src="../../img/demo-14.png" mode="aspectFill"></image></view>
+       </view>
+        <view class="news_list">
+           <view class="news_list_l">
+               <view class="news_list_l_01">标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，</view>
+               <view class="news_list_l_02">刚刚</view>
+           </view>
+           <view class="news_list_r"><image src="../../img/demo-14.png" mode="aspectFill"></image></view>
+       </view>
+        <view class="news_list">
+           <view class="news_list_l">
+               <view class="news_list_l_01">标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，标题最多两行，</view>
+               <view class="news_list_l_02">刚刚</view>
+           </view>
+           <view class="news_list_r"><image src="../../img/demo-14.png" mode="aspectFill"></image></view>
+       </view>
+   </view>
+  </scroll-view>
+
+

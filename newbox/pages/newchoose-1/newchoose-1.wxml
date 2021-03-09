@@ -1,0 +1,132 @@
+<!-- pages/newchoose-1/newchoose-1.wxml -->
+<scroll-view scroll-y class="mh_new_choose">
+     <view class="mh_pop mh_index_pop" style="display:none;">
+        <view class="mh_pop_zs">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_06">标题</view>
+            <view class="mh_pop_fxlb_07">
+                <image mode="aspectFill"src="../../img/demo-05.jpg"role="img"></image>
+            </view>
+          
+            
+            <view class="mh_pop_fxlb_gb">X</view>
+        </view>
+    </view>
+    <view class="mh_pop" style="display: none;">
+        <view class="mh_pop_new_nr">
+            <!-- <view class="mh_pop_nr_no"><image src="../../img/15.png" mode="aspectFill"></image></view> -->
+            <view class="mh_pop_new">
+                <view class="mh_pop_new_01">提示语记录</view>
+                <view class="mh_pop_new_tab">
+                    <view class="mh_pop_new_tab_hover"><text>Tab1</text></view>
+                    <view><text>Tab2</text></view>
+                </view>
+                <view class="mh_pop_new_02">
+                    <p>1.水电卡好看水电卡红色款大黄款大家圣诞节啊圣诞节爱上</p>
+                    <p>2.水电卡好看水电卡红色款大黄款</p>
+                    <p>3.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <p>4.水电卡好看水电卡红色款大黄款</p>
+                    <!-- <rich-text class="mh_pop_nr_01_05_01">XX店铺<span>产生10元邮费</span></rich-text>
+                 <rich-text class="mh_pop_nr_01_05_01">XX艺术家<span>产生10元邮费</span></rich-text>
+                  <rich-text class="mh_pop_nr_01_05_01">奖励商品<span>产生10元邮费</span></rich-text>
+                  <rich-text class="mh_pop_nr_01_05_01">奖励商品<span>产生10元邮费</span></rich-text>
+                  <rich-text class="mh_pop_nr_01_05_01">奖励商品<span>产生10元邮费</span></rich-text> -->
+                </view>
+            </view>
+            <!-- <view class="mh_pop_nr_02">
+            <text>确定</text>
+        </view> -->
+        </view>
+    </view>
+    <view class="mh_new_choose_index">
+        <image src="../../img/76.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_me_aanimation mh_me_aanimation_03">
+        <image src="../../img/22-01.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_new_choose_nr">
+        <view class="mh_new_choose_top">
+            <view class="mh_new_choose_top_01">有10位娃友正在挑盒</view>
+            <view class="mh_new_choose_top_02">
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/66.png" mode="aspectFill"></image>
+                </p>
+                <p>
+                    <image src="../../img/robot116.png" mode="aspectFill"></image>
+                </p>
+                <text class="choose_class">. . .</text>
+            </view>
+        </view>
+        <view class="mh_new_choose_middle">
+            <view class="mh_new_choose_nr_05" bindtap="startG">
+                <image src="../../img/69.png" mode="aspectFill"></image>
+                <text>摇一摇</text>
+            </view>
+            <view class="mh_new_choose_nr_05_01">
+                <image src="../../img/69-1.png" mode="aspectFill"></image>
+                <text>看一看</text>
+            </view>
+            <view class="mh_new_choose_nr_06" animation="{{animation}}">
+                <image src="../../img/demo-07.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_new_choose_nr_07">
+                <text>No.123456789012-8</text>
+            </view>
+            <view class="mh_new_choose_nr_08">
+                <view class="mh_new_choose_nr_08_01">
+                    <view class="mh_new_choose_nr_08_01_01">
+                        <image class="mh_new_choose_xz" src="../../img/91.png" mode="aspectFill"></image>
+                        <image src="../../img/ks.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_nr_08_01_02">碎片提示1</view>
+                </view>
+                <view class="mh_new_choose_nr_08_01">
+                    <view class="mh_new_choose_nr_08_01_01">
+                        <view class="mh_new_choose_sz">99</view>
+                        <image src="../../img/sq.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_nr_08_01_02">碎片提示1</view>
+                </view>
+                <view class="mh_new_choose_nr_08_01">
+                    <view class="mh_new_choose_nr_08_01_01">
+                         <image class="mh_new_choose_xz" src="../../img/91.png" mode="aspectFill"></image>
+                        <image src="../../img/jl.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_nr_08_01_02">记录卡</view>
+                </view>
+            </view>
+        </view>
+        <view class="mh_new_choose_nr_09">
+            <view class="mh_new_choose_nr_left">
+                <view class="mh_new_choose_nr_09_01">换一个</view>
+                <view class="mh_new_choose_nr_09_02">购买</view>
+            </view>
+            <view class="mh_new_choose_nr_09_03">摇一摇手机会获得谜语提示</view>
+        </view>
+    </view>
+</scroll-view>

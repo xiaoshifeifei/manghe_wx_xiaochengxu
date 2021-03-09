@@ -1,0 +1,14 @@
+<!--pages/advertise-2/advertise-2.wxml-->
+<scroll-view scroll-y class="mh_advertise_02">
+    <view class="mh_advertise_01_01">
+        <image src="../../img/79-02.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="mh_advertise_01_02">
+        <view>为庆祝盒屯宝正式上线，现展开持续一个月的“娃友越多奖励越多”活动</view>
+        <view>活动规则如下：</view>
+        <view >1.在“商品详情”、“猜盒”、“盒屯宝”、“签到”、“任务”、“砍价”页面，成功使用分享功能。</view>
+        <view>2.被分享者注册或购物，分享双方均会获得丰厚奖励。奖励包括减免金额的代金券、可获得开盒额外奖励的欧气值以及合成超稀有盲盒的碎片。</view>
+        <view>3.娃友越多奖励越多，封顶9次。</view>
+    </view>
+</scroll-view>
+

@@ -1,0 +1,153 @@
+<!--pages/box/box.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml"/>
+        <!--无盒子弹窗-->
+<view class="mh_pop" hidden="{{noBoxHide}}">
+<view class="mh_pop_nr">
+    <view class="mh_pop_nr_no" bindtap="closeNoBoxWin">
+        <image src="../../img/15.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_nr_01">请先去首页挑盒吧</view>
+    <view class="mh_pop_nr_02 self_bg" bindtap="goHome">
+        <text>立即去挑盒</text>
+        <span><image src="../../img/14.png" mode="aspectFill"></image></span>
+    </view>
+</view>
+</view>
+
+        <!--开盒弹窗分享-->
+<view class="mh_pop mh_index_pop" hidden="{{hideBox}}">
+<!--<view class="mh_pop mh_index_pop">-->
+<view class="mh_pop_fxlb mh_height">
+    <view class="mh_pop_fxlb_01">
+        <image src="{{WinImg}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_fxlb_02">{{congText}}</view>
+    <view class="mh_pop_fxlb_03">
+        <image src="{{congImg}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_fxlb_04">
+        <text>{{congText1}}</text>
+    </view>
+    <view class="mh_pop_fxlb_05">
+        <button open-type='share' data-id="1" class="mh_pop_fxlb_05_01">立即分享</button>
+        <button class="mh_pop_fxlb_05_02" bindtap="getOther">再买一只</button>
+    </view>
+    <view class="mh_pop_fxlb_bottom">想回到当前盲盒所在的大盒可点击“再买一只”</view>
+    <view class="mh_pop_fxlb_gb" data-id="1" bindtap="closeShareWin">X</view>
+</view>
+</view>
+
+        <!--开宝箱弹窗分享start-->
+<view class="mh_pop mh_index_pop" hidden="{{hideLucky}}">
+<!--<view class="mh_pop mh_index_pop">-->
+<view class="mh_pop_fxlb">
+    <view class="mh_pop_fxlb_01">
+        <image src="{{WinImg}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_fxlb_02">恭喜获得以下奖励</view>
+    <view class="mh_pop_fxlb_03">
+        <image src="{{lucImg}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_fxlb_04">
+        <text>{{lucText1}}</text>
+    </view>
+    <view class="mh_pop_fxlb_05">
+        <button open-type='share' data-id="3">立即分享</button>
+    </view>
+    <view class="mh_pop_fxlb_gb" data-id="3" bindtap="closeShareWin">X</view>
+</view>
+</view>
+        <!--开宝箱弹窗分享end-->
+
+        <!--盲盒引导弹窗-->
+<view class="mh_pop mh_index_pop" hidden="{{guideHide}}">
+<view class="mh_pop_fxlb">
+    <view class="mh_pop_fxlb_01">
+        <image src="{{WinImg}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_my_note_content">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+    <view class="mh_pop_fxlb_gb" bindtap="_hideGuideWin">X</view>
+</view>
+</view>
+
+<view animation="{{animationContain}}">
+<!--弹窗说明-->
+<view class="mh_box">
+    <!--奖励动画-->
+    <view class="{{FlyClass}}" hidden="{{hideFly}}">
+        <image src="{{flayAward}}" mode="aspectFill"></image>
+    </view>
+    <!--无疆盒子宝开始-->
+    <view class="mh_box_nr" hidden="{{boxHide1}}">
+        <view class="mh_box_nr_01 mh_box_nr_nopo" style=' background-image: url({{imgurl1}});'>
+            <view class="mh_box_nr_01_01">
+                <text>欧气值</text>
+                <progress percent="{{percentval*10}}" color="#3d62ad" backgroundColor="#CCCCCC" stroke-width="12"
+                          border-radius="12"/>
+                <view class='mh_box_nr_sz'>{{percent}}</view>
+            </view>
+            <view data-id="1" bindtap="_newGuideWin" animation="{{animationHelp}}" class="mh_box_nr_01_no">?</view>
+
+            <!--无疆盒子宝盒子图-->
+            <view wx:if="{{needOpenBox == 0}}" animation="{{animationBox}}" class="mh_box_nr_01_03"
+                  hidden="{{hideImg}}">
+                <image bindtap="{{!comicOver?'confirmOpen':''}}" src="{{boxImg}}" mode="aspectFill"
+                       class="{{boxImgClass}}"></image>
+            </view>
+            <view wx:if="{{needOpenBox == 1}}" animation="{{animationBox}}" class="mh_box_nr_01_03"
+                  hidden="{{hideImg}}">
+                <image bindtap="{{!comicOver?'getLucky':''}}" src="{{boxImg}}" mode="aspectFill"
+                       class="{{boxImgClass}}"></image>
+            </view>
+
+            <!--开盒动画-->
+            <view class="mh_box_nr_01_03_04" hidden="{{hideOpen}}">
+                <image src="{{openImg}}" mode="aspectFill"></image>
+            </view>
+
+            <!--文字提示-->
+            <view class="mh_box_nr_01_01_ms">
+                <text>{{luckText}}</text>
+            </view>
+            <view class="mh_box_nr_01_01_ts" hidden="{{hideComeClick}}" catchtap="{{!comicOver?'confirmOpen':''}}">
+                <text>点我开盒</text>
+            </view>
+
+            <view class="mh_box_nr_01_01_bh" bindtap="goTreasury">
+                <image class="{{treasuryClass}}" src="../../img/90.png" mode="aspectFill"></image>
+            </view>
+
+            <view class="mh_box_nr_01_01_bhbs">
+                <image src="../../img/92.png" mode="aspectFill"></image>
+            </view>
+        </view>
+
+        <!--盒子列表-->
+        <view class="mh_index_03_03">
+            <view class="mh_index_03_03_nr">
+                <view wx:for="{{boxes}}" wx:key="id" data-id="{{item.id}}" bindtap="{{!comicOver?'selectBox':''}}"
+                      class="mh_index_03_03_nr_01">
+                    <view class="mh_index_03_03_nr_01_01">
+                        <image src="{{item.boximg}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_index_03_03_nr_01_02">{{item.pname}}</view>
+                    <view animation="{{animationBlank}}"
+                          class="{{ item.id == selectBoxId ? 'mh_index_03_03_nr_01_04':'mh_index_03_03_nr_01_03'}}">{{
+                        item.id == selectBoxId ? '正在拆盒':'快来点我'}}
+                    </view>
+                </view>
+
+                <!--补足数据-->
+                <view bindtap="{{!comicOver?'noBoxWin':''}}" wx:for="{{nullBoxes}}" wx:key="id"
+                      class="mh_index_03_03_nr_01 mh_index_03_03_nr_01_no">
+                    <image src="{{NullBox}}" mode="aspectFill"></image>
+                </view>
+
+            </view>
+        </view>
+    </view>
+    <!--无疆盒子宝结束-->
+</view>
+</view>

@@ -1,0 +1,49 @@
+/* pages/shopping/shopping.wxss */
+.mh_shopping_nav view {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.cb_img{
+    width: 15rpx;
+    height: 25rpx;
+    margin-top: 92rpx;
+}
+
+.mh_pop_nr_all {
+    width: 650rpx;
+    border-radius: 20rpx;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mh_pop_nr_01_all {
+    width: 100%;
+    text-align: center;
+    line-height: 370rpx;
+    font-size: 46rpx;
+    position: relative;
+
+}
+.mh_pop_nr_01_05 {
+    line-height: 230rpx;
+}
+
+
+.mh_pop_nr_01_05_1 {
+    margin: 30rpx;
+    font-size: 30rpx;
+    overflow: auto;
+}
+
+.mh_pop_nr_01_05_1 rich-text {
+    line-height: 60rpx;
+    height: 60rpx;
+    text-align: left;
+    position: relative;
+    width: 100%;
+}

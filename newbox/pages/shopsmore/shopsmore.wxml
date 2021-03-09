@@ -1,0 +1,106 @@
+<!--pages/shopsmore/shopsmore.wxml-->
+<view class=" mh_shops">
+    <view class="mh_shops_01">
+        <view class="mh_shops_01_01">
+             <view class="mh_shops_01_01_02" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' ></view>
+             <view class="mh_shops_01_01_01"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+              <view class="mh_shops_01_01_03"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_shops_01_02">
+            <view class="mh_shops_01_02_01">店铺名称</view>
+            <view class="mh_shops_01_02_02">商品数量：12</view>
+        </view>
+    </view>
+
+    <view class="mh_index_spnr">
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>Tokidoki</text>
+              <text>圣地亚哥系列</text>
+              <p class="mh_bq_02">抽盒机</p>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-01.png);'>
+            <rich-text >Sale</rich-text>
+          </view>
+           <view class="mh_index_spnr_nr_01_03">有5元/10元/15元券</view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01 mh_index_spnr_nr_01_01_hui">¥59</view>
+            <view class="mh_index_spnr_nr_01_jq">¥60</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>Tokidoki</text>
+              <text>圣地亚哥系列</text>
+              <p class="mh_bq_02">抽盒机</p>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 "> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-02.png);'>
+            <rich-text >New</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>Tokidoki</text>
+              <text>圣地亚哥系列</text>
+              <p class="mh_bq_01">商城</p>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-03.png);'>
+            <rich-text >Hot</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>Tokidoki</text>
+              <text>圣地亚哥系列</text>
+              <p class="mh_bq_02">抽盒机</p>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    
+    
+  </view>
+    
+</view>
+
+<view class="mh_shops_height"></view>
+<view class="mh_shops_nav">
+  <view>
+    <image src="../../img/shops_nav_01_hover.png" mode="aspectFill"></image>
+    <text>首页</text>
+  </view>
+  <view>
+    <image src="../../img/shops_nav_02.png" mode="aspectFill"></image>
+    <text>抽盒机</text>
+  </view>
+  <view>
+    <image src="../../img/shops_nav_03.png" mode="aspectFill"></image>
+    <text>商城</text>
+  </view>
+  <view>
+    <image src="../../img/shops_nav_04.png" mode="aspectFill"></image>
+    <text>客服</text>
+  </view>
+</view>
+<view class="mh_pop" style="display:none ">
+  <view class="mh_customer">
+      <view class="mh_customer_01">联系客服</view>
+      <view class="mh_customer_02"><span>微信：</span><text>*************</text></view>
+      <view class="mh_customer_02"><span>QQ：</span><text>*************</text></view>
+      <view class="mh_customer_02"><span></span>电话：<text>*************</text></view>
+  </view>
+</view>

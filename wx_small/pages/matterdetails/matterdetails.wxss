@@ -1,0 +1,37 @@
+/* pages/matterdetails/matterdetails.wxss */
+.mh_details_pop_03 text {
+    float: left;
+    width: auto;
+    height: 60rpx;
+    padding:0 15rpx 0 15rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border: 0.5px solid #3764a9;
+    font-size: 26rpx;
+    margin-right: 30rpx;
+    background: #fff9e2;
+}
+
+.wxParse-img{
+    display: flex;
+}
+
+
+
+.mh_details_05_03 {
+    width: 300rpx;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+    display: inline-block;
+    background:#FF5F6F;
+    text-align: center;
+    color: #fff;
+    float: right;
+    border-radius: 80rpx;
+    margin-top: 20rpx;
+    letter-spacing:8rpx;
+}
+    
+    
+    

@@ -1,0 +1,164 @@
+<!--pages/cabinet-01/cabinet-01.wxml-->
+<scroll-view class="mh_shopping">
+    <view class="mh_shopping_nav mh_cabinet_nav">
+        <view class="mh_shopping_nav_hover">
+            <text>全部</text>
+        </view>
+        <view>
+            <text>抽盒</text>
+        </view>
+        <view>
+            <text>预售</text>
+        </view>
+        <view>
+            <text>其他</text>
+        </view>
+    </view>
+     <view class="mh_shiopping_prompt">
+    <image src="../../img/51.png" mode="aspectFill"></image>
+  </view>
+  <view class="mh_shopping_nr mh_shopping_nr_shopp">
+
+    <view class="mh_shopping_shops">
+      <view class="mh_shopping_shops_bt">
+        <view class="mh_shopping_shops_bt_01"><image src="../../img/36.png"></image></view>
+        <view class="mh_shopping_shops_bt_02"><image src="../../img/demo-8.png"></image></view>
+        <view class="mh_shopping_shops_bt_03">店铺名称<image src="../../img/03.png"></image></view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99X3</span>
+            </p>
+            <p>29天23时59分</p>
+            <p><image src="../../img/03.png"></image></p>
+          </view>
+        </view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99</span>
+            </p>
+            <p>29天23时59分</p>
+            <p><image src="../../img/03.png"></image></p>
+          </view>
+        </view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36-hover.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99</span>
+            </p>
+            <p>29天23时59分</p>
+            <p><image src="../../img/03.png"></image></p>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="mh_shopping_shops">
+      <view class="mh_shopping_shops_bt">
+        <view class="mh_shopping_shops_bt_01"><image src="../../img/36.png"></image></view>
+        <view class="mh_shopping_shops_bt_02"><image src="../../img/demo-8.png"></image></view>
+        <view class="mh_shopping_shops_bt_03">店铺名称</view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99</span>
+            </p>
+            <p>29天23时59分</p>
+          </view>
+        </view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99</span>
+            </p>
+            <p>29天23时59分</p>
+          </view>
+        </view>
+      </view>
+      <view class="mh_shopping_nr_01">
+        <view class="mh_shopping_nr_01_left">
+          <image src="../../img/36-hover.png"></image>
+        </view>
+        <view class="mh_shopping_nr_01_nr">
+          <view class="mh_shopping_nr_01_middle">
+            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_shopping_nr_01_right">
+            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+            <p>
+              2019-05-19 18:16
+              <span>¥999.99</span>
+            </p>
+            <p>29天23时59分</p>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <view class="mh_shopping_bottom mh_cabinet_bottom">
+    <view class="mh_shopping_bottom_01">
+      <image src="../../img/36.png" mode="aspectFill"></image>
+      <text>全选</text>
+    </view>
+    <view class="mh_shopping_bottom_02">
+      <p>
+        数量：
+        <span>3</span>
+      </p>
+      <view>立即发货</view>
+    </view>
+    <view class="button-group {{isIpx?'fix-iphonex-button':''}}">这是一个吸底按钮区域</view>
+  </view>
+</scroll-view>

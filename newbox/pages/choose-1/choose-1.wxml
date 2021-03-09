@@ -1,0 +1,16 @@
+<!--pages/choose-1/choose-1.wxml-->
+<view class="mh_choose" style=' background-image: url(../../img/16.png) ;'>
+    <view class="mh_task_01" style=' background-image: url(../../img/17.png) ;'>
+        <view class="mh_task_01_01">
+            <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+        </view>
+        <view class="mh_task_01_05">
+            
+            <image src="../../img/demo-07.png" mode="aspectFill"></image>
+        </view>
+         <view class="mh_openbox_bottom">
+             <view> <image src="../../img/27-1.png" mode="aspectFill"></image></view>
+            <view> <image src="../../img/28.png" mode="aspectFill"></image></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,55 @@
+<!-- pages/speclist/speclist.wxml -->
+<view scroll-y class="mh_me01">
+    <view class="mh_buyinterests_list">
+        <block wx:for="{{proData}}" wx:key="id">
+            <view class="mh_index_personalpage_02">
+              <!--  <view class="mh_index_03_03_01_icon" style=' background-image: url("{{BackImg}}");'>
+                    <rich-text>0元抽</rich-text>
+                </view>-->
+                <view class="mh_index_personalpage_02_01" data-id="{{item.id}}" bindtap="godetail">
+                    <view class="mh_index_personalpage_02_01_01">
+                        <image src="{{item.img}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02">
+                        <view class="mh_index_personalpage_02_01_02_01">{{item.ptitle}}</view>
+                        <view class="mh_index_personalpage_02_01_02_02">
+                            <text>获取条件</text>
+                        </view>
+                        <view class="mh_index_personalpage_02_01_02_03">
+                            <text>{{item.condition}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_index_personalpage_02_02">
+                    <button class="mh_index_personalpage_02_02_01" data-lotid="{{item.lot_id}}" bindtap="golottery">立即抢</button>
+                    <!-- <button class="mh_index_personalpage_02_02_03"  open-type='share' data-specid="{{item.id}}">去分享</button> -->
+                </view>
+            </view>
+        </block>
+        <!-- <view class="mh_index_personalpage_02">
+            <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-03.png);'>
+            <rich-text >0元抽</rich-text>
+          </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>获取条件</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>购买xxx商品一件</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02">
+                <button class="mh_index_personalpage_02_02_01">立即抢</button>
+                <button class="mh_index_personalpage_02_02_03">去分享</button>
+            </view>
+        </view> -->
+    </view>
+</view>

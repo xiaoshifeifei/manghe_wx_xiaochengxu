@@ -1,0 +1,185 @@
+<!--pages/openbox/openbox.wxml-->
+<scroll-view scroll-y  class="mh_new_choose" style="background:{{openboxdata.back_color}};">
+    <!--提示图-->
+    <view class="mh_pop mh_index_pop" style="{{c_style6}}" bindtap="cloose_coupon4">
+        <view class="mh_pop_zs" catchtap="cloose">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_06">{{img_tip}}</view>
+            <view class="mh_pop_fxlb_07">
+                <image mode="aspectFill"src="{{img_piece.pic1}}"role="img"></image>
+            </view>
+          
+<!--             
+            <view class="mh_pop_fxlb_gb">X</view> -->
+        </view>
+    </view>
+    <!--提示图-->
+    <!--提示语记录弹窗-->
+    <view class="mh_pop" style="{{c_style}}" bindtap="cloose_coupon">
+        <view class="mh_pop_new_nr" catchtap="cloose">
+            <view class="mh_pop_new">
+                <view class="mh_pop_new_01">提示语记录</view>
+                <view class="mh_pop_new_tab">
+                    <view class="{{c_style4}}"  data-type="5" bindtap="openlog"><text>摇一摇记录</text></view>
+                    <view data-type="6" class="{{c_style5}}" bindtap="openlog"><text>拼手气记录</text></view>
+                </view>
+                <view class="mh_pop_new_02">
+                    <block wx:if="{{loglist}}">
+                        <block wx:key="unique" wx:for="{{loglist}}" >
+                            <p>{{index+1}}.{{item.content}}</p>
+                        </block>
+
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--提示语记录弹窗-->
+
+    <!--看一看提示弹窗-->
+        <view class="mh_pop" style="{{c_style1}}" bindtap="cloose_coupon1">
+            <view class="mh_pop_new_nr" catchtap="cloose">
+                <view class="mh_pop_new">
+                    <view class="mh_pop_new_02_01">
+                        <view class="mh_pop_new_02_01_01">
+                            <text>{{tips4}}</text>
+                            <text>{{tips5}}</text>
+                        </view>
+                        <view class="mh_pop_new_02_01_02">
+                            <text decode="{{true}}" space="{{true}}">{{tips6}}</text>
+                        </view>
+                    </view>
+                    <view class="mh_pop_new_01_01" id="look" data-bpbp_id="{{openboxdata.id}}" bindtap="{{!buttonClicked?'look':''}}">{{tips11}}</view>
+                </view>
+            </view>
+        </view>
+    <!--看一看提示弹窗-->
+    <!--看一看暂未开启提示弹窗-->
+        <view class="mh_pop" style="{{c_style3}}" bindtap="cloose_coupon3">
+            <view class="mh_pop_new_nr" catchtap="cloose">
+                <view class="mh_pop_new">
+                    <view class="mh_pop_new_02_01">
+                        <view class="mh_pop_new_02_01_01">
+                            <text>提示卡</text>
+                        </view>
+                        <view class="mh_pop_new_02_01_03">
+                            <text decode="{{true}}" space="{{true}}">玩法努力升级中,敬请期待噢!</text>
+                        </view>
+                    </view>
+                    <view class="mh_pop_new_01_01" >暂未开放</view>
+                </view>
+            </view>
+        </view>
+    <!--看一看暂未开启提示弹窗-->
+    <!--手气卡提示弹窗-->
+        <view class="mh_pop" style="{{c_style2}}" bindtap="cloose_coupon2">
+            <view class="mh_pop_new_nr" catchtap="cloose">
+                <view class="mh_pop_new">
+                    <view class="mh_pop_new_02_01">
+                        <view class="mh_pop_new_02_01_01">
+                            <text>{{tips7}}</text>
+                            <text>{{tips8}}</text>
+                        </view>
+                        <view class="mh_pop_new_02_01_02">
+                            <text decode="{{true}}" space="{{true}}">{{tips9}}</text>
+                        </view>
+                        <view class="mh_pop_new_02_01_03">
+                            <text decode="{{true}}" space="{{true}}">(当前剩余{{remain_num}}次机会)</text>
+                        </view>
+                    </view>
+                    <view class="mh_pop_new_01_01"  bindtap="{{!buttonClicked?'startG':''}}">消耗1次机会</view>
+                </view>
+            </view>
+        </view>
+    <!--手气卡提示弹窗-->
+
+
+    <!--<view class="mh_new_choose_index" bindtap="gohome"> <image src="../../img/76.png" mode="aspectFill"></image></view>-->
+    <view class="{{piece_class}}" style="{{piece_style}}">
+        <image src="{{piece_img}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_new_choose_nr">
+        <block wx:if="{{people_nums==0}}">
+            <view class="mh_new_choose_top">
+                <view class="mh_new_choose_top_01"></view>
+                <view class="mh_new_choose_top_02">
+
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{people_nums>0}}">
+            <view class="mh_new_choose_top">
+                <view class="mh_new_choose_top_01">有{{people_nums}}位娃友正在挑盒</view>
+                <view class="mh_new_choose_top_02">
+                    <block wx:key="unique" wx:for="{{show_arr}}" >
+                        <p wx:if="{{index < 8}}"><image src="{{item}}" mode="aspectFill"></image></p>
+                    </block>
+                    <text  class="choose_class" wx:if="{{people_nums >8}}">. . .</text>
+                </view>
+            </view>
+        </block>
+        
+    <view class="mh_new_choose_middle">
+        <view class="mh_new_choose_nr_05"  bindtap="getvalidtips"> 
+            <image  src="../../img/69.png" mode="aspectFill" animation="{{animationShake}}"></image>
+            <text>摇一摇</text>
+        </view>
+        <view class="mh_new_choose_nr_05_01" bindtap="openlook"> 
+           <image src="{{imgurl9}}" mode="aspectFill" animation="{{animationLook}}"></image>
+            <text>{{tips12}}</text>
+        </view>
+
+        <view class="mh_new_choose_nr_06" animation="{{animation}}"> <image style="{{xy_style}}" src="{{openboxdata.box_3d_img}}" mode="aspectFill"></image></view>
+        <view class="mh_new_choose_nr_07"><text>No.{{box_num}} - {{order_num}}</text></view>
+       
+        <view class="mh_new_choose_nr_08">
+            <view  wx:if="{{log_status==1}}" class="mh_new_choose_nr_08_01" data-type="5" bindtap ="openlog">
+                <view class="mh_new_choose_nr_08_01_01">
+                    <image class="mh_new_choose_xz" src="../../img/91.png" mode="aspectFill"></image>
+                    <image src="../../img/jljl.png" mode="aspectFill"></image>
+                </view>
+                
+            </view>
+            <view  wx:else class="mh_new_choose_nr_08_01" data-type="5" bindtap ="openlog">
+                <view class="mh_new_choose_nr_08_01_01">
+                    <image src="../../img/jljl.png" mode="aspectFill"></image>
+                </view>
+                
+            </view>
+            
+            <view class="mh_new_choose_nr_08_01" bindtap="opentips">
+                <view class="mh_new_choose_nr_08_01_01">
+                    <view class="mh_new_choose_sz">{{remain_num}}</view>
+                    <image src="../../img/sqsq.png" mode="aspectFill"></image>
+                </view>
+                
+            </view>          
+
+             <view wx:if="{{img_piece.pic1}}" class="mh_new_choose_nr_08_01">
+                <view  data-currenturl1="{{img_piece.pic1}}" bindtap ="clickimg" class="mh_new_choose_nr_08_01_01">
+                    <image class="mh_new_choose_xz" src="../../img/91.png" mode="aspectFill"></image>
+                    <image src="{{imgurl10}}" mode="aspectFill"></image>
+                </view>
+            </view>
+            <view wx:else class="mh_new_choose_nr_08_01" bindtap="openlook">
+                <view class="mh_new_choose_nr_08_01_01">                   
+                    <image src="{{imgurl10}}" mode="aspectFill"></image>
+                </view>
+
+            </view>
+
+       </view>
+    </view>
+       <view class="mh_new_choose_nr_09">
+           <view class="mh_new_choose_nr_left">
+               <view id="change_small_box" bindtap="{{!buttonClicked?'change_small_box':''}}" class="mh_new_choose_nr_09_01">换一个</view>
+               <view id="toorder" data-detail="toorder" bindtap="{{!buttonClicked?'toorder':''}}" class="mh_new_choose_nr_09_02">就拆它</view>
+           </view>          
+           <view class="mh_new_choose_nr_09_03"> <text decode="{{true}}" space="{{true}}">{{tips13}}</text></view>
+           <view class="mh_new_choose_nr_09_03" style="color:red;"><rich-text nodes="{{tips3}}"></rich-text></view>
+       </view>
+    </view>
+   
+</scroll-view>

@@ -1,0 +1,33 @@
+<!--pages/personalpage-trading-02/personalpage-trading-02.wxml-->
+<view class="mh_shoppingmore">
+    <view class="mh_shoppingsq_02">
+       
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>默认邮费：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="未填写">...</input>
+            </view>
+            <view class="mh_shoppingsq_02_01_04">元</view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>包邮金额：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="未填写">...</input>
+            </view>
+            <view class="mh_shoppingsq_02_01_04">元</view>
+        </view>
+       <view class="mh_shoppingsq_02_03">
+           <view class="mh_shoppingsq_02_02_01">若买家购买商品总价达到您设置的包邮金额，系统自动为买家减去邮费</view>
+       </view>
+    </view>
+   
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">保存</text>
+   </view>
+</view>
+
+

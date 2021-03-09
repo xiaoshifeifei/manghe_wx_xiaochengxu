@@ -1,0 +1,25 @@
+/* pages/promoter/promoter.wxss */
+.mh_index_cb {
+    min-height: 100vh;
+    width: 100%;
+    background: #eeeeee;
+}
+
+.mh_index_spnr_nr_01{
+    z-index: 9;
+}
+
+.cl_dis{
+    display: inline-block;
+    width: 200rpx;
+    color: #939393;
+    font-size: 22rpx;
+    margin-left: 150rpx;
+    position: absolute;
+    top:75%;
+    transform: translateY(-50%);
+}
+
+.mh_shopping_nav view {
+  width: 50%;
+}

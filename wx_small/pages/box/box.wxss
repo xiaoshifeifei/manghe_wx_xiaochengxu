@@ -1,0 +1,158 @@
+/* pages/box/box.wxss */
+.mh_box_nr_01_03 image {
+    top: 0;
+}
+
+/*引导弹窗*/
+.mh_my_note_content{
+    width: 520rpx;
+    height: 630rpx;
+    overflow: auto;
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+}
+
+.mh_index_03_03_nr_01 {
+    font-size:22rpx;
+}
+
+
+/*飞发货车动画重写*/
+.mh_box_aanimation_02 {
+    animation: mobile6 2s ease-in-out;
+    -webkit-animation: mobile6 2s ease-in-out;
+    opacity: 0;
+    z-index: 111;
+}
+
+@keyframes mobile6 {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2, 0.2);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.2, 1.2);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(-50%, -50%) scale(1.2, 1.2);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1, 1);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1, 1) rotate(0deg);
+        opacity: 1;
+    }
+    90% {
+        transform: translate(-10%, 250%) scale(0.5, 0.5) rotate(350deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-10%, 320%) rotate(360deg) scale(0.1, 0.1);
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes mobile6 {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2, 0.2);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.2, 1.2);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(-50%, -50%) scale(1.2, 1.2);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1, 1);
+        opacity: 1;
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1, 1) rotate(0deg);
+        opacity: 1;
+    }
+    90% {
+        transform: translate(-10%, 250%) scale(0.5, 0.5) rotate(350deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-10%, 320%) rotate(360deg) scale(0.1, 0.1);
+        opacity: 0.5;
+    }
+}
+
+.mh_pop_fxlb_04{
+    overflow: scroll;
+}
+
+/*宝库晃动动画*/
+.mh_treasury_nr_aanimation {
+    animation: treasury 0.5s ease-in-out;
+}
+
+@keyframes treasury {
+    0% {
+        transform: rotate(-8deg);
+        transform-origin: center bottom
+    }
+    17% {
+        transform: rotate(0deg);
+        transform-origin: center bottom
+    }
+    34% {
+        transform: rotate(8deg);
+        transform-origin: center bottom
+    }
+    51% {
+        transform: rotate(-8deg);
+        transform-origin: center bottom
+    }
+    68% {
+        transform: rotate(0deg);
+        transform-origin: center bottom
+    }
+    85% {
+        transform: rotate(8deg);
+        transform-origin: center bottom
+    }
+    100% {
+        transform: rotate(0deg);
+        transform-origin: center bottom
+    }
+}
+
+
+.mh_box_nr_sz {
+    font-size: 22rpx;
+    position: absolute;
+    right: -35rpx;
+    line-height: 40rpx;
+}
+
+
+.mh_pop_fxlb_bottom{
+    font-size: 25rpx;
+    color: #9D9E9D;
+    height: 30rpx;
+    text-align: center;
+    line-height: 30rpx;
+    bottom: 10rpx;
+    clear: both;
+    margin-top: 100rpx;
+}
+
+.mh_height{
+    height:768rpx;
+}
+
+.self_bg{
+    background: #FF5F6F;
+    color: #fff;
+    border:1px solid #FF5F6F;
+}

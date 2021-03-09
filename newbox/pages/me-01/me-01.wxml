@@ -1,0 +1,21 @@
+<!--pages/me-01/me-01.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_me_03">
+            <button class="mh_me_list">
+                <text>收货地址</text><image src="../../img/03.png"></image>
+            </button>
+            <button class="mh_me_list">
+                <text>联系客服</text><image src="../../img/03.png"></image>
+            </button>
+            <button class="mh_me_list">
+                <text>更多设置</text><image src="../../img/03.png"></image>
+            </button>
+            <button class="mh_me_list">
+                <text>规则说明</text><image src="../../img/03.png"></image>
+            </button>
+
+            <view class="mh_me_list">
+                <text>收货地址</text><switch checked bindchange="switch1Change" color="#F9E000"/>
+            </view>
+        </view>
+    </scroll-view>

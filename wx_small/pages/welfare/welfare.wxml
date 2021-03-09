@@ -1,0 +1,135 @@
+<!-- pages/Signin/Signin.wxml -->
+<!--专题弹窗-->
+<view class="mh_pop_1" style="{{c_style}}" bindtap="cloose_coupon">
+    <view class="mh_pop_new_nr" style="{{img_size}}" data-linktype="{{link_type}}" data-url="{{url}}" catchtap="gowhere">
+        <image src="{{topic_img}}"  style="{{img_size}}border-radius: 20rpx;" mode="aspectFill"></image>
+    </view>
+</view>
+<!--专题弹窗-->
+
+<scroll-view scroll-y class="mh_welfare_details">
+<view class="mh_shopping_nav mh_shopping_qd" style="z-index: 15">
+    <view wx:for="{{proBar}}" wx:key="id" data-id="{{item.id}}" class="{{nowId==item.id?'mh_shopping_nav_hover':''}}" bindtap="switchTab">
+        <text>{{item.name}}</text>
+    </view>
+</view>
+<view class="mh_welfare" hidden="{{welfareHide}}">
+    <view class="mh_welfare_height"></view>
+    <!--轮播开始-->
+    <view class="mh_index_01" wx:if="{{showdata.length>0}}">
+        <swiper indicator-dots="true" indicator-color="RGB(61,98,173)" indicator-active-color="#fff" autoplay="true" interval="5000" duration="1000" circular="true">
+            <block wx:for="{{showdata}}" wx:key="id">
+                <swiper-item data-url="{{item.url}}" data-linktype="{{item.link_type}}" data-topicimg="{{item.image1}}" bindtap="{{item.is_frame == 1 ? 'touchimg':'gowhere'}}">
+                    <image src="{{item.image3}}" class="slide-image" mode="aspectFill"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!--轮播结束-->
+    <view class="mh_index_spnr_nr" wx:for="{{Lottery}}" wx:key="id">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">{{item.type_txt}}</view>
+            <view class="mh_index_spnr_nr_01_02">
+                <text>{{item.title}}</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03" data-id="{{item.id}}" bindtap="goDetail"> <image src="{{item.images.pic1}}" mode="aspectFill"></image></view>
+    </view>
+    <!--无活动-->
+    <view class="mh_shiopping_prompt" wx:if="{{Lottery.length<=0}}">
+        <image src="{{NullImg}}" mode="aspectFill"></image>
+    </view>
+</view>
+
+<view class="mh_welfare" hidden="{{cutHide}}">
+    <view class="mh_welfare_height"></view>
+    <!--轮播开始-->
+    <view class="mh_index_01" wx:if="{{showdata.length>0}}">
+        <swiper indicator-dots="true" indicator-color="RGB(61,98,173)" indicator-active-color="#fff" autoplay="true" interval="5000" duration="1000" circular="true">
+            <block wx:for="{{showdata}}" wx:key="id">
+                <swiper-item data-url="{{item.url}}" data-topicimg="{{item.image1}}" bindtap="{{item.is_frame == 1 ? 'touchimg':'gowhere'}}">
+                    <image src="{{item.image3}}" class="slide-image" mode="aspectFill"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!--轮播结束-->
+    <!--倒计时-->
+    <view class="mh_djs" wx:if="{{actInfo}}" hidden="{{listHide}}">
+        <view class="mh_djs_01"> {{actInfo.title}}</view>
+        <rich-text class="mh_index_02_01_01">
+            <p>{{day}}</p><font>天</font>
+            <p>{{hour}}</p><font>时</font>
+            <p>{{minute}}</p><font>分</font>
+            <p>{{second}}</p><font>秒</font>
+        </rich-text>
+    </view>
+    <!--新砍价列表-->
+    <view class="mh_index_spnr mh_index_spnr_new" hidden="{{listHide}}">
+        <view class="mh_index_spnr_nr" wx:for="{{cutList}}" wx:key="id" data-id="{{item.id}}" bindtap="toBargainDetail">
+            <view wx:if="{{item.info.icon_type >= 1}}"  class="mh_index_03_03_01_icon" style=' background-image: url({{item.info.icon_img}});'>
+                <rich-text >{{item.info.icon_text}}</rich-text>
+            </view>
+            <view wx:else class="mh_index_03_03_01_icon" >
+                <rich-text ></rich-text>
+            </view>
+            <view class="mh_index_spnr_nr_01_03" data-id="{{item.id}}" catchtap="{{!wClicked?'shareWin':''}}">可砍¥{{item.diff_price}}</view>
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+                <view class="mh_index_spnr_nr_01_011 mh_index_spnr_nr_01_01_hui1">¥{{item.max_price}}</view>
+                <view class="mh_index_spnr_nr_01_jq">¥{{item.min_price}}</view>
+                <view class="mh_index_spnr_nr_01_02" style="width: 250rpx;font-size: 22rpx;">
+                    <text space="nbsp" style="display: block;color: #939393;">{{item.info.pname}} {{item.info.series}}</text>
+                    <text style="display: block;color: #939393;"></text>
+                </view>
+            </view>
+            <view class="{{index==prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"> <image src="{{item.info.images.pic1}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+
+    <!--无活动-->
+   <!-- <view class="mh_shiopping_prompt" hidden="{{cutList == null?false:true}}">
+        <image src="{{NullImg}}" mode="aspectFill"></image>
+    </view>-->
+
+</view>
+</scroll-view>
+<!--好友砍价弹窗 start-->
+<view class="mh_pop mh_index_pop" hidden="{{bargainHide}}">
+<view class="mh_pop_nr">
+    <view class="mh_pop_nr_no" bindtap="closeWin">
+        <image src="../../img/15.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_index_pop_01">
+        <image src="{{imgurl1}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_index_pop_02">
+        <rich-text>库存有限，先到先得（库存：<font>{{cutInfoData.stock?cutInfoData.stock:0}}</font>）</rich-text>
+    </view>
+    <view class="mh_bargaining">
+        <view class="mh_bargaining_01">
+            <view class="mh_bargaining_01_01" style="width: {{cutInfoData.percent}}"></view>
+            <view class="mh_bargaining_01_02" style="left: {{cutInfoData.percent1}}">
+                <view class="mh_bargaining_01_02_01" style=' background-image: url({{PriceImg}});'>
+                    <text>已砍到了{{cutInfoData.cuted_price}}元</text>
+                </view>
+                <view class="mh_bargaining_01_02_02">
+                    <image src="../../img/43.png" mode="aspectFill"></image>
+                </view>
+            </view>
+            <view class="mh_bargaining_01_03">
+                <text class="mh_bargaining_01_03_01">底价{{cutInfoData.min_price}}元</text>
+                <text class="mh_bargaining_01_03_02">原价{{cutInfoData.max_price}}元</text>
+            </view>
+        </view>
+    </view>
+    <view class="mh_index_pop_03">
+        <rich-text>已有<font>{{cutInfoData.count}}</font>位朋友成功帮忙砍价<font>{{cutInfoData.cut_price}}</font>元！</rich-text>
+    </view>
+    <view class="mh_index_pop_04">
+        <button open-type='share' data-id="{{cutInfoData.id}}">邀请好友砍价</button>
+    </view>
+    <view class="mh_index_pop_05">新用户帮砍价还能领取礼包。</view>
+</view>
+
+</view>
+<!--end 弹窗结束-->

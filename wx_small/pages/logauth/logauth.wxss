@@ -1,0 +1,15 @@
+/* pages/logauth/logauth.wxss */
+.for_height{
+    height: 38rpx;
+}
+.no_auth {
+    width: 650rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background: #EEEEEE;
+    color: #232323;
+    font-size: 34rpx;
+    display: inline-block;
+    border-radius: 15rpx;
+}

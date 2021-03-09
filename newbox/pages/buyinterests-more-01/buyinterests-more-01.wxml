@@ -1,0 +1,91 @@
+<!--pages/buyinterests-more-01/buyinterests-more-01.wxml-->
+<scroll-view scroll-y class="mh_me">
+   
+     <view class="mh_buyinterests_bt">甜甜系列</view>
+    <view class="mh_trading_spnr mh_buyinterests_xq">
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        
+    </view>
+     <view class="mh_buyinterests_bt">甜甜二系列</view>
+    <view class="mh_trading_spnr mh_buyinterests_xq">
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        
+    </view>
+     <view class="mh_buyinterests_bt">甜甜三系列</view>
+    <view class="mh_trading_spnr mh_buyinterests_xq">
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        
+    </view>
+<view class="personalpage_height_01"></view>
+   
+</scroll-view>
+

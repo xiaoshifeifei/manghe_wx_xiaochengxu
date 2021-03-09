@@ -1,0 +1,3 @@
+<!--pages/moneylog/moneylog.wxml-->
+<text>pages/moneylog/moneylog.wxml</text>
+<button open-type="contact">进入客服会话</button>

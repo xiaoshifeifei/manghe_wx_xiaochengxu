@@ -1,0 +1,21 @@
+<!--pages/address/address.wxml-->
+<view class="mh_address">
+   <view class="mh_mh_address_nr">
+       <view catchtap="editAddress" class="mh_order_list" wx:for="{{addressList}}" wx:key="unique" data-id="{{item.id}}">
+            <view class="mh_order_list_01">
+                <text>{{item.recipient}}</text>
+                <text>{{item.phone}}</text>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text>收货地址：{{item.province}} {{item.city}} {{item.area}} {{item.address}}</rich-text>
+                <rich-text catchtap="changeDefault" data-id="{{item.id}}">
+                <image wx:if="{{item.is_default == 1}}" src="../../img/36-hover.png"></image>
+                <image wx:else src="../../img/36.png"></image>
+                设为默认</rich-text>
+            </view>
+        </view>
+   </view>
+    <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01" bindtap="addAddress">新增地址</text>
+   </view>
+</view>

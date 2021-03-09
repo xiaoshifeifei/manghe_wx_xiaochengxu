@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "奖励记录",
+  "usingComponents": {},
+  "onReachBottomDistance":80
+}

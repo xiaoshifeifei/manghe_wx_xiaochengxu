@@ -1,0 +1,23 @@
+<view class="mh_authorization">
+    <view class="mh_authorization_01">
+        <view class="mh_authorization_01_01">
+            <image src="{{HeadImg}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_authorization_01_02">无疆盒子</view>
+    </view>
+    <!--用户授权登录-->
+    <view class="mh_authorization_02" wx:if="{{isSet}}">
+        <button wx:if="{{canIUse}}" open-type="getUserInfo" class="mh_authorization_03_01" bindgetuserinfo="bindGetUserInfo">点击授权登录</button>
+        <view class="for_height"></view>
+        <button wx:if="{{canIUse}}" class="no_auth" bindtap="noAuth">暂不授权登录</button>
+        <view wx:else>请升级微信版本</view>
+    </view>
+    <!--用户手机号绑定-->
+    <view class="mh_authorization_02" wx:if="{{isMobile}}">
+        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="mh_authorization_03_01">微信用户快捷登录</button>
+    </view>
+    <!--底部协议-->
+    <view class="mh_authorization_bottom" wx:if="{{isSet}}">
+        <view>授权登录即视为同意<button bindtap="goAgree">《无疆盒子用户协议》</button></view>
+    </view>
+</view>

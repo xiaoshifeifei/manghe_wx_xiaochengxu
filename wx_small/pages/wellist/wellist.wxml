@@ -1,0 +1,17 @@
+<!-- pages/Signin/Signin.wxml -->
+<scroll-view scroll-y class="mh_welfare" hidden="{{welfareHide}}">
+<view class="mh_index_spnr_nr" wx:for="{{Lottery}}" wx:key>
+    <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+        <view class="mh_index_spnr_nr_01_01">{{item.type_txt}}</view>
+        <view class="mh_index_spnr_nr_01_02">
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+    <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03" data-id="{{item.id}}" bindtap="goDetail"> <image src="{{item.images.pic1}}" mode="aspectFill"></image></view>
+</view>
+<!--无活动-->
+<view class="mh_shiopping_prompt" wx:if="{{Lottery.length<=0}}">
+    <image src="{{NullImg}}" mode="aspectFill"></image>
+</view>
+
+</scroll-view>

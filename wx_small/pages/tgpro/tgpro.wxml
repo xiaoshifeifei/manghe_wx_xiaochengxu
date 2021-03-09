@@ -1,0 +1,138 @@
+<!-- pages/personalpage-02/personalpage-02.wxml -->
+<view class="mh_me01">
+    <!--确实置顶or取消置顶-->
+   <!-- <view class="mh_pop" hidden="{{hideTop}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">{{top_txt}}</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button bindtap="_dealTop">确认</button>
+                <button bindtap="toggleTop">取消</button>
+            </view>
+        </view>
+    </view>-->
+     <!--确实置顶or取消置顶 end-->
+      <!--选品成功-->
+    <!--<view class="mh_pop" hidden="{{hideDelete}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">是否确认删除该商品？</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button bindtap="_dealDelete">确定</button>
+                <button bindtap="toggleDelete">取消</button>
+            </view>
+        </view>
+    </view>-->
+     <!--选品成功 end-->
+    <view class="mh_index_top">
+        <view class="mh_index_nav">
+            <text wx:for="{{tgBar}}" wx:key="id" data-id="{{item.id}}" class="{{nowId==item.id?'mh_index_nav_hover':''}}" bindtap="switchTab">{{item.name}}</text>
+        </view>
+    </view>
+    <view class="mh_index_top_height" wx:if="{{nowId != 3}}"></view>
+    <view class="mh_index_top_height" wx:if="{{nowId != 3}}"></view>
+    <!--设置tab-->
+    <block wx:if="{{nowId==1}}">
+        <!--顶部搜索 start-->
+        <view class="mh_index_personalpage_search">
+            <view class="mh_index_personalpage_01">
+                <input bindblur="getInputData" type="text" maxlength="25" placeholder="请输入带货通知信息" value="{{info.notice}}"/>
+            </view>
+        </view>
+        <!--顶部搜索 end-->
+        <view class="mh_index_personalpage">
+            <!--带货员的推广商品-->
+                <view class="mh_index_personalpage_02" wx:for="{{baseData}}" wx:key="id">
+                    <view class="mh_index_personalpage_02_01">
+                        <view class="mh_index_personalpage_02_01_01">
+                            <image src="{{item.img_pic1}}" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_index_personalpage_02_01_02">
+                            <view class="mh_index_personalpage_02_01_02_01">
+                                [{{item.typeName}}]{{item.pname}}
+                            </view>
+                            <view class="mh_index_personalpage_02_01_02_02">
+                                <text>价格：{{item.price1}}</text>
+                                <text>提成：{{item.percent}}</text>
+                            </view>
+                            <view class="mh_index_personalpage_02_01_02_03">
+                                <text>状态：{{item.status_txt}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="mh_index_personalpage_02_02">
+                        <button class="mh_index_personalpage_02_02_01" data-id="{{item.id}}" data-top="{{item.is_top}}" ontap="_setTop">
+                            <block wx:if="{{item.is_top == 1}}">
+                                取消置顶
+                            </block>
+                            <block wx:else>
+                                置顶
+                            </block>
+                        </button>
+                        <button class="mh_index_personalpage_02_02_02" data-id="{{item.id}}" data-pid="{{item.p_id}}" ontap="_deleteTg">删除</button>
+                    </view>
+                </view>
+        </view>
+        <view class="personalpage_height_01"></view>
+        <view class="personalpagee_bottom">
+            <button bindtap="goChoose">添加商品</button>
+        </view>
+    </block>
+    <!--活动tab-->
+    <block wx:elif="{{nowId==3}}">
+        <view class="mh_index_top_height"></view>
+        <view class="mh_index_personalpage_05" wx:for="{{activitys}}" wx:key="id">
+            <view class="mh_index_personalpage_05_01">
+                <text>减</text>
+            </view>
+            <view class="mh_index_personalpage_05_02">
+                <text>{{item.act_title}}</text>
+                <text>{{item.act_date}}</text>
+            </view>
+            <view class="mh_index_personalpage_05_03">
+                <text>{{item.act_status}}</text>
+            </view>
+        </view>
+        <view class="personalpage_height_01"></view>
+        <view class="personalpagee_bottom">
+            <button bindtap="addActivity">添加活动</button>
+        </view>
+    </block>
+
+    <!--明细tab-->
+    <block wx:elif="{{nowId==2}}">
+        <view class="mh_index_top_height"></view>
+        <view class="mh_preview_height"></view>
+        <view style="height: 30rpx"></view>
+        <view class="mh_index_personalpage_04">
+            <view class="mh_index_personalpage_04_nr">
+                <view class="mh_index_personalpage_04_01">
+                    <text>年度销售单量：{{yearData.num_order}}</text>
+                </view>
+                <view class="mh_index_personalpage_04_01">
+                    <text>年度销售总额：{{yearData.num_money}}</text>
+                </view>
+                <view class="mh_index_personalpage_04_01">
+                    <text>年度提成总额：{{yearData.tg_money}}</text>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_ts">{{yearData.tips}}</view>
+        </view>
+        <!--资金明细开始-->
+        <view class="mh_index_personalpage_02" wx:for="{{orders}}" wx:key="id">
+            <view class="mh_index_personalpage_02_04">
+                <text>提成/订单金额</text>
+                <text>{{item.ptime_txt}}</text>
+            </view>
+            <view class="mh_index_personalpage_02_05">
+                <text>{{item.divide_money}}/{{item.act_money}}</text>
+                <text class="{{item.is_dh_cash==0?'mh_index_personalpage_02_05_01':''}}">{{item.istg_txt}}</text>
+            </view>
+        </view>
+        <view class="personalpage_height_01"></view>
+    </block>
+</view>

@@ -1,0 +1,7 @@
+/* pages/speccode/speccode.wxss */
+page{
+    background: #eeeeee;
+}
+.mh_index_personalpage_expire{
+    background:#DDDDDD;
+}

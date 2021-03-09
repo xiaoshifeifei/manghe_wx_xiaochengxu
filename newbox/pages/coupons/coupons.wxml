@@ -1,0 +1,30 @@
+<!--pages/coupons/coupons.wxml-->
+<scroll-view scroll-y class="mh_coupons">
+    <view class="mh_coupons_01" style=' background-image: url(../../img/87.png); background-repeat: no-repeat; background-size:auto 100%'>
+        <view class="mh_coupons_01_01"><image src="../../img/88.png" mode="aspectFill"></image></view>
+        <view class="mh_coupons_01_02">有效期：2019.11.20-2020.01.09</view>
+        <view class="mh_coupons_01_03">
+            <view class="mh_coupons_01_03_01">优惠券品类</view>
+            <view class="mh_coupons_01_03_02">30元代金券</view>
+        </view>
+        <view class="mh_coupons_01_04">
+            <view class="mh_coupons_01_04_01">
+                <text>¥30</text>
+                <text>可抵¥100</text>
+            </view>
+        </view>
+    </view>
+     <view class="mh_coupons_01" style=' background-image: url(../../img/87.png); background-repeat: no-repeat; background-size:auto 100%'>
+        <view class="mh_coupons_01_01"><image src="../../img/88.png" mode="aspectFill"></image></view>
+        <view class="mh_coupons_01_02">有效期：2019.11.20-2020.01.09</view>
+        <view class="mh_coupons_01_03">
+            <view class="mh_coupons_01_03_01">优惠券品类</view>
+            <view class="mh_coupons_01_03_02">30元代金券</view>
+        </view>
+        <view class="mh_coupons_01_04">
+            <view class="mh_coupons_01_04_01">
+                <text>¥30</text>
+            </view>
+        </view>
+    </view>
+</scroll-view >

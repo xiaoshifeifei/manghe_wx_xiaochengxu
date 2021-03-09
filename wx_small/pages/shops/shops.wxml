@@ -1,0 +1,11 @@
+<!--pages/shops/shops.wxml-->
+<view class="mh_welfare mh_shops mh_shopslist">
+    <view class="mh_index_spnr_nr" wx:for="{{shopData}}" wx:key="id" data-id="{{item.id}}" bindtap="_shopDetail">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' ></view>
+        <view class="mh_index_spnr_nr_01_04"><image src="{{item.face}}" mode="aspectFill"></image></view>
+        <view class="mh_index_spnr_nr_01_05">{{item.sname}}</view>
+        <view class="mh_index_spnr_nr_01_06">{{item.num_product}}</view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="{{item.images}}" mode="aspectFill"></image></view>
+    </view>
+</view>
+

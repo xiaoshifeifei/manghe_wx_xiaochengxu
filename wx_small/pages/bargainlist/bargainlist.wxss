@@ -1,0 +1,7 @@
+/* pages/bargainlist/bargainlist.wxss */
+.mh_index_02_01_01 font{
+    font-size: 26rpx;
+}
+.mh_djs{
+    margin-top: 33rpx;
+}

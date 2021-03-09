@@ -1,0 +1,128 @@
+<!-- pages/personalpage/personalpage.wxml -->
+<scroll-view scroll-y class="mh_me">
+    <!-- 限时活动-->
+       <view class="mh_limitactivities_01">
+         <view class="mh_limitactivities_01_01">
+             <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <view class="mh_limitactivities_02">
+              <text>随机立减活动</text>
+              <text>进行中....</text>
+          </view>
+       </view>
+    <!-- 限时活动 end -->
+    <view class="personalpage_01">
+        <view class="mh_me_01_02_01">
+           <view class="mh_me_01_02_01_05">
+             <image src="../../img/demo-8.png" mode="aspectFill"></image>
+           </view>
+            <view class="mh_me_01_02_01_01">
+                 <text>用户名称</text>
+                 <text>1天前更新</text>
+            </view>
+            <view class="mh_me_01_02_01_02" style="display:none;"> <image src="../../img/103.png" mode="aspectFill"></image></view>
+             <view class="mh_me_01_02_01_03"> <image src="../../img/95.png" mode="aspectFill"></image></view>
+             <view class="mh_me_01_02_01_04" style="display:none;">
+               <button>生成海报</button>
+             </view>
+             <view class="mh_me_01_02_01_06">
+                <view class="mh_me_fhdd_icon">11</view>
+                <image src="../../img/me-01.png" mode="aspectFill"></image>
+                <text>购买记录</text>
+             </view>
+        </view>
+    </view>
+    <view class="personalpage_nav">
+        <text class="personalpage_nav_hover">带货</text>
+        <text>交易</text>
+        <text>心愿</text>
+    </view>
+    <view class="personalpage_height"></view>
+    <view class="personalpage_notice">
+        <image src="../../img/96.png" mode="aspectFill"></image>
+        <view class="personalpage_notice_01 marquee">
+           <text class="content">通知文字...通知文字...通知文字...通知文字...通知文字...通知文字...通知文字...</text>
+        </view>
+    </view>
+    <view class="mh_index_spnr">
+ 
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-02.png);'>
+            <rich-text >New</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>Tokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    
+  </view>
+  <view class="personalpage_height_01"></view>
+  <view class="personalpagee_bottom">
+       <button>带货管理</button>
+   </view>
+   
+</scroll-view>

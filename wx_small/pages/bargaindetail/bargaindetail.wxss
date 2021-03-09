@@ -1,0 +1,24 @@
+.mh_details_05_01_02{
+    width:180rpx;
+}
+.mh_details_05_03 button{
+    width:300rpx;
+    height:120rpx;
+    text-align:center;
+    line-height:120rpx;
+    display:inline-block;
+    background:#232323;
+    text-align:center;
+    color:#fdfdfd;
+    float:right;
+}
+
+.wxParse-img{
+    display: flex;
+}
+
+.mh_details_05_03{
+    background:#FF5F6F;
+    border:1px solid #FF5F6F;
+    letter-spacing:8rpx;
+}

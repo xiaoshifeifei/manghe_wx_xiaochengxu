@@ -1,0 +1,17 @@
+<view class="mh_index" style=' background-image: url({{PageBackImg}});'>
+
+  <view class="mh_index_03 mh_index_new">
+
+    <view class="mh_index_03_03 mh_index_03_new">
+      <view class="mh_index_03_03_01" wx:for="{{listData}}">
+        <div>
+          <p>
+            <image src="{{item.img}}" mode="aspectFill" ></image>
+          </p>
+        </div>
+        <text>¥39</text>
+      </view>
+    </view>
+  </view>
+</view>
+

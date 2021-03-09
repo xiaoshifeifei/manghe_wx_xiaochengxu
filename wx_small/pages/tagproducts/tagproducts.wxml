@@ -1,0 +1,21 @@
+<!--pages/tagproducts/tagproducts.wxml-->
+<view class=" mh_shops">
+    <view class="mh_index_spnr">
+        <view class="mh_index_spnr_nr" wx:for="{{proData}}" wx:key="unique">
+            <view wx:if="{{item.icon_type >= 1}}" class="mh_index_03_03_01_icon" style=' background-image: url({{ImgUrl}}icon{{item.icon_type}}.png);'>
+                <rich-text >{{item.icon}}</rich-text>
+            </view>
+            <view  wx:else class="mh_index_03_03_01_icon" >
+            </view>
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+                <view class="mh_index_spnr_nr_01_01">¥{{item.price}}</view>
+                <view class="mh_index_spnr_nr_01_02">
+                    <text space="nbsp">{{item.pname}} {{item.series}}</text>
+                    <p class="{{item.sell_way==0?'mh_bq_02':'mh_bq_01'}}">{{item.typeName}}</p>
+                </view>
+            </view>
+            <view data-link="{{item.url}}" bindtap="goLink" class="{{index == prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"><image src="{{index == prosty?item.pic2:item.img}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+
+</view>

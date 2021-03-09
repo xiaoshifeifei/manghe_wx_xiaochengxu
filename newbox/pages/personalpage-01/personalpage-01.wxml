@@ -1,0 +1,38 @@
+<!--pages/personalpage-01/personalpage-01.wxml-->
+<scroll-view scroll-y class="mh_me01">
+ <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>设置昵称：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="请输入昵称">...</input>
+            </view>
+        </view>
+     <view class="mh_shoppingsq_02_01">
+         <view class="mh_shoppingsq_02_01_01">
+             <text>分享标题：</text>
+         </view>
+         <view class="mh_shoppingsq_02_01_03">
+             <input placeholder="请输入分享标题">...</input>
+         </view>
+     </view>
+     <view class="mh_shoppingsq_02_01 mh_shoppingsq_02_add">
+         <view class="mh_shoppingsq_02_01_01">
+             <text>分享配图：</text>
+         </view>
+          <view class="page__bd">
+         <mp-cells>
+             <mp-cell>
+                 <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="" tips=""></mp-uploader>
+             </mp-cell>
+         </mp-cells>
+     </view>
+     </view>
+    
+    </view>
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+        <button>保存设置</button>
+    </view>
+</scroll-view>

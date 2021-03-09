@@ -1,0 +1,7 @@
+<!--pages/topic/topic.wxml-->
+<scroll-view scroll-y class="empty_tip" style="background:{{color}};height:{{height}}">
+    <image src="{{image}}" mode="widthFix"></image>
+</scroll-view>
+
+
+

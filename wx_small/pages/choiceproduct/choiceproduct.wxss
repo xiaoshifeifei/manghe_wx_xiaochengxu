@@ -1,0 +1,14 @@
+/* pages/choiceproduct/choiceproduct.wxss */
+page{
+    background: #eeeeee;
+}
+.mh_shops_new {
+    background: #eeeeee;
+    width: 100%;
+}
+
+.mh_index_spnr {
+    display: table;
+    margin: 0 0 30rpx 0;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+<!--pages/hotactivities/hotactivities.wxml-->
+<!--专题弹窗-->
+    <view class="mh_pop_1" style="{{c_style}}" bindtap="cloose_coupon">
+        <view class="mh_pop_new_nr" style="{{img_size}}" data-url="{{url}}" catchtap="gowhere">
+            <image src="{{topic_img}}"  style="{{img_size}} border-radius: 20rpx;" mode="aspectFill"></image>
+        </view>
+    </view>
+<!--专题弹窗-->
+<scroll-view scroll-y class="mh_new_choose">
+    <block wx:key="unique" wx:for="{{showdata}}">
+        <view wx:if="{{item.is_frame == 1}}" class="mh_hotactivities"  data-url="{{item.url}}" data-topicimg="{{item.image1}}" bindtap="touchimg">
+            <image src="{{item.image3}}" mode="aspectFill"></image>
+        </view>
+        <view wx:else class="mh_hotactivities"  data-url="{{item.url}}" data-topicimg="{{item.image1}}" bindtap="gowhere">
+            <image src="{{item.image3}}" mode="aspectFill"></image>
+        </view>      
+    </block> 
+</scroll-view>

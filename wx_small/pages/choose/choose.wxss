@@ -1,0 +1,135 @@
+/* pages/choose/choose.wxss */
+.mh_new_choose_top_01 {
+    font-size:25rpx;
+}
+
+
+.choose_class{
+    color: #a9aaaa;
+    display: inline-block;
+    width: 80rpx;
+    height: 80rpx;
+    overflow: hidden;
+}
+
+.mh_new_choose_index{
+    position: fixed;
+    z-index: 20;
+}
+
+.mh_new_choose_04_01{
+    margin-left: 150rpx;
+    background: #FF5F6F;
+    color:#fff;
+    letter-spacing:8rpx;
+}
+
+.mh_new_choose_04_011{
+    margin-left: 0rpx;
+}
+
+.mh_new_choose_04_022{
+    background: #fff;
+    color:#FF5F6F;
+    border:1px solid #FF5F6F;
+    letter-spacing:8rpx;
+}
+
+
+.mh_new_choose_04{
+    bottom: 50rpx;
+}
+.mh_new_choose_051{
+    bottom: 70rpx;
+}
+.mh_new_choose_nr_09_03{
+    position: absolute;
+    bottom: 5rpx;
+    width: 620rpx;
+}
+.mh_new_choose_nr_09_041{
+    position: absolute;
+    bottom: 24rpx;
+    width: 620rpx;
+}
+
+
+
+.mh_new_choose_4hang {
+    text-align: center
+}
+
+.mh_new_choose_4hang .mh_new_choose_01 {
+    width: 527rpx;
+    height: 317rpx;
+}
+
+.mh_new_choose_02 {
+    margin-bottom: 30rpx;
+}
+
+.mh_new_choose_4hang .mh_new_choose_02 {
+    width: 527rpx;
+    margin-left: 49rpx
+}
+
+.mh_new_choose_4hang .mh_new_choose_02_01 .mh_new_choose_02_nr {
+    width: 129.5rpx;
+    height: 129.5rpx;
+}
+
+.mh_new_choose_4hang .mh_new_choose_02_01 {}
+
+.mh_new_choose_3hang {
+    text-align: center
+}
+
+.mh_new_choose_3hang .mh_new_choose_01 {
+    width: 465rpx;
+    height: 279rpx;
+}
+
+.mh_new_choose_3hang .mh_new_choose_02 {
+    width: 465rpx;
+    margin-left: 78rpx
+}
+
+.mh_new_choose_3hang .mh_new_choose_02_01 .mh_new_choose_02_nr {
+    width: 152rpx;
+    height: 152rpx;
+}
+
+.mh_new_choose_3hang .mh_new_choose_02_nr_01 {
+    text-indent: -20rpx
+}
+
+.mh_new_choose_4hang .mh_new_choose_02_nr_01 {
+    text-indent: -20rpx
+}
+/*
+
+.mh_new_choose_04 {
+    position: fixed;
+    bottom: 60rpx;
+    z-index: 15;
+}
+*/
+
+.mh_new_choose_04_height {
+    height: 150rpx;
+
+}
+
+.wxParse-img{
+    display: flex;
+}
+
+
+.mh_pop_fxlb_08 {
+    margin: 0 30rpx;
+    font-size: 26rpx;
+    line-height: 150%;
+    height: 600rpx;
+    overflow-y: scroll;
+}
+

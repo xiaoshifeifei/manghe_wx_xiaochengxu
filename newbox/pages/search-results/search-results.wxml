@@ -1,0 +1,107 @@
+<!--pages/search-results/search-results.wxml-->
+
+<scroll-view scroll-y  class="mh_index">
+   <view class='mh_index_search'>
+      <view class="mh_index_search_01">
+          <input type='text' placeholder='输入你想要的内容' confirm-type='search' bindinput='inputBind' bindconfirm='query'></input>
+          <image src="../../img/104.png" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="mh_preview_height"></view>
+  <view  class="mh_index_top mh_index_fixed">
+      <view class="mh_index_nav">
+        <text class="mh_index_nav_hover">商品</text>
+        <text>品类</text>
+        <text>用户</text>
+      </view>
+  </view>
+  <view class="mh_preview_height"></view>
+ 
+
+
+
+  <view class="mh_index_spnr">
+   
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45.png);'>
+            <rich-text >预售</rich-text>
+          </view>
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">¥59</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>TokidokiTokidokiTokidokiTokidoki 圣地亚哥系列</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    
+   
+     
+  </view>
+
+   
+
+   
+
+ 
+</scroll-view >

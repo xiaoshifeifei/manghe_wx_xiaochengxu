@@ -1,0 +1,117 @@
+<!--pages/trading-more/trading-more.wxml-->
+<scroll-view scroll-y  class="mh_index"  >
+     <view class='mh_index_search'>
+      <view class="mh_index_search_01">
+          <input type='text' placeholder='搜索IP，系列，玩具名称' confirm-type='search' bindinput='inputBind' bindconfirm='query'></input>
+          <image src="../../img/104.png" mode="aspectFill"></image>
+          <image src="../../img/106.png" mode="aspectFill" class="mh_index_search_qk"></image>
+      </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_preview_choose">
+        <view class="mh_preview_choose_01">
+            <view class="mh_preview_choose_01_01">盒子</view>
+            <view>其他</view>
+        </view>
+        <view class="mh_preview_choose_02">
+            <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+             <view class="mh_preview_choose_list">
+                <view class="mh_preview_choose_list_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_preview_choose_list_02">商品名称</view>
+            </view>
+        </view>
+    </view>
+    </scroll-view >
+
+

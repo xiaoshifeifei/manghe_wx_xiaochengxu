@@ -1,0 +1,671 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxbe87c2ef1e4d1330",
+	"projectname": "newbox",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 61,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/new/new",
+					"pathName": "pages/new/new",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "new",
+					"pathName": "pages/new/new",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shopping",
+					"pathName": "pages/shopping/shopping",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "paradise",
+					"pathName": "pages/paradise/paradise",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "box",
+					"pathName": "pages/box/box",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "box-1",
+					"pathName": "pages/box-1/box-1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "me",
+					"pathName": "pages/me/me",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "allorder",
+					"pathName": "pages/allorder/allorder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shoppingmore",
+					"pathName": "pages/shoppingmore/shoppingmore",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "Signin",
+					"pathName": "pages/Signin/Signin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "topup",
+					"pathName": "pages/topup/topup",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": 13,
+					"name": "details",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "task",
+					"pathName": "pages/task/task",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "choose",
+					"pathName": "pages/choose/choose",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "openbox",
+					"pathName": "pages/openbox/openbox",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "authorization",
+					"pathName": "pages/authorization/authorization",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "address",
+					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addresssave",
+					"pathName": "pages/addresssave/addresssave",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "payment",
+					"pathName": "pages/payment/payment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "payment-1",
+					"pathName": "pages/payment-1/payment-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "bargaining",
+					"pathName": "pages/bargaining/bargaining",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "choose-1",
+					"pathName": "pages/choose-1/choose-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/choose-1/choose-1",
+					"pathName": "pages/choose-1/choose-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "newchoose",
+					"pathName": "pages/newchoose/newchoose",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "newchoose-1",
+					"pathName": "pages/newchoose-1/newchoose-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publicity-1",
+					"pathName": "pages/publicity-1/publicity-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "publicity-2",
+					"pathName": "pages/publicity-2/publicity-2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "advertise-1",
+					"pathName": "pages/advertise-1/advertise-1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "advertise-2",
+					"pathName": "pages/advertise-2/advertise-2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/advertise-3/advertise-3",
+					"pathName": "pages/advertise-3/advertise-3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/stores/stores",
+					"pathName": "pages/stores/stores",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "stores-01",
+					"pathName": "pages/stores-01/stores-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "locate",
+					"pathName": "pages/locate/locate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "welfare",
+					"pathName": "pages/welfare/welfare",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "welfare-01",
+					"pathName": "pages/welfare-01/welfare-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "welfare-02",
+					"pathName": "pages/welfare-02/welfare-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "coupons",
+					"pathName": "pages/coupons/coupons",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shops",
+					"pathName": "pages/shops/shops",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shopsmore",
+					"pathName": "pages/shopsmore/shopsmore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/hotactivities/hotactivities",
+					"pathName": "pages/hotactivities/hotactivities",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "me-01",
+					"pathName": "pages/me-01/me-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "allorder-01",
+					"pathName": "pages/allorder-01/allorder-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/allorder-02/allorder-02",
+					"pathName": "pages/allorder-02/allorder-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/allorder-03/allorder-03",
+					"pathName": "pages/allorder-03/allorder-03",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/me",
+					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 48,
+					"name": "news-01",
+					"pathName": "pages/news-01/news-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "news",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mebalance",
+					"pathName": "pages/mebalance/mebalance",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "meproblem",
+					"pathName": "pages/meproblem/meproblem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage",
+					"pathName": "pages/personalpage/personalpage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-01",
+					"pathName": "pages/personalpage-01/personalpage-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-02",
+					"pathName": "pages/personalpage-02/personalpage-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-03",
+					"pathName": "pages/personalpage-03/personalpage-03",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "preview",
+					"pathName": "pages/preview/preview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "search-results",
+					"pathName": "pages/search-results/search-results",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Integralmall",
+					"pathName": "pages/Integralmall/Integralmall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-04",
+					"pathName": "pages/personalpage-04/personalpage-04",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-04-add",
+					"pathName": "pages/personalpage-04-add/personalpage-04-add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 62,
+					"name": "buyinterests",
+					"pathName": "pages/buyinterests/buyinterests",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buyinterests-list",
+					"pathName": "pages/buyinterests-list/buyinterests-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "buyinterests-more",
+					"pathName": "pages/buyinterests-more/buyinterests-more",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/trading/trading",
+					"pathName": "pages/trading/trading",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/trading-search/trading-search",
+					"pathName": "pages/trading-search/trading-search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/trading-more/trading-more",
+					"pathName": "pages/trading-more/trading-more",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/trading-list/trading-list",
+					"pathName": "pages/trading-list/trading-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 69,
+					"name": "pages/personalpage-trading/personalpage-trading",
+					"pathName": "pages/personalpage-trading/personalpage-trading",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 70,
+					"name": "pages/me-02/me-02",
+					"pathName": "pages/me-02/me-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cabinet/cabinet",
+					"pathName": "pages/cabinet/cabinet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cabinet/cabinet",
+					"pathName": "pages/cabinet/cabinet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cabinet-01/cabinet-01",
+					"pathName": "pages/cabinet-01/cabinet-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cabinet-02/cabinet-02",
+					"pathName": "pages/cabinet-02/cabinet-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cabinet-03/cabinet-03",
+					"pathName": "pages/cabinet-03/cabinet-03",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-01/personalpage-trading-01",
+					"pathName": "pages/personalpage-trading-01/personalpage-trading-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-02/personalpage-trading-02",
+					"pathName": "pages/personalpage-trading-02/personalpage-trading-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/buyinterests-more-01/buyinterests-more-01",
+					"pathName": "pages/buyinterests-more-01/buyinterests-more-01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-03/personalpage-trading-03",
+					"pathName": "pages/personalpage-trading-03/personalpage-trading-03",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-04/personalpage-trading-04",
+					"pathName": "pages/personalpage-trading-04/personalpage-trading-04",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-trading-05",
+					"pathName": "pages/personalpage-trading-05/personalpage-trading-05",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "personalpage-trading-06",
+					"pathName": "pages/personalpage-trading-06/personalpage-trading-06",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cabinet-02",
+					"pathName": "pages/cabinet-02/cabinet-02",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-07/personalpage-trading-07",
+					"pathName": "pages/personalpage-trading-07/personalpage-trading-07",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-08/personalpage-trading-08",
+					"pathName": "pages/personalpage-trading-08/personalpage-trading-08",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-09/personalpage-trading-09",
+					"pathName": "pages/personalpage-trading-09/personalpage-trading-09",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-10/personalpage-trading-10",
+					"pathName": "pages/personalpage-trading-10/personalpage-trading-10",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-11/personalpage-trading-11",
+					"pathName": "pages/personalpage-trading-11/personalpage-trading-11",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-12/personalpage-trading-12",
+					"pathName": "pages/personalpage-trading-12/personalpage-trading-12",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalpage-trading-13/personalpage-trading-13",
+					"pathName": "pages/personalpage-trading-13/personalpage-trading-13",
+					"scene": null
+				}
+			]
+		}
+	}
+}

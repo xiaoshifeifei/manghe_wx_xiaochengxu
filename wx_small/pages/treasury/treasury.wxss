@@ -1,0 +1,33 @@
+/* pages/treasury/treasury.wxss */
+/*合成弹窗*/
+.mh_chip_wcb{
+    top:20%;
+}
+
+.mh_pop_fxlb_04{
+    overflow: scroll;
+}
+
+/*引导弹窗*/
+.mh_my_note_content{
+    width: 520rpx;
+    height: 630rpx;
+    overflow: auto;
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+}
+
+/*合成弹窗*/
+.mh_pop_fxlb_05{
+    margin: 15rpx;
+    display: flex;
+}
+.mh_pop_fxlb_05 button {
+    width: 50%;
+    height: 80rpx;
+    background: #fcc800;
+    color: #232323;
+    border-radius: 80rpx;
+    line-height: 80rpx;
+    margin: 10rpx;
+}

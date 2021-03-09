@@ -1,0 +1,61 @@
+<!--pages/shopsmore/shopsmore.wxml-->
+<view class=" mh_shops">
+    <view class="mh_shops_01">
+        <view class="mh_shops_01_01">
+            <view class="mh_shops_01_01_02" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' ></view>
+            <view class="mh_shops_01_01_01"> <image src="{{Shop.images}}" mode="aspectFill"></image></view>
+            <view class="mh_shops_01_01_03"><image src="{{Shop.face}}" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_shops_01_02">
+            <view class="mh_shops_01_02_01">{{Shop.notice}}</view>
+            <!--<view class="mh_shops_01_02_02">商品数量：{{Shop.num_product}}</view>-->
+        </view>
+    </view>
+
+    <view class="mh_index_spnr">
+        <view class="mh_index_spnr_nr" wx:for="{{proData}}" wx:key="id">
+            <view wx:if="{{item.icon_type >= 1}}" class="mh_index_03_03_01_icon" style=' background-image: url({{item.icon_new_img}});'>
+                <rich-text >{{item.icon_text}}</rich-text>
+            </view>
+            <view  wx:else class="mh_index_03_03_01_icon" >
+            </view>
+            <view class="mh_index_spnr_nr_01" style=' background-image: url({{WaveImg}}); background-repeat: repeat-x; background-size:auto 100%' >
+                <view class="mh_index_spnr_nr_01_01">¥{{item.price}}</view>
+                <view class="mh_index_spnr_nr_01_02">
+                    <text space="nbsp">{{item.pname}} {{item.series}}</text>
+                    <p class="{{item.sell_way==0?'mh_bq_02':'mh_bq_01'}}">{{item.typeName}}{{item.card_name}}</p>
+                </view>
+            </view>
+            <view data-link="{{item.url}}" bindtap="goLink" class="{{index == prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"><image src="{{index == prosty?item.pic2:item.img}}" mode="aspectFill"></image></view>
+        </view>
+    </view>
+
+</view>
+
+<view class="mh_shops_height"></view>
+<view class="mh_shops_nav" style="{{bottom}}">
+  <view  bindtap="choose"  data-type="1">
+    <image src="{{nav1}}" mode="aspectFill"></image>
+    <text>首页</text>
+  </view>
+  <view  bindtap="choose"  data-type="2">
+    <image src="{{nav2}}" mode="aspectFill"></image>
+    <text>抽盒机</text>
+  </view>
+  <view  bindtap="choose"  data-type="3">
+    <image src="{{nav3}}" mode="aspectFill"></image>
+    <text>商城</text>
+  </view>
+  <view  bindtap="choose"  data-type="4">
+    <image src="{{nav4}}" mode="aspectFill"></image>
+    <text>客服</text>
+  </view>
+</view>
+<view class="mh_pop" style="{{style1}}" bindtap="cloose_coupon">
+    <view class="mh_customer" catchtap="openservice">
+        <view class="mh_customer_01">联系客服</view>
+        <view class="mh_customer_02"><span>微信：</span><text selectable='true'>{{cs_weixin}}</text></view>
+        <view class="mh_customer_02"><span>QQ：</span><text selectable='true'>{{cs_qq}}</text></view>
+        <view class="mh_customer_02"><span>电话：</span><text selectable='true'>{{cs_phone}}</text></view>
+    </view>
+</view>

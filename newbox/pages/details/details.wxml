@@ -1,0 +1,142 @@
+<!-- pages/details/details.wxml -->
+<scroll-view scroll-y class="mh_details">
+     <view class="mh_pop" style="display:none;">
+ 
+        <view class="mh_pop_nr_zj">
+           <view class="mh_pop_nr_zj_05">系统提示</view>
+           <view class="mh_pop_nr_zj_02">
+                <text>请您确认是否使用购买权</text>
+                <text class="mh_pop_nr_zj_02_zy">序列号：00000000000000</text>
+           </view>
+           <button class="mh_pop_nr_zj_03">
+                确认
+           </button>
+           <button class="mh_pop_nr_zj_04">
+                取消
+           </button>
+        </view>
+        
+   
+</view>
+    <view class="mh_new_choose_index">
+        <image src="../../img/76.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop mh_index_pop" style="display:none;">
+        <view class="mh_pop_fxlb">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_02">恭喜你获得bob的公仔一个</view>
+            <view class="mh_pop_fxlb_03">
+                <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_04">
+                <text>内容1</text>
+                <text>内容2</text>
+                <text>内容3</text>
+            </view>
+            <view class="mh_pop_fxlb_05">
+                <button class="mh_pop_fxlb_05_01">立即分享</button>
+                <button class="mh_pop_fxlb_05_02">再买一只</button>
+            </view>
+            <view class="mh_pop_fxlb_gb">X</view>
+        </view>
+    </view>
+    <view class="mh_details_01">
+        <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_02">
+        <image src="../../img/09.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_03 mh_details_03_hover">
+        <image src="../../img/05.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_details_04">
+        <view class="mh_details_04_01">
+            <view class="mh_details_04_01_01" style=' background-image: url(../../img/08.png);'>
+                <text>抢先预定</text>
+            </view>
+            <view class="mh_details_04_01_02">bububu小天使bububu小天使bububu小天使bububu小天使</view>
+            <view class="mh_details_04_01_03">¥39</view>
+            <view class="mh_details_04_01_04">
+                <rich-text>
+                    <image src="../../img/10.png" mode="aspectFill"></image>
+                    喜欢29999
+                </rich-text>
+                <rich-text>
+                    <image src="../../img/11.png" mode="aspectFill"></image>
+                    库存29
+                </rich-text>
+            </view>
+            <view class="mh_details_04_01_05">
+                <image src="../../img/demo-01.png" mode="aspectFill"></image>
+            </view>
+            <view class='mh_xzxh'>
+                <view class="mh_details_pop_02">
+                    <rich-text>
+                        <text>商品型号</text>
+                    </rich-text>
+                </view>
+                <view class="mh_details_pop_03">
+                    <text class="mh_details_pop_03_hover">选中数据</text>
+                    <text>数据</text>
+                    <text>数据</text>
+                    <text>数据</text>
+                    <text>数据</text>
+                </view>
+            </view>
+        </view>
+        <view class="mh_details_04_02">
+            <view class="mh_details_04_02_bt">商品详情</view>
+            <view class="mh_details_04_02_nr">
+                <p>
+                    商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑
+                </p>
+            </view>
+        </view>
+    </view>
+    <view class="mh_details_05" style="bottom:100rpx">
+        <view class="mh_details_05_01">
+            <view class="mh_details_05_01_01">
+                <image src="../../img/06.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_details_05_01_02">1</view>
+            <view class="mh_details_05_01_03">
+                <image src="../../img/07.png" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="mh_details_05_03">立即购买</view>
+        <view class="mh_details_05_02">
+            <rich-text>
+                合计：
+                <span>999.00积分</span>
+            </rich-text>
+        </view>
+        <view class="button-group {{isIpx?'fix-iphonex-button':''}}">这是一个吸底按钮区域</view>
+    </view>
+    <view class="mh_pop" style="display:none;">
+        <view class="mh_details_pop">
+            <view class="mh_details_pop_01">
+                <view class="mh_details_pop_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_details_pop_01_02">
+                    <text>bububu小天使</text>
+                    <text>¥39</text>
+                    <text>库存29</text>
+                </view>
+            </view>
+            <view class="mh_details_pop_02">
+                <rich-text>
+                    <text>入库方式</text>
+                    <image src="../../img/12.png" mode="aspectFill"></image>
+                </rich-text>
+            </view>
+            <view class="mh_details_pop_03">
+                <text class="mh_details_pop_03_hover">盒豚宝</text>
+                <text>购物车</text>
+            </view>
+            <view class="mh_details_pop_04">提交订单</view>
+        </view>
+    </view>
+</scroll-view>

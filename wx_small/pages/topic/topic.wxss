@@ -1,0 +1,8 @@
+/* pages/advertise/advertise.wxss */
+.empty_tip{
+    width: 100%;
+}
+.empty_tip image{
+    width: 100%;
+}
+

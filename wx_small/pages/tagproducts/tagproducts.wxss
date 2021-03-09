@@ -1,0 +1,11 @@
+/* pages/tagproducts/tagproducts.wxss */
+.mh_shops {
+    background: #eeeeee;
+    min-height: 1500rpx;
+}
+
+.mh_index_spnr {
+    display: table;
+    margin: 0 0 30rpx 0;
+    width: 100%;
+}

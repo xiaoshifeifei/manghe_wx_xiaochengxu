@@ -1,0 +1,26 @@
+<!--pages/meproblem/meproblem.wxml-->
+<scroll-view scroll-y class="mh_me">
+
+    <view class="meproblem">
+        <view class="meproblem_01">
+            <view class="meproblem_01_01">Q:提现额度</view>
+            <view class="meproblem_01_02">每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦</view>
+        </view>
+        <view class="meproblem_01">
+            <view class="meproblem_01_01">Q:提现额度</view>
+            <view class="meproblem_01_02">每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦</view>
+        </view>
+        <view class="meproblem_01">
+            <view class="meproblem_01_01">Q:提现额度</view>
+            <view class="meproblem_01_02">每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦</view>
+        </view>
+        <view class="meproblem_01">
+            <view class="meproblem_01_01">Q:提现额度</view>
+            <view class="meproblem_01_02">每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦</view>
+        </view>
+        <view class="meproblem_01">
+            <view class="meproblem_01_01">Q:提现额度</view>
+            <view class="meproblem_01_02">每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦每天可提现一次，最高1000元，暂只支持全额提现，不支持部分提现哦</view>
+        </view>
+    </view>
+</scroll-view>

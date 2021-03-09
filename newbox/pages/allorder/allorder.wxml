@@ -1,0 +1,156 @@
+<!-- pages/allorder/allorder.wxml -->
+<scroll-view class="mh_shopping">
+    <view class="mh_shopping_nav mh_allorder_nav">
+        <view class="mh_shopping_nav_hover">
+            <text>全部</text>
+        </view>
+        <view>
+            <text>待付款</text>
+        </view>
+        <view>
+            <text>待发货</text>
+        </view>
+        <view>
+            <text>待收货</text>
+        </view>
+         <view>
+            <text>已收货</text>
+        </view>
+         <view>
+            <text>售后处理</text>
+        </view>
+        
+    </view>
+    <view scroll-y class="mh_shopping_list_nr">
+        <view class="mh_shopping_list_more">
+            <view class="mh_shopping_shops">
+                <view class="mh_shopping_shops_bt">
+                    <view class="mh_shopping_shops_bt_02">
+                        <image src="../../img/demo-8.png"></image>
+                    </view>
+                    <view class="mh_shopping_shops_bt_03">
+                        店铺名称
+                        <image src="../../img/03.png"></image>
+                    </view>
+                    <view class="mh_shopping_shops_bt_04">待收货/已收货</view>
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                    
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_shopping_nr_02">
+                    <view>共计2件商品</view>
+                    <view>
+                        合计：
+                        <span>¥1000.00</span>
+                        （运费：¥5.00）
+                    </view>
+                </view>
+                <view class="mh_shopping_nr_03">
+                    <view class="mh_shopping_nr_03_01">确认收货</view>
+                    <view>订单详情</view>
+                </view>
+            </view>
+             <view class="mh_shopping_shops">
+                <view class="mh_shopping_shops_bt">
+                    <view class="mh_shopping_shops_bt_02">
+                        <image src="../../img/demo-8.png"></image>
+                    </view>
+                    <view class="mh_shopping_shops_bt_03">
+                        店铺名称
+                        <image src="../../img/03.png"></image>
+                    </view>
+                    <view class="mh_shopping_shops_bt_04">待收货/已收货</view>
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_shopping_nr_01">
+                    <view class="mh_shopping_nr_01_nr">
+                        <view class="mh_shopping_nr_01_middle">
+                            <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_shopping_nr_01_right">
+                            <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                            <p>
+                                <span>¥999.99</span>
+                            </p>
+                            <p>x1</p>
+                        </view>
+                    </view>
+                </view>
+               <view class="mh_shopping_nr_04">
+                   换货成功/换货失败
+               </view>
+                <view class="mh_shopping_nr_03">
+                    <view class="mh_shopping_nr_03_01">确认收货</view>
+                    <view>订单详情</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

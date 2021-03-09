@@ -1,0 +1,5 @@
+/* pages/bigbox/bigbox.wxss */
+.mh_new_choose_03 {
+    font-size:22rpx;
+    margin-top: 80rpx;
+}

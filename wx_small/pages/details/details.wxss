@@ -1,0 +1,15 @@
+/* pages/details/details.wxss */
+.mh_new_choose_index{
+    position: fixed;
+    z-index: 20;
+}
+
+.wxParse-img{
+    display: flex;
+}
+
+.mh_details_05_03{
+    background:#FF5F6F;
+    border:1px solid #FF5F6F;
+    letter-spacing:8rpx;
+}

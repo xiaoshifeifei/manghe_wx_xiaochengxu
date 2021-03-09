@@ -1,0 +1,33 @@
+/* pages/addresssave/addresssave.wxss */
+
+.mh_mh_address_bottom text{
+    z-index:0;
+}
+
+.mh_my_class{
+  color: #FF0000;
+}
+
+.mh_my_class_gray{
+  color: #9E9E9E;
+}
+
+.mh_mh_address_nr_list_botton {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 20rpx;
+  display: inline-block;
+  font-size: 34rpx;
+  width: 100%;
+  background-color: #FDFDFD;
+}
+
+.mh_mh_address_nr_list button::after{
+  border: none;
+}
+
+.f_class{
+  font-size: 26rpx;
+  color: #232323;
+}

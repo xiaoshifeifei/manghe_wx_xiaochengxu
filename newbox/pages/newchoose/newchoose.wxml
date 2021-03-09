@@ -1,0 +1,175 @@
+<!--pages/newchoose/newchoose.wxml-->
+<scroll-view scroll-y  class="mh_new_choose" >
+  <view class="mh_gz">规则</view>
+   <view class="mh_pop mh_index_pop" style="display:;">
+        <view class="mh_pop_gz">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_08">
+                <view class="mh_pop_fxlb_08_01">标题</view>
+                <view class="mh_pop_fxlb_08_02">内容</view>
+                 <view class="mh_pop_fxlb_08_01">标题</view>
+                <view class="mh_pop_fxlb_08_02">内容</view>
+            </view>
+            <button class="mh_pop_nr_zj_03">
+                确认
+           </button>
+            
+            <view class="mh_pop_fxlb_gb">X</view>
+        </view>
+    </view>
+  <view class="mh_pop mh_index_pop" style="display:none;">
+        <view class="mh_pop_zs">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_06">标题</view>
+            <view class="mh_pop_fxlb_07">
+                <image mode="aspectFill"src="../../img/demo-05.jpg"role="img"></image>
+            </view>
+          
+            
+            <view class="mh_pop_fxlb_gb">X</view>
+        </view>
+    </view>
+    <view class="mh_pop" style="display:none;">
+        <view class="mh_choos_details_pop mh_choos_details_animation">
+              <view class="mh_choos_details_pop_nr">
+                <p>
+                    商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑商品说明是什么可以用后台编辑
+                </p>
+            </view>
+        </view>
+    </view>
+    <view class="mh_new_choose_nr">
+        <view class="mh_new_choose_nr_top mh_new_choose_nr_center">
+             <view class="mh_new_choose_shops">
+                <p><image src="../../img/demo-8.png" mode="aspectFill"></image></p>
+                <p><span>店铺名称：</span>有10位娃友正在挑盒</p>
+                <p><image src="../../img/93.png" mode="aspectFill"></image></p>
+            </view>
+             <view class="mh_new_choose_top_01">有10位娃友正在挑盒</view>
+        </view>
+       
+        <view class="mh_new_choose_top">
+          <view class="mh_new_choose_top_02">
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+          </view>
+        </view>
+        <view class="mh_new_choose_4hang">
+            <view class="mh_new_choose_01">
+                <image src="../../img/64.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_new_choose_02">
+                <view class="mh_new_choose_02_01">
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>4</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                   <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>4</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                   <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>4</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                   <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>4</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                   <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                      <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>4</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                   <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                     <view class="mh_new_choose_02_nr">
+                        <view class="mh_new_choose_02_nr_01" style=' background-image: url(../../img/68.png); '>5</view>
+                        <image src="../../img/66.png" mode="aspectFill"></image>
+                    </view>
+                    
+                </view>    
+            </view>
+        </view>
+
+        <view class="mh_new_choose_03 ">
+            <view class="mh_new_choose_03_01">
+                <text>No.123456789012</text>
+            </view>
+            <view class="mh_new_choose_03_02">
+                <text>商品详情</text>
+            </view>
+        </view>
+         <view class="mh_new_choose_bz">描述的文字标红</view>
+        <view class="mh_new_choose_04">
+            <view class="mh_new_choose_04_01">换一盒</view>
+            <view class="mh_new_choose_04_02">直接端盒</view>
+        </view>
+        <view class="mh_new_choose_04_height"></view>
+    </view>
+   
+</scroll-view>

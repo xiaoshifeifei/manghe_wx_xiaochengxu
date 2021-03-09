@@ -1,0 +1,72 @@
+<!-- pages/allorder-02/allorder-02.wxml -->
+<view class="mh_shoppingmore">
+    <view class="mh_pop" style="display:none ;">
+  <view class="mh_pop_nr mh_pop_nr_yy">
+    <view class="mh_pop_nr_no">
+      <image src="../../img/15.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_pop_nr_01">
+      <view class="mh_pop_nr_01_01">换货原因</view>
+      <view class="mh_pop_nr_01_07">
+        <view>效果不好/不喜欢/不想要<image src="../../img/36.png"role="img"></image></view>
+        <view>效果不好/不喜欢/不想要<image src="../../img/36.png"role="img"></image></view>
+        <view>效果不好/不喜欢/不想要<image src="../../img/36.png"role="img"></image></view>
+        <view>效果不好/不喜欢/不想要<image src="../../img/36.png"role="img"></image></view>
+        <view>效果不好/不喜欢/不想要<image src="../../img/36-hover.png"role="img"></image></view>
+        <view>效果不好/不喜欢/不想要<image src="../../img/36.png"role="img"></image></view>
+      </view>
+    </view>
+    <view class="mh_pop_nr_02">
+      <text>确定</text>
+    </view>
+  </view>
+</view>
+    <view class="mh_shoppingsq_01">
+        <view class="mh_shopping_nr_01">
+            <view class="mh_shopping_nr_01_nr">
+                <view class="mh_shopping_nr_01_middle">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_shopping_nr_01_right">
+                    <p>[盲盒]盲盒名称盲盒名称盲盒名称盲盒名称盲盒名称</p>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>换货原因：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_02">
+                请选择
+                <image src="../../img/03.png"></image>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>换货说明：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="请输入收货人">...</input>
+            </view>
+        </view>
+    </view>
+    <view class="mh_shoppingsq_03">
+        <view class="mh_shoppingsq_03_01">上传凭证</view>
+        <view class="mh_shoppingsq_03_02">+</view>
+    </view>
+    <view class="mh_shoppingsq_04">
+        <view class="mh_shoppingsq_04_01">收货地址：与取件地址保持一致</view>
+        <view class="mh_shoppingsq_04_02">
+            <view class="mh_shoppingsq_04_02_01">
+                <image mode="aspectFill"src="../../img/41.png"role="img"></image>
+                收获地址：已填写地址某某某某某已填写地址某某某某某已填写地址某某某某某
+            </view>
+            <view class="mh_shoppingsq_04_02_02"><image src="../../img/03.png"></image></view>
+        </view>
+    </view>
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">提交</text>
+   </view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/me/me.wxss */
+/*.mh_me{
+    height: 115vh;
+}*/
+.text{
+    display: inline-block;
+    margin-left: 20rpx;
+    vertical-align: top;
+    margin-top: 50rpx;
+
+}
+
+.noimg{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    border-radius: 50%;
+}
+
+.mh_me_02_01 {
+    position: relative;
+    
+}
+    
+
+.mh_me_fhdd_icon {
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    background: #d60b0a;
+    color: #fff;
+    font-size: 22rpx;
+    line-height: 36rpx;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    margin-left: 5rpx;
+    top: -10rpx;
+    padding-bottom: 0;
+    
+}
+    

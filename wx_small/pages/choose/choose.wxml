@@ -1,0 +1,118 @@
+<!-- pages/choose/choose.wxml -->
+<scroll-view scroll-y  wx:if="{{boxdata}}" class="mh_new_choose" style="background:{{boxdata.batch.back_color}};" >
+
+    <view class="mh_gz" bindtap="getRule">规则</view>
+    <!--规则弹窗 start-->
+    <view class="mh_pop mh_index_pop" hidden="{{guideHide}}">
+        <view class="mh_pop_gz">
+            <view class="mh_pop_fxlb_01">
+                <image src="../../img/75.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_fxlb_08">
+                <view class="mh_pop_fxlb_08_01">{{ruleData.pro_rule.title}}</view>
+                <view class="mh_pop_fxlb_08_02">
+                    <rich-text  nodes="{{ruleData.pro_rule.content}}"></rich-text>
+                </view>
+                <view class="mh_pop_fxlb_08_01">{{ruleData.pla_rule.title}}</view>
+                <view class="mh_pop_fxlb_08_02">
+                    <rich-text  nodes="{{ruleData.pla_rule.content}}"></rich-text>
+                </view>
+            </view>
+            <button class="mh_pop_nr_zj_03" bindtap="closeGuide">
+                知道了
+            </button>
+
+            <!--<view class="mh_pop_fxlb_gb">X</view>-->
+        </view>
+    </view>
+    <!--规则弹窗 end -->
+
+    <!--<view class="mh_new_choose_index" bindtap="gohome"> <image src="../../img/76.png" mode="aspectFill"></image></view>-->
+    <view class="mh_pop" style="{{style3}}" bindtap="cloose_coupon">
+        <view class="mh_choos_details_pop mh_choos_details_animation" catchtap="open">
+              <view class="mh_choos_details_pop_nr">
+                <p><rich-text  nodes="{{html}}"></rich-text></p>
+            </view>
+        </view>
+    </view>
+    
+    <view class="mh_new_choose_nr" >         
+            <view class="mh_new_choose_nr_top mh_new_choose_nr_center">
+                <view class="mh_new_choose_shops"  data-s_id="{{s_id}}" bindtap="goshop">
+                    <p><image src="{{shop_face}}" mode="aspectFill"></image></p>
+                    <p>{{sname}}：{{people_nums}}位娃友正在挑盒</p>
+                    <p><image src="../../img/93.png" mode="aspectFill"></image></p>
+                </view>
+            </view>    
+            <block wx:if="{{people_nums>0}}">
+                <view class="mh_new_choose_top">                
+                    <view class="mh_new_choose_top_02">
+                        <block wx:key="unique" wx:for="{{show_arr}}" >
+
+                            <p wx:if="{{index < 8}}"><image src="{{item}}" mode="aspectFill"></image></p>
+                        </block>
+                            <text  class="choose_class" wx:if="{{people_nums >8}}">. . .</text>
+                    </view>
+                </view>    
+            </block>          
+             
+        
+        <view animation="{{animation}}">    
+            <view class="orgin {{style2}}">
+                <view class="mh_new_choose_01">
+                    <image src="{{boxdata.batch.top_img}}" mode="aspectFill"></image>
+                </view>
+                <view class="mh_new_choose_02">               
+                    <view class="{{style1}}">
+                        <block wx:key="unique" wx:for="{{boxdata.position}}" >
+                            <view wx:if="{{item.status==0}}"  class="mh_new_choose_02_nr" id="openbox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bpbp_id="{{item.id}}" data-pb_id="{{boxdata.pb_id}}" data-status="{{item.status}}" bindtap="openbox">
+                                <view class="mh_new_choose_02_nr_01" style=' background-image: url({{boxdata.batch.icon_img}}); '>{{item.order_num}}</view>
+                                <image src="{{boxdata.batch.unsold_img}}" mode="aspectFill"></image>
+                            </view>
+                            <view wx:else  class="mh_new_choose_02_nr" id="selled" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" bindtap="selled">
+                                <view class="mh_new_choose_02_nr_01" style=' background-image: url({{boxdata.batch.icon_img}}); '>{{item.order_num}}</view>
+                                <image src="{{boxdata.batch.sold_img}}" mode="aspectFill"></image>
+                            </view>
+                        </block>
+                    </view>               
+                </view>
+            </view>
+            <view class="mh_new_choose_03 {{class_name}}" >
+                <view class="mh_new_choose_03_01">
+                    <text>No.{{boxdata.box_num}}</text>
+                </view>
+                <view class="mh_new_choose_03_02" id="productinfo" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-whr="ch"  data-pb_id="{{boxdata.pb_id}}" bindtap="productinfo">
+                    <text>商品详情</text>
+                </view>
+            </view>
+        </view>
+        <view class="mh_new_choose_bz">
+            <rich-text nodes="{{boxdata.pretime}}"></rich-text>
+            <rich-text nodes="{{boxdata.tips}}"></rich-text>
+        </view>
+        <!--判断是否关联了商城ID-->
+        <block wx:if="{{boxdata.rel_pid>0}}">
+            <view class="{{isPhoneX==true?'mh_new_choose_04 mh_new_choose_051':'mh_new_choose_04'}}">
+                <view class="mh_new_choose_04_01 mh_new_choose_04_011" id="changebox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bb_id="{{boxdata.box_num}}"  bindtap="{{!buttonClicked?'changebox':''}}">换一盒</view>
+                <view class="mh_new_choose_04_02 mh_new_choose_04_022" bindtap="_goBuyAll">端整盒</view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="{{isPhoneX==true?'mh_new_choose_04 mh_new_choose_051':'mh_new_choose_04'}}">
+                <view class="mh_new_choose_04_01" id="changebox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bb_id="{{boxdata.box_num}}"  bindtap="{{!buttonClicked?'changebox':''}}">换一盒</view>
+            </view>
+        </block>
+
+        <!--<view wx:if="{{isPhoneX}}" class="mh_new_choose_04 mh_new_choose_051">
+            <view class="mh_new_choose_04_01" id="changebox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bb_id="{{boxdata.box_num}}"  bindtap="{{!buttonClicked?'changebox':''}}">换一盒</view>
+        </view>
+        <view wx:else class="mh_new_choose_04">
+            <view class="mh_new_choose_04_01" id="changebox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bb_id="{{boxdata.box_num}}"  bindtap="{{!buttonClicked?'changebox':''}}">换一盒</view>
+        </view>-->
+        <view class="mh_new_choose_04_height"></view>
+        <!--<view wx:if="{{isPhoneX}}" class="mh_new_choose_nr_09_03 mh_new_choose_nr_09_041" style="color:red;">{{boxdata.tips}}</view>
+        <view wx:else class="mh_new_choose_nr_09_03" style="color:red;"></view>-->
+    </view>
+    
+   
+</scroll-view>

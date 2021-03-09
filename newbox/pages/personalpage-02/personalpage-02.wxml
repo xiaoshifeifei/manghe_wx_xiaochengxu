@@ -1,0 +1,131 @@
+<!-- pages/personalpage-02/personalpage-02.wxml -->
+<scroll-view scroll-y class="mh_me01">
+    <!--确实删除-->
+    <view class="mh_pop" style="display:block;">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">是否确认删除该商品？</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button>继续选品</button>
+                <button>结束返回</button>
+            </view>
+        </view>
+    </view>
+     <!--确实删除 end-->
+      <!--选品成功-->
+    <view class="mh_pop" style="display:none;">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_no">
+                <image src="../../img/15.png" mode="aspectFill"></image>
+            </view>
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">恭喜你，本次选品成功！</view>
+            </view>
+            <view class="mh_pop_nr_03">
+                <button>继续选品</button>
+            </view>
+        </view>
+    </view>
+     <!--选品成功 end-->
+    <view class="mh_index_top">
+        <view class="mh_index_nav">
+            <text class="mh_index_nav_hover">设置</text>
+            <text>明细</text>
+        </view>
+    </view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_personalpage_search">
+       <view class="mh_index_personalpage_01">
+            <input placeholder="请输入带货通知信息">...</input>
+        </view>
+    </view>
+    <view class="mh_index_personalpage">
+       
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>状态：上架中/下架中</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02">
+                <button class="mh_index_personalpage_02_02_01">置顶</button>
+                <button class="mh_index_personalpage_02_02_02">删除</button>
+            </view>
+        </view>
+
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>状态：上架中/下架中</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02">
+                <button class="mh_index_personalpage_02_02_01">置顶</button>
+                <button class="mh_index_personalpage_02_02_02">删除</button>
+            </view>
+        </view>
+
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>状态：上架中/下架中</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02" style=" display: none">
+                <button class="mh_index_personalpage_02_02_01">置顶</button>
+                <button class="mh_index_personalpage_02_02_02">删除</button>
+            </view>
+            <view class="mh_index_personalpage_02_03">
+                <text>点击勾选</text>
+                <image src="../../img/101-01.png" mode="aspectFill"></image>
+            </view>
+
+        </view>
+
+
+    </view>
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+        <button>添加商品</button>
+    </view>
+</scroll-view>

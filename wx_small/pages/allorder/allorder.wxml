@@ -1,0 +1,126 @@
+<!-- pages/allorder/allorder.wxml -->
+<scroll-view class="mh_shopping">
+    <view class="mh_shopping_nav mh_allorder_nav">
+        <view wx:for="{{tabBar}}" wx:key="id" data-id="{{item.id}}" bindtap="changeOrder" class="{{tabBarIndex==index?'mh_shopping_nav_hover':''}}">
+            <text>{{item.name}}</text>
+        </view>
+    </view>
+    <view scroll-y class="mh_shopping_list_nr">
+        <view class="mh_shopping_list_more">
+            <!--售后订单-->
+            <block wx:if="{{nowIndex==6}}">
+                <view class="mh_shopping_shops" wx:if="{{orderList}}" wx:for="{{orderList}}" wx:key="id">
+                    <view class="mh_shopping_shops_bt">
+                        <view class="mh_shopping_shops_bt_02" data-s_id="{{item.s_id}}" bindtap="goShops">
+                            <image src="{{item.face}}"></image>
+                        </view>
+                        <view class="mh_shopping_shops_bt_03" data-s_id="{{item.s_id}}" bindtap="goShops">
+                            {{item.sname}}
+                            <image wx:if="{{item.s_id>0}}" src="../../img/03.png"></image>
+                        </view>
+                        <view class="mh_shopping_shops_bt_04">{{item.type_txt}}</view>
+                    </view>
+                    <view class="mh_shopping_nr_01" data-id="{{item.id}}" bindtap="afterDetail">
+                        <view class="mh_shopping_nr_01_nr">
+                            <view class="mh_shopping_nr_01_middle">
+                                <image src="{{item.cache.pimage}}" mode="aspectFill"></image>
+                            </view>
+                            <view class="mh_shopping_nr_01_right">
+                                <p>[{{item.tname}}]{{item.cache.pname}}{{item.cache.scsi_name}}</p>
+                              <!--  <p>
+                                    <span>¥999.99</span>
+                                </p>
+                                <p>x1</p>-->
+                            </view>
+                        </view>
+                    </view>
+                    <view wx:if="{{item.status == 1}}" class="mh_shopping_nr_04">
+                        {{item.status_txt}}
+                    </view>
+                    <view wx:elif="{{item.status == 3}}" class="mh_shopping_nr_04">
+                        {{item.status_txt}}
+                    </view>
+                    <view wx:else class="mh_shopping_nr_04_hui">
+                        {{item.status_txt}}
+                    </view>
+                    <view class="mh_shopping_nr_03">
+                        <!--<view class="mh_shopping_nr_03_01">确认收货</view>-->
+                        <view data-id="{{item.id}}" bindtap="afterDetail">查看详情</view>
+                    </view>
+                </view>
+            </block>
+            <block wx:else>
+                <!--正常订单-->
+                <view class="mh_shopping_shops" wx:if="{{orderList}}" wx:for="{{orderList}}" wx:key="id">
+                    <view class="mh_shopping_shops_bt">
+                        <view class="mh_shopping_shops_bt_02" data-s_id="{{item.s_id}}" bindtap="goShops">
+                            <image src="{{item.face}}"></image>
+                        </view>
+                        <view class="mh_shopping_shops_bt_03" data-s_id="{{item.s_id}}" bindtap="goShops">
+                            {{item.sname}}
+                            <image wx:if="{{item.s_id>0}}" src="../../img/03.png"></image>
+                        </view>
+                        <view class="mh_shopping_shops_bt_04">{{item.status_txt}}</view>
+                    </view>
+                    <view class="mh_shopping_nr_01" wx:for="{{item.cart}}" wx:for-item="cartItem" wx:key="id" data-id="{{item.id}}" bindtap="goDetail">
+                        <view class="mh_shopping_nr_01_nr">
+                            <view class="mh_shopping_nr_01_middle">
+                                <image src="{{cartItem.cache.pimage}}" mode="aspectFill"></image>
+                            </view>
+                            <view class="mh_shopping_nr_01_right">
+                                <p>[{{cartItem.tname}}]{{cartItem.cache.pname}}{{cartItem.cache.scsi_name}}</p>
+                                <p>
+                                    <span>¥{{cartItem.money}}</span>
+                                </p>
+                                <p>x{{cartItem.amount}}</p>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="mh_shopping_nr_02">
+                        <view>共计{{item.amount}}件商品</view>
+                        <view>
+                            合计：
+                            <span>¥{{item.total_fee}}</span>
+                            <block wx:if="{{item.postage>0}}">
+                                （运费：¥{{item.postage}}）
+                            </block>
+                            <block wx:else>
+                                （运费：包邮费）
+                            </block>
+                        </view>
+                    </view>
+                    <view class="mh_shopping_nr_03">
+                        <block wx:if="{{item.status == 0}}">
+                            <!--待付款-->
+                            <view class="mh_shopping_nr_03_01" data-id="{{item.id}}" bindtap="{{!wClicked?'_goRePay':''}}">立即支付</view>
+                            <view style="color: #FF5F6F" data-id="{{item.id}}" bindtap="{{!wClicked?'_goCancel':''}}">取消支付</view>
+                            <view data-id="{{item.id}}" bindtap="goDetail">订单详情</view>
+                        </block>
+                        <block wx:elif="{{item.status == 1}}">
+                            <!--待发货-->
+                            <view data-id="{{item.id}}" bindtap="goDetail">订单详情</view>
+                        </block>
+                        <block wx:elif="{{item.status == 2}}">
+                            <!--待收货-->
+                            <view class="mh_shopping_nr_03_01" data-id="{{item.id}}" bindtap="goReceipt">确认收货</view>
+                            <view data-id="{{item.id}}" bindtap="goDetail">订单详情</view>
+                        </block>
+                        <block wx:elif="{{item.status == 3}}">
+                            <!--已收货-->
+                            <view data-id="{{item.id}}" bindtap="goDetail">订单详情</view>
+                        </block>
+                        <block wx:elif="{{item.status == 4}}">
+                            <!--售后处理-->
+                            <view data-id="{{item.id}}" bindtap="goDetail">订单详情</view>
+                        </block>
+                    </view>
+                    <!-- <view class="mh_shopping_nr_03">
+                         <view class="mh_shopping_nr_03_01">确认收货</view>
+                         <view>订单详情</view>
+                     </view>-->
+                </view>
+            </block>
+        </view>
+    </view>
+</scroll-view>
+

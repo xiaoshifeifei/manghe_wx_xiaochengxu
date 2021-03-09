@@ -1,0 +1,47 @@
+<!--pages/specdetail/specdetail.wxml-->
+<scroll-view scroll-y class="mh_welfare_details">
+    <view class="mh_welfare_details_01">
+        <image src="{{dataInfo.product.img}}" mode="aspectFill"></image>
+    </view>
+    <view class="mh_welfare_details_07">
+        <view class="mh_welfare_details_07_01">
+            <text>¥{{dataInfo.product.price1}}</text>
+            <text>全新未拆</text>
+        </view>
+        <view class="mh_welfare_details_07_02">
+            <text>{{dataInfo.product.ptitle}} X{{dataInfo.spec.total_num}}</text>
+            <text>获取条件：</text>
+            <text>{{dataInfo.spec.condition}}</text>
+        </view>
+    </view>
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">规则介绍</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <p><rich-text  nodes="{{html1}}"></rich-text></p>
+        </view>
+    </view>
+     <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">商品介绍</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <p><rich-text  nodes="{{html}}"></rich-text></p>
+        </view>
+    </view>
+     <view class="mh_preview_height_01"></view>
+
+    <view class="mh_preview_03" wx:if="{{dataInfo.spec.close_share == 0}}">
+        <button class="mh_preview_03_01" open-type='share'>去分享</button>
+        <button bindtap="golottery">立即抢</button>
+    </view>
+
+    <view class="mh_preview_0w" wx:if="{{dataInfo.spec.close_share == 1}}">
+        <button bindtap="golottery">立即抢</button>
+    </view>
+
+   
+</scroll-view >
+
+

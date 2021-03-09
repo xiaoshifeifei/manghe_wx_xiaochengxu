@@ -1,0 +1,4 @@
+/* pages/bargainrecord/bargainrecord.wxss */
+.mh_record{
+    padding-bottom: 40rpx;
+}

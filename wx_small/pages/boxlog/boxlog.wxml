@@ -1,0 +1,23 @@
+<!--pages/record/record.wxml-->
+<view class="mh_record">
+    <view class="mh_shiopping_prompt" hidden="{{imageHide}}"><image src="{{NullImg}}" mode="aspectFill" ></image></view>
+
+    <view class="mh_record_nr">
+        <view class="mh_record_nr_list">
+            <view class="mh_record_nr_list_nr" wx:for="{{BoxData}}" wx:key>
+                <rich-text >
+                    <p>{{item.pname}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>款式</p>
+                    <p>{{item.scsi_name}}</p>
+                </rich-text>
+                <rich-text >
+                    <p>开盒时间</p>
+                    <p>{{item.formate_date}}</p>
+                </rich-text>
+            </view>
+        </view>
+
+    </view>
+</view >

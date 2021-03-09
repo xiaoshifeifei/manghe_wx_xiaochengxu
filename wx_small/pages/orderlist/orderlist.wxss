@@ -1,0 +1,43 @@
+/* pages/orderlist/orderlist.wxss */
+.mh_order_list_03_03{
+    width: 100%;
+    display: table;
+    padding: 30rpx 0;
+    border-top: 0.5px solid #ececec;
+
+}
+
+.mh_order_list_03_03_button_01{
+    width:200rpx;
+    height:60rpx;
+    right:0;
+    border-radius:80rpx;
+    color:#fff;
+    font-size:25rpx;
+    background:#FF5F6F;
+    letter-spacing:8rpx;
+    display:inline-block;
+    float:right;
+    margin-left: 5rpx;
+}
+
+.mh_order_list_03_03_button_02{    
+    width:200rpx;
+    height:60rpx;
+    right:0;
+    border-radius:80rpx;
+    color:#FF5F6F;
+    border:1px solid #FF5F6F;
+    letter-spacing:8rpx;
+    font-size:25rpx;
+    background:#fff;
+    display:inline-block;
+    float:right;
+}
+
+.mh_shopping_nr{
+    padding-bottom: 50rpx;
+    height: 100%;
+}
+
+    

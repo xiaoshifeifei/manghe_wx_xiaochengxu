@@ -1,0 +1,7 @@
+<!--pages/mehelp/mehelp.wxml-->
+<import src="../../assets/wxParse/wxParse/wxParse.wxml" />
+<scroll-view scroll-y class="mh_shopping">
+    <view class="mh_content">
+        <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+</scroll-view>

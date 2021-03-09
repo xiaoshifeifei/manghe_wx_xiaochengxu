@@ -1,0 +1,96 @@
+<!--pages/personalpage-trading-13/personalpage-trading-13.wxml-->
+
+<!-- 申请取消订单 -->
+<view class="mh_pop" style="display: ;">
+   <view class="mh_pop_sqqx">
+      <view class="mh_pop_sqqx_01">申请取消订单</view>
+      <view class="mh_pop_sqqx_02">
+        <view class="mh_pop_sqqx_02_01">
+          <text>我不想买了</text>
+          <image src="../../img/36.png" mode="aspectFill"></image>
+        </view>
+         <view class="mh_pop_sqqx_02_01">
+          <text>信息填写错误重新拍</text>
+          <image src="../../img/36-hover.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_pop_sqqx_02_01">
+          <text>卖家缺货</text>
+          <image src="../../img/36.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_pop_sqqx_02_01">
+          <text>卖家联系不上，一致未确认订单</text>
+          <image src="../../img/36.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_pop_sqqx_02_01">
+          <text>面交/其他平台交易</text>
+          <image src="../../img/36.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_pop_sqqx_02_01">
+          <text>其他原因</text>
+          <image src="../../img/36.png" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="mh_pop_sqqx_03">
+        <button>暂不取消</button>
+       <button>取消订单</button>
+      </view>
+   </view>
+</view>
+<!-- 申请取消订单 end -->
+
+<view class="mh_order">
+   <view class="mh_shoppingmore_04">
+        <view class="mh_shopping_list_more">
+            <view class="mh_shopping_shops">
+                <view class="mh_shopping_nr_05">
+                    <view class="mh_shopping_nr_05_01">订单状态：等待卖家确认订单</view>
+                    <view class="mh_shopping_nr_05_02">描述</view>
+                    <view class="mh_shopping_nr_05_03">描述</view>
+                </view>
+                <view class="mh_shopping_nr_03">
+                    <view class="mh_shopping_nr_03_01">取消订单</view>
+                </view>
+            </view>
+        </view>
+    </view>
+   <view class="mh_shoppingsq_04">
+        <view class="mh_shoppingsq_04_01">收货地址：与取件地址保持一致</view>
+        <view class="mh_shoppingsq_04_02">
+            <view class="mh_shoppingsq_04_02_01">
+                <image mode="aspectFill"src="../../img/41.png"role="img"></image>
+                收获地址：已填写地址某某某某某已填写地址某某某某某已填写地址某某某某某
+            </view>
+            <view class="mh_shoppingsq_04_02_02"><image src="../../img/03.png"></image></view>
+        </view>
+    </view>
+   <view class="personalpage_trading_buy_02">
+       <view class="personalpage_trading_buy_02_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+       <view class="personalpage_trading_buy_02_02">
+           <view class="personalpage_trading_buy_02_02_01">商品名称</view>
+           <view class="personalpage_trading_buy_02_02_02">
+               <text class="personalpage-trading-set-02-list_03_01">已拆袋</text>
+           </view>
+           <view class="personalpage_trading_buy_02_02_03">天天系列</view>
+           <view class="personalpage_trading_buy_02_02_03">快来买</view>
+       </view>
+       <view class="personalpage_trading_buy_02_03">¥50.00</view>
+   </view>
+    <view class="personalpage_trading_buy_03">
+        <view class="personalpage_trading_buy_03_01">
+           邮费<span>99元</span>
+        </view>
+    </view>
+    <view class="mh_shoppingmore_06">
+       <view>备注：</view>
+       <view>备注内容</view>
+   </view> 
+     <view class="mh_shoppingmore_06">
+       <view>订单号：1239817231723917391</view>
+       <view>创建时间： 2020-02-01 17:18:12</view>
+       <view>发货时间： 2020-02-01 17:18:12</view>
+       <view>成交时间： 2020-02-01 17:18:12</view>
+   </view>
+   <view class="personalpage_height_01"></view>
+  
+</view>
+

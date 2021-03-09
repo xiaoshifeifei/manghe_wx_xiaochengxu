@@ -1,0 +1,38 @@
+<!-- pages/activityadd/activityadd.wxml -->
+<view class="mh_order">
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+            活动类型
+            <span>随机立减（1-3元）</span>
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+            <picker mode="date" value="{{date}}" start="2020/01/01" end="2022/01/01" bindchange="bindDateChange">
+                <view class="picker">活动日期: <span>{{date}}<image src="../../img/03.png"></image></span></view>
+            </picker>
+            
+        </view>
+    </view>
+     <view class="mh_order_03">
+        <view class="mh_order_03_01">
+            <picker mode="time" value="{{stime}}" start="00:00" end="23:59" bindchange="bindStimeChange">
+                <view class="picker">活动开始时间: <span>{{stime}}<image src="../../img/03.png"></image></span></view>
+            </picker>
+            
+        </view>
+    </view>
+    <view class="mh_order_03">
+        <view class="mh_order_03_01">
+            <picker mode="time" value="{{etime}}" start="00:00" end="23:59" bindchange="bindEtimeChange">
+                <view class="picker">活动结束时间: <span>{{etime}}<image src="../../img/03.png"></image></span></view>
+            </picker>
+            
+        </view>
+    </view>
+
+    <view class="personalpage_height_01"></view>
+    <view class="personalpagee_bottom">
+        <button bindtap="saveActivity">保存活动</button>
+    </view>
+</view>

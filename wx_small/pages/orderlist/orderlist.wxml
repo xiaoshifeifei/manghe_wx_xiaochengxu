@@ -1,0 +1,77 @@
+<!--pages/orderlist/orderlist.wxml-->
+<view >
+    <view class="mh_shopping_nav mh_allorder_nav">
+        <view style="width: 50%;" wx:for="{{tabBar}}" wx:key data-id="{{item.id}}" bindtap="changeOrder" class="{{tabBarIndex==index?'mh_shopping_nav_hover':''}}">
+            <text>{{item.name}}</text>
+        </view>
+    </view>   
+    <view wx:if="{{tabBarIndex==0}}" class="mh_shopping_nr mh_payment_nav_01">
+        <view wx:if="{{nowOrder}}">
+            <view class="mh_order_list"  wx:for="{{nowOrder}}" wx:key>
+                    <view class="mh_order_list_01">
+                        <text>{{item.type_name}}</text>
+                        <text>订单号:{{item.id}}</text>
+                    </view>
+                    <view class="mh_order_list_02">
+                        <view class="mh_order_list_02_01">
+                            <image src="{{item.imgurl}}" mode="aspectFill"></image>
+                        </view>
+                        <view class="mh_order_list_02_02">
+                            <rich-text>[{{item.sell_way_name}}]{{item.pname}}</rich-text>
+                            <rich-text>
+                                下单时间:{{item.otime}}
+                                <span>X{{item.amount}}</span>
+                            </rich-text>
+                            <rich-text wx:if="{{item.type==1}}"> 
+                                <span>{{item.money}}积分</span>
+                            </rich-text>
+                            <rich-text wx:elif="{{item.type==4}}">
+                            原价:¥{{item.money}},已成功砍价:¥{{item.coupon_money}}<span>实际需付款:¥{{item.actual_money}}</span>
+                            </rich-text>    
+                            <rich-text wx:else> 
+                                <span>¥{{item.money}}</span>
+                            </rich-text>
+                        </view>
+                    </view>
+                    <view class="mh_order_list_03_03">
+                        <button data-order_id="{{item.id}}" data-type="{{item.type}}" data-sell_way="{{item.sell_way}}" bindtap="{{!buttonClicked?'toorder':''}}" class="mh_order_list_03_03_button_01" >付款</button>
+                        <button data-order_id="{{item.id}}" bindtap="{{!buttonClicked?'cancelorder':''}}" class="mh_order_list_03_03_button_02" >取消</button>
+                    </view>
+
+                </view>
+            </view>
+        </view>
+        
+    <view wx:else class="mh_shopping_nr mh_payment_nav_01" >
+        <view class="mh_order_list" wx:if="{{nowOrder}}" wx:for="{{nowOrder}}" wx:key>
+            <view class="mh_order_list_01">
+                <text>{{item.type_name}}</text>
+                <text>订单号：{{item.id}}</text>
+            </view>
+            <view class="mh_order_list_02">
+                <view class="mh_order_list_02_01">
+                    <image src="{{item.imgurl}}" mode="aspectFill"></image>
+                </view>
+                <view class="mh_order_list_02_02">
+                    <rich-text>[{{item.sell_way_name}}]{{item.pname}}</rich-text>
+                    <rich-text>
+                        下单时间：{{item.otime}}
+                        <span>X1</span>
+                    </rich-text>
+                     <rich-text>
+                        支付时间：{{item.ptime}}
+                    </rich-text>
+                </view>
+            </view>
+            <view class="mh_order_list_03">
+                <rich-text wx:if="{{item.type==1}}">原价:{{item.money}}积分<span>实际付款:{{item.actual_money}}积分</span></rich-text>
+                <rich-text wx:elif="{{item.type==4}}">原价:¥{{item.money}},已成功砍价:¥{{item.coupon_money}}<span>实际付款:¥{{item.actual_money}}</span></rich-text>
+                <rich-text wx:else>原价:¥{{item.money}},优惠:¥{{item.coupon_money}}<span>实际付款:¥{{item.actual_money}}</span></rich-text>
+            </view>
+        </view>
+    </view>
+
+    <view class="personalpagee_bottom">
+        <button style="background: #FF5F6F" bindtap="goCart">去盒柜发货</button>
+    </view>
+</view>

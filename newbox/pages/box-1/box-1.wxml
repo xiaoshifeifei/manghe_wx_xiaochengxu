@@ -1,0 +1,110 @@
+<!-- pages/box/box.wxml -->
+<import src="../../template/template.wxml" />
+<template is="tabBar" data="{{tabBar}}" />
+<scroll-view scroll-y class="mh_box">
+   <view class="mh_box_nav">
+       <view>
+      <image src="../../img/71-1.png" mode="aspectFill"></image>
+      <text>盲盒</text>
+    </view>
+    <view>
+      <image src="../../img/72.png" mode="aspectFill"></image>
+      <text>宝库</text>
+    </view>
+   </view>
+   <view class="mh_box_nr">
+      <view class="mh_pop" style="display:none ;">
+         <view class="mh_box_nr_01" >
+            <view class="mh_box_nr_01_02">?</view>
+            <view class="mh_box_nr_01_no">X</view>
+            <view class="mh_box_nr_01_04">
+               <view class="mh_box_nr_01_04_01" style=' background-image: url(../../img/24.png);'>
+                  <p>
+                     <image src="../../img/22.png" mode="aspectFill"></image>
+                  </p>
+                  <text>99/20</text>
+               </view>
+               <view class="mh_box_nr_01_04_02">
+                  <text>可用来合成某某系列盲盒</text>
+               </view>
+               <view class="mh_box_nr_01_04_03">立即合成</view>
+            </view>
+         </view>
+      </view>
+       <view class="mh_box_nr_01 mh_box_nr_nopo" style=' background-image: url(../../img/37.png);'>
+      <view class="mh_box_nr_01_01">
+        <text>幸运值</text>
+        <progress percent="60" color="#3d62ad" backgroundColor="#CCCCCC" stroke-width="12" border-radius="12" />
+        <view class='mh_box_nr_sz'>10%</view>
+      </view>
+      <view class="mh_box_nr_01_no">?</view>
+      <view class="mh_box_nr_01_03">
+        <image src="../../img/46.png" mode="aspectFill" class="mh_box_nr_aanimation"></image>
+      </view>
+      <view class="mh_box_nr_01_03_04">
+        <image src="../../img/aanimation_18.png" mode="aspectFill"></image>
+      </view>
+      <view class="mh_box_nr_01_01_ms">
+        <text>再开*个盲盒，可以额外抽奖</text>
+      </view>
+       <view class="mh_box_nr_01_01_ts">
+        <text>快来打开我</text>
+      </view>
+    </view>
+    <view class="mh_index_03_03">
+      <view class="mh_box_prompt" style="display: none;">
+        <image src="../../img/52.png" mode="aspectFill"></image>
+      </view>
+      <view class="mh_index_03_03_nr mh_index_03_03_nr_box">
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-1.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">
+             <text>普通碎片</text>
+             <text>（50/100）</text>
+          </view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-2.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">
+             <text>稀有碎片</text>
+             <text>（50/100）</text>
+          </view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-3.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">
+             <text>超稀有碎片</text>
+             <text>（50/100）</text>
+          </view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-4.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">积分：10</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-5.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">抵用券：5元</view>
+        </view>
+        <view class="mh_index_03_03_nr_01 " >
+          <view class="mh_index_03_03_nr_01_01">
+            <image src="../../img/73-5.png" mode="aspectFill"></image>
+          </view>
+          <view class="mh_index_03_03_nr_01_02">抵用券：10元</view>
+        </view>
+      
+       
+      </view>
+     
+    </view>
+   </view>
+</scroll-view>

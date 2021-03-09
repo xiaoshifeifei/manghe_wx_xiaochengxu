@@ -1,0 +1,4 @@
+/* pages/mecode/mecode.wxss */
+.mh_record{
+    padding-bottom: 40rpx;
+}

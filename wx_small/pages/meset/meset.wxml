@@ -1,0 +1,18 @@
+<!--pages/me-01/me-01.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_me_03">
+        <button class="mh_me_list" bindtap="bindPhone" aria-disabled="true">
+            <text>绑定手机号</text><image src="../../img/03.png"></image>
+        </button>
+        <button class="mh_me_list" open-type='feedback' aria-disabled="true">
+            <text>意见反馈</text><image src="../../img/03.png"></image>
+        </button>
+        <button class="mh_me_list" data-type="0" bindtap="mehelp" aria-disabled="true">
+            <text>使用协议</text><image src="../../img/03.png"></image>
+        </button>
+        <button class="mh_me_list" bindtap="codeList" aria-disabled="true">
+            <text>正品验证</text>
+            <image src="../../img/03.png"></image>
+        </button>
+    </view>
+</scroll-view>

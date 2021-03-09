@@ -1,0 +1,54 @@
+<!--pages/mebalance/mebalance.wxml-->
+<scroll-view scroll-y class="mh_me">
+    <!-- 系统提示 -->
+    <view class="mh_pop" style="display:none ">
+        <view class="mh_pop_nr mh_pop_withdrawal">
+            <view class="mh_pop_nr_no"><image src="../../img/15.png" ></image></view>
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">提现</view>
+                <view class="mh_pop_nr_01_10">
+                    <text>¥</text>
+                    <input placeholder="请输入提现金额"></input>
+                </view>
+            </view>
+            <view class="mh_pop_nr_03">
+                <button>确定</button>
+            </view>
+        </view>
+    </view>
+    <!-- 提现提示 end -->
+    <view class="mebalance_01">
+        <view class="mebalance_01_02">0.00<text>元</text></view>
+        <view class="mebalance_01_01">可用余额：3000.00元</view>
+        <view class="mebalance_01_03"><button class="mebalance_01_03_hui">申请提现</button></view>
+        <view class="mebalance_01_04"><text>每天可提现一次，暂只支持全额提现（最高1000元）</text></view>
+        <view class="mebalance_01_05">提现常见问题</view>
+    </view>
+    <view class="mebalance_02">
+        <view class="mebalance_02_bt">
+            <view class="mebalance_02_bt_01">
+              <text class="mebalance_02_bt_hover">交易明细</text>
+            </view>
+            <view class="mebalance_02_bt_01">
+              <text>提现记录</text>
+            </view>
+        </view>
+        <view class="mebalance_02_01">
+            <view class="mebalance_02_01_01">
+                <text>提现（提现成功）</text>
+                <text>-20.00</text>
+            </view>
+            <view class="mebalance_02_01_02">1234567890012345</view>
+            <view class="mebalance_02_01_02">2020-02-26 15:50</view>
+        </view>
+         <view class="mebalance_02_01">
+            <view class="mebalance_02_01_01">
+                <text>出售收入</text>
+                <text>-20.00</text>
+            </view>
+            <view class="mebalance_02_01_02">1234567890012345</view>
+            <view class="mebalance_02_01_02">2020-02-26 15:50</view>
+        </view>
+    </view>
+</scroll-view>
+

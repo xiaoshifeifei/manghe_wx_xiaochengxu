@@ -1,0 +1,74 @@
+<!-- pages/Signin/Signin.wxml -->
+<scroll-view scroll-y class="mh_welfare_details">
+   <view class="mh_index_01 mh_shopping_fl_lb">
+    <swiper >
+      <block>
+        <swiper-item>
+          <image src="../../img/demo-02.jpg" class="slide-image" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    
+  </view>
+<view class="mh_shopping_nav mh_shopping_qd mh_shopping_fl">
+    <view class="mh_shopping_nav_hover">
+        <text>0元抽奖</text>
+    </view>
+    <view>
+        <text>超级砍价</text>
+    </view>
+</view>
+ <view class="mh_welfare_height"></view>
+
+<view class="mh_welfare">
+  
+      <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">剩7天开奖</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>0元抢LOFT凯尔特十二生肖系列盲盒</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+     <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">剩8天开奖</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>0元抢LOFT凯尔特十二生肖系列盲盒</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">剩8天开奖</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>0元抢LOFT凯尔特十二生肖系列盲盒</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">剩8天开奖</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>0元抢LOFT凯尔特十二生肖系列盲盒</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    <view class="mh_index_spnr_nr">
+        <view class="mh_index_spnr_nr_01" style=' background-image: url(../../img/63.png); background-repeat: repeat-x; background-size:auto 100%' >
+            <view class="mh_index_spnr_nr_01_01">剩8天开奖</view>
+            <view class="mh_index_spnr_nr_01_02">
+              <text>0元抢LOFT凯尔特十二生肖系列盲盒</text>
+            </view>
+        </view>
+        <view class="mh_index_spnr_nr_02 mh_index_spnr_nr_03"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+    </view>
+    
+</view>
+
+
+    </scroll-view>

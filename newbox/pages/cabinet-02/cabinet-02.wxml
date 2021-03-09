@@ -1,0 +1,107 @@
+<!--pages/cabinet-02/cabinet-02.wxml-->
+<view class="mh_shoppingmore">
+    <view class="mh_cabinet_top">
+         <view class="mh_cabinet_top_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_cabinet_top_02">
+                    <p>毕业生</p>
+                    <p>校园系列</p>
+                </view>
+    </view>
+    <view class="mh_shoppingsq_02">
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>来自：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_05">
+              <text class="mh_shoppingsq_02_01_05_01">实体商品</text>
+              <text>盒机直发</text>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>状态：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_05">
+              <text class="mh_shoppingsq_02_01_05_01">未拆盒</text>
+              <text>未拆盒拆袋</text>
+              <text>已拆袋</text>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>价格：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="请输入价格">...</input>
+            </view>
+            <view class="mh_shoppingsq_02_01_04">元</view>
+        </view>
+       <view class="mh_shoppingsq_02_02">
+           <view class="mh_shoppingsq_02_02_01">玩家在卖29元起，成交均价39元</view>
+           <view class="mh_shoppingsq_02_02_02">商品上架须知</view>
+       </view>
+    </view>
+    <view class="mh_shoppingsq_03">
+        <view class="mh_shoppingsq_03_01">上传图片</view>
+        <view class="mh_shoppingsq_03_02">
+            <view class="mh_shoppingsq_03_02_01">+</view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+            <view class="mh_shoppingsq_03_02_02">
+                <view class="mh_shoppingsq_03_02_02_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_trading_spnr_list_08">
+                    <image mode="aspectFill"src="../../img/109.png"role="img"></image>
+                </view>
+            </view>
+        </view>
+        <view class="mh_shoppingsq_03_03">
+             <input placeholder="请输入简单的描述，不超过10个字">...</input>
+        </view>
+    </view>
+   
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">保存</text>
+   </view>
+</view>

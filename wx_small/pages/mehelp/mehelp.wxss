@@ -1,0 +1,7 @@
+/* pages/mehelp/mehelp.wxss */
+.mh_shopping{
+    background-color: #EEEEEE;
+}
+.mh_content{
+    padding: 10rpx 40rpx 20rpx 40rpx;
+}

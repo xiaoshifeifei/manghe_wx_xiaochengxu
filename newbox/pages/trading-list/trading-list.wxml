@@ -1,0 +1,87 @@
+<!--pages/trading-list/trading-list.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_index_top">
+        <view class="mh_index_nav">
+            <text class="mh_index_nav_hover">设置</text>
+            <text>明细</text>
+        </view>
+    </view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_trading_list">
+       <view class="mh_trading_list_01">
+           <image mode="aspectFill"src="../../img/101-01.png"role="img"></image>
+           <text>不显示已取消订单</text>
+        </view>
+    </view>
+    <view class="mh_index_personalpage">
+       
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_06">
+               <view class="mh_index_personalpage_02_06_01"><image src="../../img/demo-8.png" mode="aspectFill"></image><text>卖家昵称</text></view>
+               <view class="mh_index_personalpage_02_06_02">
+                   <text class="mh_index_personalpage_02_06_02_01">等待买家确认</text>
+               </view>
+            </view>
+        </view>
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_06">
+               <view class="mh_index_personalpage_02_06_01"><image src="../../img/demo-8.png" mode="aspectFill"></image><text>卖家昵称</text></view>
+               <view class="mh_index_personalpage_02_06_02">
+                   <text class="mh_index_personalpage_02_06_02_02">已确认</text>
+               </view>
+            </view>
+        </view>
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        [抽盒机]标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>价格：59:00</text>
+                        <text>提成：10%</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_06">
+               <view class="mh_index_personalpage_02_06_01"><image src="../../img/demo-8.png" mode="aspectFill"></image><text>卖家昵称</text></view>
+               <view class="mh_index_personalpage_02_06_02">
+                   <text class="mh_index_personalpage_02_06_02_03">已取消/已过期</text>
+               </view>
+            </view>
+        </view>
+    </view>
+  
+</scroll-view>

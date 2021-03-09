@@ -1,0 +1,4 @@
+/* pages/boxlog/boxlog.wxss */
+.mh_record{
+    padding-bottom: 40rpx;
+}

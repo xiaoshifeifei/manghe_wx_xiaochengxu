@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "余额明细",
+  "usingComponents": {},
+  "onReachBottomDistance":80
+}

@@ -1,0 +1,229 @@
+<!--pages/welfare-02/welfare-02.wxml-->
+<scroll-view scroll-y class="mh_welfare_details">
+    <view class="mh_welfare_details_01">
+        <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="mh_welfare_details_02">
+        <view class="mh_welfare_details_02_01">0元抢LOFT凯尔特十二生肖系列盲盒</view>
+        <view class="mh_welfare_details_02_02">2019年12月07日 20:00 自动开奖</view>
+    </view>
+    <view class="mh_welfare_details_03">
+        <view class="mh_welfare_details_03_01">
+            <span></span>
+            <view class="mh_welfare_details_03_02">
+                <text>09</text>
+                <text>天</text>
+            </view>
+        </view>
+        <view class="mh_welfare_details_03_01">
+            <span></span>
+            <view class="mh_welfare_details_03_02">
+                <text>08</text>
+                <text>时</text>
+            </view>
+        </view>
+        <view class="mh_welfare_details_03_01">
+            <span></span>
+            <view class="mh_welfare_details_03_02">
+                <text>22</text>
+                <text>分</text>
+            </view>
+        </view>
+        <view class="mh_welfare_details_03_01">
+            <span></span>
+            <view class="mh_welfare_details_03_02">
+                <text>18</text>
+                <text>秒</text>
+            </view>
+        </view>
+    </view>
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">活动详情</view>
+            <view class="mh_welfare_details_04_01_02">玩法说明</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <p>1.点击参与按钮即可成功参与：</p>
+            <p>2.到达指定时间后开奖，系统随机抽取参与者N名获奖。</p>
+            <p>3.部分奖品须主动联系客服领取，其余奖品会自动发放至盒屯中，运费规则同平台下单包邮</p>
+            <p>4.关注******************</p>
+        </view>
+        <button class="mh_welfare_details_04_03">
+            立即参与
+        </button>
+        <view class="mh_welfare_details_04_04">
+            <button>更多抽奖</button>
+            <button>去分享</button>
+        </view>
+    </view>
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">中奖名单</view>
+        </view>
+        <view class="mh_welfare_details_04_05">
+            <view class="mh_welfare_details_04_05_01">中奖名称</view>
+            <view class="mh_welfare_details_04_05_02">
+                <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+            </view>
+             <view class="mh_welfare_details_04_05_01">中奖名称</view>
+            <view class="mh_welfare_details_04_05_02">
+                <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名用户名用户用户用户</text>
+                </view>
+                 <view>
+                    <p></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+                 <view>
+                    <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+                    <text>用户名</text>
+                </view>
+            </view>
+        </view>
+    </view>
+      <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">活动奖品</view>
+        </view>
+       <view class="mh_welfare_details_04_06">
+           <view class="mh_welfare_details_04_06_01"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+           <view class="mh_welfare_details_04_06_02">lulu猪套餐*1</view>
+       </view>
+       <view class="mh_welfare_details_04_07">
+              <button class="mh_welfare_details_04_03">
+                 立即参与
+             </button>
+       </view>
+        <view class="mh_welfare_details_04_06">
+           <view class="mh_welfare_details_04_06_01"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+           <view class="mh_welfare_details_04_06_02">lulu猪套餐*1</view>
+       </view>
+        <view class="mh_welfare_details_04_06">
+           <view class="mh_welfare_details_04_06_01"> <image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+           <view class="mh_welfare_details_04_06_02">lulu猪套餐*1</view>
+       </view>
+    </view>
+      <view class="mh_welfare_details_08">
+       <view class="mh_new_choose_top_02">
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+             <p><image src="../../img/66.png" mode="aspectFill"></image></p>
+          </view>
+          <view class="mh_welfare_details_08_01">有4位娃友已参与</view>
+          <view class="mh_welfare_details_08_02"><button>查看榜单 ></button></view>
+    </view>
+    <view class="mh_pop" style="display:block;">
+       <view class="mh_zldrb">
+           <view class="mh_zldrb_01">
+               <view class="mh_zldrb_01_01">助力达人榜</view>
+               <view class="mh_zldrb_01_02">总助力数：55</view>
+           </view>
+           <view class="mh_zldrb_02">
+               <view class="mh_zldrb_02_01">
+                   <text>参与者</text>
+                   <text>助力者</text>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+               <view class="mh_zldrb_02_02">
+                   <view class="mh_zldrb_02_02_list">
+                       <view class="mh_zldrb_02_02_list_01"><image src="../../img/66.png" mode="aspectFill"></image></view>
+                       <view class="mh_zldrb_02_02_list_02">用户名</view>
+                       <view class="mh_zldrb_02_02_list_03">10</view>
+                   </view>
+               </view>
+
+           </view>
+           <view class="mh_zldrb_03">备注文字</view>
+       </view>
+    </view>
+   
+</scroll-view >

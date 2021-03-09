@@ -1,0 +1,107 @@
+<!--pages/personalpage-03/personalpage-03.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_index_top">
+        <view class="mh_index_nav">
+            <text>设置</text>
+            <text class="mh_index_nav_hover">明细</text>
+        </view>
+    </view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_top_height"></view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_index_personalpage_04">
+      <view class="mh_index_personalpage_04_nr">
+         <view class="mh_index_personalpage_04_01">
+            <text>年度销售单量：60</text>
+        </view>
+        <view class="mh_index_personalpage_04_01">
+            <text>年度销售单量：60</text>
+        </view>
+        <view class="mh_index_personalpage_04_01">
+            <text>年度销售单量：60</text>
+        </view>
+      </view>
+    </view>
+    <view class="mh_index_personalpage_ts">年度数据统计有1-2分钟的延迟，请耐心等待。</view>
+    <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text>已到账</text>
+        </view>
+    </view>
+    <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+     <view class="mh_index_personalpage_02">
+        <view class="mh_index_personalpage_02_04">
+            <text>提成/订单金额</text>
+            <text>2020-02-25</text>
+        </view>
+        <view class="mh_index_personalpage_02_05">
+            <text>10.00/100.00</text>
+            <text class="mh_index_personalpage_02_05_01">处理中</text>
+        </view>
+    </view>
+</scroll-view>

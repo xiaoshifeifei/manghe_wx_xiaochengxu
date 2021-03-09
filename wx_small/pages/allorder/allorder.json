@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "我的订单",
+  "usingComponents": {},
+  "onReachBottomDistance":50
+}

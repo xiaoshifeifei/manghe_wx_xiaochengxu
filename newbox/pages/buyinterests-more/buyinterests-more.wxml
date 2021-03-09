@@ -1,0 +1,47 @@
+<!--pages/buyinterests-more/buyinterests-more.wxml-->
+<scroll-view scroll-y class="mh_welfare_details">
+    <view class="mh_welfare_details_01">
+        <image src="../../img/demo-05.jpg" mode="aspectFill"></image>
+    </view>
+    <view class="mh_welfare_details_07">
+        <view class="mh_welfare_details_07_01">
+            <text>¥520</text>
+            <text>全新未拆</text>
+        </view>
+        <view class="mh_welfare_details_07_02">
+            <text>XXX商品购买权 X18</text>
+            <text>获取条件：</text>
+            <text>参与0元抽1次</text>
+        </view>
+    </view>
+    <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">规则介绍</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <p>1.点击参与按钮即可成功参与：</p>
+            <p>2.到达指定时间后开奖，系统随机抽取参与者N名获奖。</p>
+            <p>3.部分奖品须主动联系客服领取，其余奖品会自动发放至盒屯中，运费规则同平台下单包邮</p>
+            <p>4.关注******************</p>
+        </view>
+    </view>
+     <view class="mh_welfare_details_04">
+        <view class="mh_welfare_details_04_01">
+            <view class="mh_welfare_details_04_01_01">商品介绍</view>
+        </view>
+        <view class="mh_welfare_details_04_02">
+            <p>1.点击参与按钮即可成功参与：</p>
+            <p>2.到达指定时间后开奖，系统随机抽取参与者N名获奖。</p>
+            <p>3.部分奖品须主动联系客服领取，其余奖品会自动发放至盒屯中，运费规则同平台下单包邮</p>
+            <p>4.关注******************</p>
+        </view>
+    </view>
+     <view class="mh_preview_height_01"></view>
+    <view class="mh_preview_03">
+        <button class="mh_preview_03_01">去分享</button>
+        <button>立即抢</button>
+    </view>
+
+   
+</scroll-view >
+

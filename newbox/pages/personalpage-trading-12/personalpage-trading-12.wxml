@@ -1,0 +1,30 @@
+<!--pages/personalpage-trading-12/personalpage-trading-12.wxml-->
+<view class="mh_shoppingmore">
+    <view class="mh_shoppingsq_02">
+       
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>商品：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="未填写">...</input>
+            </view>
+            <view class="mh_shoppingsq_02_01_04">元</view>
+        </view>
+        <view class="mh_shoppingsq_02_01">
+            <view class="mh_shoppingsq_02_01_01">
+                <text>运费：</text>
+            </view>
+            <view class="mh_shoppingsq_02_01_03">
+               <input placeholder="未填写">...</input>
+            </view>
+            <view class="mh_shoppingsq_02_01_04">元</view>
+        </view>
+    </view>
+   
+     <view class="mh_mh_address_bottom">
+       <text class="mh_mh_address_bottom_01">确定</text>
+   </view>
+</view>
+
+

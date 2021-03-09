@@ -1,0 +1,72 @@
+<!--pages/personalpage-trading-05/personalpage-trading-05.wxml-->
+<scroll-view scroll-y class="mh_me">
+    <view class="personalpage_01">
+        <view class="mh_me_01_02_01">
+           <view class="mh_me_01_02_01_05">
+             <image src="../../img/demo-8.png" mode="aspectFill"></image>
+           </view>
+            <view class="mh_me_01_02_01_01">
+                 <text>用户名称</text>
+                 <text>1天前更新</text>
+            </view>
+            <view class="mh_me_01_02_01_02" style="display:none;"> <image src="../../img/103.png" mode="aspectFill"></image></view>
+             <view class="mh_me_01_02_01_03"> <image src="../../img/95.png" mode="aspectFill"></image></view>
+             <view class="mh_me_01_02_01_04" style="display:none;">
+               <button>生成海报</button>
+             </view>
+             <view class="mh_me_01_02_01_06">
+                <view class="mh_me_fhdd_icon">11</view>
+                  <image src="../../img/me-01.png" mode="aspectFill"></image>
+                <text>购买记录</text>
+             </view>
+        </view>
+    </view>
+    <view class="personalpage_nav">
+        <text>带货</text>
+        <text>交易</text>
+        <text class="personalpage_nav_hover">心愿</text>
+    </view>
+    <view class="personalpage_height"></view>
+    <view class="personalpage_sm">
+        总成交N单，成功率79%
+    </view>
+    <view class="personalpage_notice">
+        <view class="personalpage_notice_02">
+           <text class="content">交易说明，在交易商品管理界面配置...</text>
+        </view>
+    </view>
+<view class="mh_trading_spnr mh_buyinterests_xq">
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        <view class="mh_trading_spnr_list">
+            <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+            <view class="mh_trading_spnr_list_02">毕业生</view>
+        </view>
+        
+    </view>
+  <view class="personalpage_height_01"></view>
+  <view class="personalpagee_bottom">
+       <button>心愿单管理</button>
+   </view>
+ 
+   
+</scroll-view>
+

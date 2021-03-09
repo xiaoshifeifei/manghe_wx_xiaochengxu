@@ -1,0 +1,12 @@
+<!--pages/invite/invite.wxml-->
+<view>
+<view wx:if="{{cutInfo.step == 1}}"> 第一轮砍价活动</view>
+<view wx:else> 第二轮砍价活动</view>
+<view>倒计时{{day}}天{{hour}}时{{minute}}分{{second}}秒</view>
+<view>
+    <view wx:for="{{cutList}}" wx:key>
+        <image src='{{item.info.images}}'></image>
+        <button data-id="{{item.p_id}}" open-type='share'>分享{{item.p_id}}</button>
+    </view>
+</view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/openbox/openbox.wxml-->
+<scroll-view scroll-y  class="mh_openbox" style=' background-image: url(../../img/23.png) ;'>
+    <view class="mh_me_aanimation mh_me_aanimation_01">
+        <image src="../../img/22-01.png" mode="aspectFill"></image>
+    </view>
+    <view class="mh_openbox_top" style=' background-image: url(../../img/29.png) ;'>
+        <view class="mh_openbox_ts">
+            <view class="mh_openbox_ts_01" style=' background-image: url(../../img/24.png) ;'>
+                <view><image src="../../img/22.png" mode="aspectFill"></image></view>
+                <text>碎片提示1</text>
+            </view>
+            <view class="mh_openbox_ts_01" style=' background-image: url(../../img/24.png) ;'>
+                <view><image src="../../img/22.png" mode="aspectFill"></image></view>
+                <text>碎片提示2</text>
+            </view>
+            <view class="mh_openbox_ts_01" style=' background-image: url(../../img/24.png) ;'>
+                <view><image src="../../img/22.png" mode="aspectFill"></image></view>
+                <text>碎片提示3</text>
+            </view>
+        </view>
+        <view class="mh_openbox_nr" style=' transform: translateY(-15%)'>
+            <image src="../../img/demo-07.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_openbox_botton">
+            <view> <image src="../../img/25.png" mode="aspectFill"></image><text>摇一摇</text></view>
+            <view> <image src="../../img/26.png" mode="aspectFill"></image><text>看一看</text></view>
+        </view>
+        <view class="mh_openbox_bottom">
+             <view> <image src="../../img/27.png" mode="aspectFill"></image></view>
+            <view> <image src="../../img/28.png" mode="aspectFill"></image></view>
+        </view>
+    </view>
+</scroll-view>

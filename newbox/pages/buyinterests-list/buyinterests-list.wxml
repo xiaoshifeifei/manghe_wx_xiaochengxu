@@ -1,0 +1,60 @@
+<!--pages/buyinterests-list/buyinterests-list.wxml-->
+<scroll-view scroll-y class="mh_me01">
+    <view class="mh_buyinterests_list">
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-02.png);'>
+            <rich-text >买商品</rich-text>
+          </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>获取条件</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>购买xxx商品一件</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02">
+                <button class="mh_index_personalpage_02_02_01">立即抢</button>
+                <button class="mh_index_personalpage_02_02_03">去分享</button>
+            </view>
+        </view>
+
+        <view class="mh_index_personalpage_02">
+            <view class="mh_index_03_03_01_icon" style=' background-image: url(../../img/45-03.png);'>
+            <rich-text >0元抽</rich-text>
+          </view>
+            <view class="mh_index_personalpage_02_01">
+                <view class="mh_index_personalpage_02_01_01">
+                    <image src="../../img/demo-11.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_index_personalpage_02_01_02">
+                    <view class="mh_index_personalpage_02_01_02_01">
+                        xxx商品购买权
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_02">
+                        <text>获取条件</text>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02_03">
+                        <text>购买xxx商品一件</text>
+                    </view>
+                </view>
+            </view>
+            <view class="mh_index_personalpage_02_02">
+                <button class="mh_index_personalpage_02_02_01">立即抢</button>
+                <button class="mh_index_personalpage_02_02_03">去分享</button>
+            </view>
+        </view>
+
+      
+
+
+    </view>
+</scroll-view>

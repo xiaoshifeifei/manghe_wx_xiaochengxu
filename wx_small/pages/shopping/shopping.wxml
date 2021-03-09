@@ -1,0 +1,133 @@
+<!--pages/shopping/shopping.wxml-->
+<view class="mh_pop" hidden="{{hidePop}}">
+    <view class="mh_pop_nr">
+        <view class="mh_pop_nr_no" bindtap="closePop"><image src="../../img/15.png" mode="aspectFill"></image></view>
+        <view class="mh_pop_nr_01">
+            <view class="mh_pop_nr_01_01">是否确定发货</view>
+            <view class="mh_pop_nr_01_05">
+                 <view wx:if="{{is_postage < 1}}">这笔订单没有产生邮费</view>
+                <rich-text class="mh_pop_nr_01_05_01" wx:for="{{shopPostage}}" wx:key="id">{{item.sname}}<span>产生{{item.postage}}元邮费</span><p>{{item.remark}}</p></rich-text>
+                <rich-text class="mh_pop_nr_01_05_01" wx:for="{{artPostage}}" wx:key="id">{{item.sname}}艺术家<span>产生{{item.postage}}元邮费</span><p>{{item.remark}}</p></rich-text>
+                <rich-text class="mh_pop_nr_01_05_01" wx:for="{{scorePostage}}" wx:key="id">{{item.sname}}<span>产生{{item.postage}}元邮费</span><p>{{item.remark}}</p></rich-text>
+                <rich-text class="mh_pop_nr_01_05_01" wx:for="{{rewardPostage}}" wx:key="id">{{item.sname}}<span>产生{{item.postage}}元邮费</span><p>{{item.remark}}</p></rich-text>
+                <rich-text class="mh_pop_nr_01_05_01" wx:for="{{invitePostage}}" wx:key="id">{{item.sname}}<span>产生{{item.postage}}元邮费</span><p>{{item.remark}}</p></rich-text>
+            </view>
+        </view>
+        <view class="mh_pop_nr_02" bindtap="_confirmWindow">
+            <text>确定</text>
+        </view>
+    </view>
+</view>
+
+<!--start 弹窗-->
+<view class="mh_pop" hidden="{{hideInfo}}" bindtap="_closeInfo">
+<view class="mh_pop_nr_all" catchtap="_doInfo">
+     <view class="mh_pop_nr_01_all">
+        <view class="mh_pop_nr_01_01" style="background: #3764A9;color: #FFFFFF">商品信息</view>
+        <view class="mh_pop_nr_01_05_1">
+
+            <!--奖励-->
+            <block wx:if="{{cartInfo.p_type == 3}}">
+                <rich-text class="mh_pop_nr_01_05_01">商品名称：{{cartInfo.name}}</rich-text>
+                <rich-text class="mh_pop_nr_01_05_01">商品价格：{{cartInfo.money}}</rich-text>
+                <rich-text class="mh_pop_nr_01_05_01">奖励来源：{{cartInfo.get}}</rich-text>
+                <rich-text class="mh_pop_nr_01_05_01">获得时间：{{cartInfo.format_time}}</rich-text>
+            </block>
+
+            <!--非奖励-->
+            <block wx:if="{{cartInfo.p_type != 3}}">
+                <!--抽盒-->
+                <block wx:if="{{cartInfo.p_sell_way == 0}}">
+                    <rich-text class="mh_pop_nr_01_05_01">商品名称：{{cartInfo.name}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">商品价格：{{cartInfo.money}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">订单编号：{{cartInfo.op_id}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">大盒编号：{{cartInfo.big}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">小盒位置：{{cartInfo.pos}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">下单时间：{{cartInfo.format_time}}</rich-text>
+                </block>
+                <block wx:else>
+                    <!--非抽盒-->
+                    <rich-text class="mh_pop_nr_01_05_01">商品名称：{{cartInfo.name}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">商品价格：{{cartInfo.money}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">订单编号：{{cartInfo.op_id}}</rich-text>
+                    <rich-text class="mh_pop_nr_01_05_01">下单时间：{{cartInfo.format_time}}</rich-text>
+                </block>
+            </block>
+        </view>
+    </view>
+</view>
+</view>
+<!--end 弹窗-->
+
+<view class="mh_shopping">
+ <view class="mh_shopping_nav">
+     <view wx:for="{{cartBar}}" wx:key="id" data-id="{{item.id}}" class="{{nowId==item.id?'mh_shopping_nav_hover':''}}" bindtap="switchTab">
+         <text>{{item.name}}</text>
+     </view>
+  </view>
+
+ <!--发货车列表start-->
+ <!--<view class="mh_shopping_nr mh_shopping_nr_shopp">-->
+ <view class="mh_shopping_nr mh_shopping_nr_shopp">
+     <view class="mh_shopping_shops" wx:for="{{cartList}}" wx:key="id">
+         <view class="mh_shopping_shops_bt">
+             <view class="mh_shopping_shops_bt_01" ontap="shopSelect" data-index="{{item.index}}" data-id="{{item.shop.id}}" data-status="{{item.shop.selectStatus}}">
+                 <image wx:if="{{item.shop.selectStatus}}" src="../../img/36-hover.png"></image>
+                 <image wx:else src="../../img/36.png"></image>
+             </view>
+             <view class="mh_shopping_shops_bt_02" data-id="{{item.shop.id}}" bindtap="{{item.shop.shopType == true?'goShops':''}}"><image style="border-radius: 50%" src="{{item.shop.face}}"></image></view>
+             <block wx:if="{{item.shop.shopType == true}}">
+                 <view class="mh_shopping_shops_bt_03" bindtap="goShops" data-id="{{item.shop.id}}">
+                     {{item.shop.sname}}
+                     <image src="../../img/03.png" role="img"></image>
+                 </view>
+             </block>
+             <block wx:else>
+                 <view class="mh_shopping_shops_bt_03">
+                     {{item.shop.sname}}
+                 </view>
+             </block>
+         </view>
+         <view class="mh_shopping_nr_01" wx:for="{{item.cart}}" wx:for-item="cartItem" wx:key="id">
+             <view class="mh_shopping_nr_01_left" data-id="{{cartItem.id}}" data-shop="{{item.shop.id}}" data-index="{{index}}" ontap="itemSelect" data-status="{{cartItem.selectStatus}}">
+                 <image wx:if="{{cartItem.selectStatus}}" src="../../img/36-hover.png"></image>
+                 <image wx:else src="../../img/36.png"></image>
+             </view>
+             <view class="mh_shopping_nr_01_nr" data-id="{{cartItem.id}}" data-shop="{{item.shop.id}}" data-index="{{index}}" ontap="getInfo" data-status="{{cartItem.selectStatus}}">
+                 <view class="mh_shopping_nr_01_middle">
+                     <image src="{{cartItem.cache.pimage}}" mode="aspectFill"></image>
+                 </view>
+                 <view class="mh_shopping_nr_01_right">
+                     <p>{{cartItem.type_name}}{{cartItem.cache.pname}}{{cartItem.cache.scsi_name}} x{{cartItem.amount}}</p>
+                     <p>
+                         {{cartItem.dtime}}
+                         <span>{{cartItem.money}}</span>
+                     </p>
+                     <p>{{cartItem.pre_txt}}</p>
+                     <p>
+                         <image src="../../img/03.png" role="img"></image>
+                     </p>
+                 </view>
+             </view>
+         </view>
+     </view>
+ </view>
+ <!--end 发货车列表-->
+
+ <!--未授权登录展示-->
+ <view  class="mh_shopping_nr mh_shiopping_prompt" hidden="{{authHide}}" bindtap="goAuth"><image src="{{authImg}}" mode="aspectFill" ></image></view>
+ <!--暂无购物车商品展示-->
+ <view wx:if="{{cartList.length==0}}" class="mh_shopping_nr mh_shiopping_prompt" hidden="{{imageHide}}"><image src="{{NullImg}}" mode="aspectFill" ></image></view>
+
+  <view class="mh_shopping_bottom" style="{{bottom}}">
+    <view class="mh_shopping_bottom_01" ontap="itemSelectAll" data-status="{{selectedTypeCounts==cartNum?'true':'false'}}">
+      <image wx:if="{{selectedTypeCounts==cartNum}}" src="../../img/36-hover.png" mode="aspectFill"></image>
+      <image wx:else src="../../img/36.png" mode="aspectFill"></image>
+      <text>全选</text>
+    </view>
+    <view class="mh_shopping_bottom_02">
+      <p>数量：<span>{{selectedCounts}}</span></p>
+      <view bindtap="{{!wClicked?'submitSearch':''}}">立即发货</view>
+    </view>
+  </view>
+</view>

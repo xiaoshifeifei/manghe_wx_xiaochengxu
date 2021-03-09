@@ -1,0 +1,199 @@
+<!-- pages/me/me.wxml -->
+<scroll-view scroll-y class="mh_me">
+     <view class="mh_me_01">
+       
+        <view class="mh_me_01_02" wx:if="{{showNone}}">
+            <view class="mh_me_01_02_01" bindtap="nameGoAuth">
+                <view class="noimg"><image src="{{HeadImg}}" mode="aspectFill"></image></view>
+                <text class="text">{{Mname}}</text>
+            </view>
+            
+        </view>
+        <view class="mh_me_01_02" wx:else>
+            <view class="mh_me_01_02_01" >
+                <open-data type="userAvatarUrl" bindtap="nameGoAuth"><image src="" mode="aspectFill"></image></open-data>
+                <open-data type="userNickName" bindtap="nameGoAuth"></open-data>
+            </view>
+            <view wx:if="{{is_tg==1}}" class="mh_me_01_02_02" bindtap="goHomePage"><text>个人主页</text><image src="../../img/50.png" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_me_01_03">
+                <view class="mh_me_01_03_01" style="font-size:30rpx;" bindtap="scoreLog">积分：{{MScore}}</view>
+                <view class="mh_me_01_03_02" style="font-size:30rpx;" bindtap="toBalance">余额：¥{{MMoney}}<image src="../../img/80.png" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_me_01_04" wx:if="{{is_tg == 1}}">
+           <view  class="mh_me_01_04_01" bindtap="goHomePage">
+               <view class="mh_me_01_04_01_01">带货商品</view>
+               <view class="mh_me_01_04_01_02">{{dh_nums}}</view>
+           </view>
+           <view  class="mh_me_01_04_01" bindtap="goHomePage">
+                <view class="mh_me_01_04_01_01">年度销售额</view>
+               <view class="mh_me_01_04_01_02">{{year_money}}</view>
+           </view>
+       </view> 
+    </view>
+    <!-- <view class="mh_me_01">
+        <!--头像-->
+        <!-- <view class="mh_me_01_02" wx:if="{{showNone}}">
+            <image src="{{HeadImg}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_me_01_02" wx:else bindtap="nameGoAuth">
+            <open-data type="userAvatarUrl"><image src="" mode="aspectFill"></image></open-data>
+        </view>
+
+        <view class="mh_me_01_03"> -->
+
+            <!--积分-->
+            <!-- <view class="mh_me_01_03_01" bindtap="scoreLog">
+                <p>{{configData.scoreName}}<image src="../../img/50.png" mode="aspectFill"></image></p>
+                <p>{{MScore}}</p>
+            </view> -->
+
+            <!--余额-->
+            <!-- <view class="mh_me_01_03_01" bindtap="topUp">
+                <p>{{configData.moneyName}}<image src="../../img/50.png" mode="aspectFill"></image></p>
+                <p>¥{{MMoney}}</p>
+            </view> -->
+
+            <!--名称-->
+            <!-- <view wx:if="{{showNone}}" class="mh_me_01_03_01" bindtap="nameGoAuth">
+                <p>昵称</p>
+                <p>{{Mname}}</p>
+            </view> -->
+            <!-- <view wx:else class="mh_me_01_03_01">
+                <p>昵称</p>
+                <open-data type="userNickName"></open-data>
+            </view> -->
+
+        <!-- </view>
+    </view>  -->
+     <!--发货订单-->
+    <view class="mh_me_fhdd">
+        <view class="mh_me_fhdd_01">
+            <view class="mh_me_fhdd_01_01">我的订单</view>
+            <view class="mh_me_fhdd_01_02" bindtap="expressList" data-id="1">查看全部<image src="../../img/80.png" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_me_fhdd_02">
+            <view bindtap="expressList" data-id="2">
+                <image src="../../img/me-09.png" mode="aspectFill"></image>
+                <p>待付款</p>
+                <view class="mh_me_fhdd_icon" wx:if="{{Count0>0}}">{{Count0}}</view>
+            </view>
+            <view bindtap="expressList" data-id="3">
+                <image src="../../img/me-10.png" mode="aspectFill"></image>
+                <p>待发货</p>
+                <view class="mh_me_fhdd_icon" wx:if="{{MCount>0}}">{{MCount}}</view>
+            </view>
+            <view bindtap="expressList" data-id="4">
+                <image src="../../img/me-11.png" mode="aspectFill"></image>
+                <p>待收货</p>
+                <view class="mh_me_fhdd_icon" wx:if="{{Count2>0}}">{{Count2}}</view>
+            </view>
+            <view bindtap="expressList" data-id="5">
+                <image src="../../img/me-12.png" mode="aspectFill"></image>
+                <p>已收货</p>
+            </view>
+            <view bindtap="expressList" data-id="6">
+                <image src="../../img/me-13.png" mode="aspectFill"></image>
+                <p>售后处理</p>
+                <view class="mh_me_fhdd_icon" wx:if="{{Count4>0}}">{{Count4}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="mh_me_02">
+        <view bindtap="orderList"  class="mh_me_02_01">
+            <p>
+                <image src="../../img/39.png"></image>
+            </p>
+            <p>购买记录</p>
+            <view class="mh_me_fhdd_icon" wx:if="{{OrderCount>0}}">{{OrderCount}}</view>
+        </view>
+
+        <view class="mh_me_02_01" bindtap="logBox">
+            <p >
+                <image src="../../img/39-5.png"></image>
+            </p>
+            <p>开盒记录</p>
+        </view>
+       
+        <view class="mh_me_02_01">
+            <p bindtap="goTicket" aria-disabled="true">
+                <image src="../../img/39-7.png"></image>
+            </p>
+            <p>优惠券</p>
+            <view class="mh_me_fhdd_icon" wx:if="{{TicketCount>0}}">{{TicketCount}}</view>
+        </view>
+
+        <view  bindtap="goSpecCode"  class="mh_me_02_01">
+            <p>
+                <image src="../../img/spec.png"></image>
+            </p>
+            <p>购买权</p>
+            <view class="mh_me_fhdd_icon" wx:if="{{CodeCount>0}}">{{CodeCount}}</view>
+        </view>
+
+        <!--第二行-->
+        <view class="mh_me_02_01" bindtap="goAddressList">
+            <button >
+                <image src="../../img/39-4.png"></image>
+            </button>
+            <p>收货地址</p>
+        </view>
+        <view class="mh_me_02_01" bindtap="bargainList">
+            <button >
+                <image src="../../img/me-03.png"></image>
+            </button>
+            <p>我的砍价</p>
+        </view>
+       
+        <view bindtap="logList" class="mh_me_02_01">
+            <button>
+                <image src="../../img/39-6.png"></image>
+            </button>
+            <p>奖励记录</p>
+        </view>
+
+        <view  bindtap="goTreasury"  class="mh_me_02_01">
+            <p>
+                <image src="../../img/me_12.png"></image>
+            </p>
+            <p>我的宝库</p>
+        </view>
+
+        <!-- <view bindtap="mehelp" class="mh_me_02_01" data-type="1"  aria-disabled="true">
+            <button>        
+                <image src="../../img/me-08.png"></image>           
+            </button>
+            <p>使用帮助</p>        
+        </view> -->
+
+    </view>
+
+   
+
+    <view class="mh_me_03">
+        <!-- <button class="mh_me_list" data-type="1" bindtap="mehelp" aria-disabled="true">
+            <text>使用帮助</text>
+            <image src="../../img/03.png"></image>
+        </button> -->
+        <!-- <button class="mh_me_list" bindtap="codeList" aria-disabled="true">
+            <text>正品验证</text>
+            <image src="../../img/03.png"></image>
+        </button> -->
+        <view class="mh_me_list">
+            <text>音乐开关</text><switch checked="{{musicCheck}}" bindchange="musicChange" color="#F9E000"/>
+        </view>
+        <button class="mh_me_list" data-type="1" bindtap="mehelp" aria-disabled="true">
+            <text>使用帮助</text>
+            <image src="../../img/03.png"></image>
+        </button>    
+        <button class="mh_me_list" open-type="contact" aria-disabled="true">
+            <text>联系客服</text><image src="../../img/03.png"></image>
+        </button>       
+        <button class="mh_me_list" bindtap="meSet" aria-disabled="true">
+            <text>更多设置</text><image src="../../img/03.png"></image>
+        </button>
+    </view>
+    <official-account></official-account>
+    <view class="mh_index_right"></view>
+</scroll-view>

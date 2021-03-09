@@ -1,0 +1,28 @@
+/* pages/task/task.wxss */
+.mh_task_top .mh_box_nr_01_no {
+    top: 15rpx;
+    color: #232323;
+    background: #fff;
+}
+
+.mh_my_note_content{
+    width: 520rpx;
+    height: 630rpx;
+    overflow: auto;
+    margin-top: 20rpx;
+    margin-left: 50rpx;
+}
+
+.active{
+    color: #3DCCB8;
+}
+
+.mh_task_top_jd {
+    margin: 0 80rpx;
+    background: #D8D8D8;
+    display: block;
+    height: 18rpx;
+    border-radius: 18rpx;
+    margin-top: 140rpx;
+
+}

@@ -1,0 +1,93 @@
+<!--pages/search/search.wxml-->
+<!-- <view class="search_input">
+
+    <input  value="" type="text" placeholder="搜索商品/品牌" placeholder-style="" placeholder-class="input-placeholder" confirm-type="搜索" bindconfirm="search"></input>
+
+    <view class="search_button">清空</view>
+</view>
+<view class="search_near">
+    <view class="search_near_01">最近搜索</view>
+    <view class="search_near_02">
+        <block wx:for="{{list1}}" wx:key="{{item.id}}">
+            <view data-id="{{item.id}}" bindtap="near_search" >{{item.search_content}}</view>
+        </block>
+    </view>
+</view>
+<view class="search_hot">
+    <view class="search_hot_01">热门搜索</view>
+    <view class="search_hot_02">
+        <block wx:for="{{list2}}" wx:key="*this">
+            <view>
+                {{item.hot_word}}     
+            </view>
+        </block>
+    </view>
+</view> -->
+
+<view  class="mh_index">
+     <view class='mh_index_search'>
+      <view class="mh_index_search_01">
+          <input type='text' placeholder='搜索商品/品牌' placeholder-style="" placeholder-class="input-placeholder" confirm-type="搜索" bindconfirm="search" value="{{content}}"></input>
+          <image src="../../img/104.png" mode="aspectFill"></image>
+          <image src="../../img/106.png" mode="aspectFill" class="mh_index_search_qk" bind:tap="clearcontent"></image>
+      </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_index_search_02" hidden="{{is_show}}">
+        <view class="mh_index_bt" wx:if="{{list1.length>0}}">
+            <view class="mh_index_bt_01">最近搜索</view>
+            <view class="mh_index_bt_02" bind:tap="delSearchLog"> <image src="../../img/105.png" mode="aspectFill"></image></view>
+        </view>
+        <view class="mh_index_search_02_01" wx:if="{{list1.length>0}}">
+            <block wx:for="{{list1}}" wx:key="id">
+                <button data-content="{{item.search_content}}" bindtap="near_search">{{item.search_content}}</button>
+            </block>
+            
+        </view>
+        <view class="mh_index_bt" wx:if="{{list2.length>0}}">
+            <view class="mh_index_bt_01">热门搜索</view>
+        </view>
+        <view class="mh_index_search_02_01" wx:if="{{list2.length>0}}">
+            <block wx:for="{{list2}}" wx:key="id">
+                <button data-content="{{item.hot_word}}" bindtap="hot_search">{{item.hot_word}}</button>
+            </block>
+        </view>
+    </view>
+
+    <view  class="mh_index_top mh_index_fixed" hidden="{{is_show2}}">
+        <view class="mh_index_nav">
+            <text class="mh_index_nav_hover">商品</text>
+            <!-- <text>品类</text>
+            <text>用户</text> -->
+        </view>
+    </view>
+    <view class="mh_preview_height" hidden="{{is_show2}}"></view>
+ 
+
+    <view class="mh_index_spnr" hidden="{{is_show2}}">
+        <block wx:key="unique" wx:for="{{listData}}" wx:for-item="item1" wx:for-index="index1">
+            <view class="mh_index_spnr_nr" id="tochoose" data-p_id="{{item1.p_id}}" data-s_id="{{item1.s_id}}" data-sell_way="{{item1.sell_way}}" bindtap="tochoose">
+                <view wx:if="{{item1.icon_type >= 1}}"  class="mh_index_03_03_01_icon" style=' background-image: url({{item1.icon_img}});'>
+                    <rich-text >{{item1.icon_text}}</rich-text>
+                </view>
+                <view wx:else class="mh_index_03_03_01_icon" >
+                    <rich-text ></rich-text>
+                </view>
+                <view class="mh_index_spnr_nr_01" style=' background-image: url({{imgurl3}}); background-repeat: repeat-x; background-size:auto 100%' >
+                    <view class="mh_index_spnr_nr_01_01">¥{{item1.price}}</view>
+                    <view class="mh_index_spnr_nr_01_02">
+                        <text space="nbsp">{{item1.pname}} {{item1.series}}</text>
+                        <p class="{{item1.sell_way==0?'mh_bq_02':'mh_bq_01'}}">{{item1.typeName}}{{item1.card_name}}</p>
+                    </view>
+                </view>
+                <view class="{{index1 == prosty?'mh_index_spnr_nr_02 mh_index_spnr_nr_03':'mh_index_spnr_nr_02'}}"> <image src="{{index1 == prosty?item1.pic2:item1.img}}" mode="aspectFill"></image></view>
+            </view>
+        </block>
+    </view>
+
+    <view class="search_no" hidden="{{is_show3}}">
+        <view>没找到相关数据，换个词试试</view>
+    </view>
+
+</view>
+

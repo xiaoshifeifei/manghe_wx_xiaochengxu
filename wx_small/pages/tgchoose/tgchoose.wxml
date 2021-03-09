@@ -1,0 +1,75 @@
+<!-- pages/personalpage-02/personalpage-02.wxml -->
+<view class="mh_me01">
+    <!--选品or取消选品-->
+    <view class="mh_pop" hidden="{{hideWin}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">{{winChoTxt}}</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button bindtap="_goOn">确定</button>
+                <button bindtap="_back">取消</button>
+            </view>
+        </view>
+    </view>
+    <!--end-->
+    <!--选品成功-->
+    <view class="mh_pop" hidden="{{hideChoose}}">
+        <view class="mh_pop_nr">
+            <view class="mh_pop_nr_01">
+                <view class="mh_pop_nr_01_01">系统提示</view>
+                <view class="mh_pop_nr_01_09">{{winTxt}}</view>
+            </view>
+            <view class="mh_pop_nr_04">
+                <button bindtap="_goOn">继续选品</button>
+                <button bindtap="_back">结束返回</button>
+            </view>
+        </view>
+    </view>
+    <!--选品成功 end-->
+
+    <!--顶部搜索 start-->
+    <view class="mh_index_personalpage_search">
+        <view class="mh_index_personalpage_01">
+            <input bindblur="getInputData" type="text" placeholder="请输入您要搜索的商品名或品牌名" value="">...</input>
+        </view>
+    </view>
+    <!--顶部搜索 end-->
+    <view class="mh_index_top_height"></view>
+    <view class="mh_index_personalpage">
+        <block wx:for="{{allPro}}" wx:key="id">
+            <view class="mh_index_personalpage_02">
+                <view class="mh_index_personalpage_02_01">
+                    <view class="mh_index_personalpage_02_01_01">
+                        <image src="{{item.img_pic1}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="mh_index_personalpage_02_01_02">
+                        <view class="mh_index_personalpage_02_01_02_01">
+                            [{{item.typeName}}]{{item.pname}}
+                        </view>
+                        <view class="mh_index_personalpage_02_01_02_02">
+                            <text>价格：{{item.price1}}</text>
+                            <text>提成：{{item.percent}}</text>
+                        </view>
+                        <view class="mh_index_personalpage_02_01_02_03">
+                            <text>状态：{{item.status_txt}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="mh_index_personalpage_02_02" style=" display: none">
+                    <button class="mh_index_personalpage_02_02_01">置顶</button>
+                    <button class="mh_index_personalpage_02_02_02">删除</button>
+                </view>
+                <view class="mh_index_personalpage_02_03" ontap="itemSelect" data-index="{{index}}" data-id="{{item.id}}" data-status="{{item.selectStatus}}">
+                    <text>{{item.selectStatus == false?'点击选中':'已经选中'}}</text>
+                    <image src="{{item.selectStatus == false?'../../img/101.png':'../../img/101-01.png'}}" mode="aspectFill"></image>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="personalpage_height_01"></view>
+  <!--  <view class="personalpagee_bottom">
+        <button>添加商品</button>
+    </view>-->
+</view>

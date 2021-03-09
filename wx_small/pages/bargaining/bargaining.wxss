@@ -1,0 +1,29 @@
+.mh_argaining_01_01 image {
+    width: 90rpx;
+    height: 90rpx;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.mh_argaining_05_02_01_l image {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.mh_argaining_button_03 {
+    width: 315rpx;
+    height: 70rpx;
+    display: inline-block;
+    margin-left: 20rpx;
+    line-height: 70rpx;
+    border: 0;
+    border-radius: 70rpx;
+    font-size: 30rpx;
+    background: #fcc800;
+    left: 50%;
+    transform: translate(-50%);
+}
+

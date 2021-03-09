@@ -1,0 +1,135 @@
+<!-- pages/Signin/Signin.wxml -->
+<view class="mh_pop" style="display: none;">
+    <view class="mh_pop_01_nr" style=' background-image: url(../../img/34.png);'>
+        <view class="mh_pop_01_nr_01">
+            <image src="../../img/demo-09.png" mode="aspectFill"></image>
+        </view>
+        <view class="mh_pop_01_nr_02">
+            <text class="mh_pop_01_nr_02_01">+999</text>
+            <text class="mh_pop_01_nr_02_02">积分</text>
+            <text class="mh_pop_01_nr_02_03">签到成功</text>
+        </view>
+        <view class="mh_pop_01_nr_04">明天再来</view>
+    </view>
+</view>
+<view class="mh_shopping_nav mh_shopping_qd">
+    <view class="mh_shopping_nav_hover">
+        <text>新人签到</text>
+    </view>
+    <view>
+        <text>每日签到</text>
+    </view>
+</view>
+<view class="mh_Signin">
+    <view class="mh_signin_topbt">?</view>
+    <view class="mh_Signin_nr">
+        <view class="mh_Signin_01 mh_Signin_01_yes">
+            <view class="mh_Signin_01_01">已完成</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03 mh_Signin_01_hui">
+                <button>已完成</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第2天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第3天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第4天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第5天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第6天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+        <view class="mh_Signin_01">
+            <view class="mh_Signin_01_01">第7天</view>
+            <view class="mh_Signin_01_02">
+                <view class="mh_Signin_01_02_01">
+                    <image src="../../img/demo-08.png" mode="aspectFill"></image>
+                </view>
+                <view class="mh_Signin_01_02_02">
+                    <text class="">999</text>
+                    <text class="">物品名称</text>
+                </view>
+            </view>
+            <view class="mh_Signin_01_03">
+                <button>领取</button>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="mh_Signin_bottom">
+    <image src="../../img/35.png" mode="aspectFill"></image>
+</view>

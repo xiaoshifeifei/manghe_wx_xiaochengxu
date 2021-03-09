@@ -1,0 +1,25 @@
+<!--pages/bigbox/bigbox.wxml-->
+<scroll-view scroll-y  class="mh_new_choose" style="background:{{boxdata.batch.back_color}};">
+    <view class="mh_new_choose_nr" style="padding-top: 180rpx;">
+        <view class="mh_new_choose_nr_06" animation="{{animation}}">
+            <image src="{{boxdata.batch.box_3d_img}}" mode="aspectFill"></image>
+        </view>
+        <view class="mh_new_choose_03">
+            <view class="mh_new_choose_03_01">
+                <text>盒子编号No.{{boxdata.box_num}}</text>
+            </view>
+            <view class="mh_new_choose_03_02" id="productinfo" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-whr="ch"  data-pb_id="{{boxdata.pb_id}}" bindtap="productinfo">
+                <image src="../../img/67.png" mode="aspectFill"></image>
+                <text>商品详情</text>
+            </view>
+        </view>
+        <view class="mh_new_choose_nr_09">
+            <view class="mh_new_choose_nr_left">
+            <view class="mh_new_choose_nr_09_01" id="changebox" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bpbp_id="{{boxdata.bpbp_id}}"  bindtap="{{!buttonClicked?'changebox':''}}" >换一盒</view>
+            <view class="mh_new_choose_nr_09_02" id="toorder" data-p_id="{{boxdata.p_id}}" data-s_id="{{s_id}}" data-bpbp_id="{{boxdata.bpbp_id}}"  data-sku_id="{{boxdata.ps_id}}"  bindtap="{{!buttonClicked?'toorder':''}}">购买</view>
+            </view>
+            <view class="mh_new_choose_nr_09_03">如果觉得买一小盒不过瘾，我们为您提供了卖一大盒的机会。不同的产品，一大盒内包含的小盒数量会有不同，一般一大盒为6-10小盒不等。</view>
+        </view>
+    </view>
+   
+</scroll-view>

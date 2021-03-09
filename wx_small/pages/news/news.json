@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#eeeeee",
+  "navigationBarTitleText": "资讯列表",
+  "usingComponents": {},
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":50
+}

@@ -1,0 +1,149 @@
+<!--pages/cabinet/cabinet.wxml-->
+<view class="mh_shopping">
+    <view class="mh_shopping_nav mh_payment_nav">
+        <view class="mh_shopping_nav_hover">
+            <text>盒柜</text>
+        </view>
+        <view>
+            <text>发货</text>
+        </view>
+    </view>
+    <view class="mh_preview_height"></view>
+    <view class="mh_cabinet">
+        <view class="mh_cabinet_nr">
+            <view class="mh_cabinet_01">
+                <view class="mh_cabinet_01_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_cabinet_01_02">品牌名称-商品/系列名称</view>
+                <view class="mh_cabinet_01_03">
+                    <text>收集6/13</text>
+                </view>
+            </view>
+            <view class="mh_series_fixed_nr_02">
+                 <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_01">寄存</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">寄卖</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_02">到手</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_03">发货中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_04">交易中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                 <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_04">交易中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="mh_cabinet">
+        <view class="mh_cabinet_nr">
+            <view class="mh_cabinet_01">
+                <view class="mh_cabinet_01_01"><image src="../../img/demo-8.png" mode="aspectFill"></image></view>
+                <view class="mh_cabinet_01_02">品牌名称-商品/系列名称</view>
+                <view class="mh_cabinet_01_03">
+                    <text>收集6/13</text>
+                </view>
+            </view>
+            <view class="mh_series_fixed_nr_02">
+                 <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_01">寄存</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">寄卖</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_02">到手</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_03">发货中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_04">交易中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+                 <view class="mh_trading_spnr_list">
+                    <view class="mh_trading_spnr_list_01"><image src="../../img/demo-05.jpg" mode="aspectFill"></image></view>
+                    <view class="mh_trading_spnr_list_02">商品名称</view>
+                    <view class="mh_trading_spnr_list_06">ID：2222222</view>
+                    <view class="mh_trading_spnr_list_04">
+                        <text class="mh_trading_spnr_list_04_04">交易中</text>
+                    </view>
+                    <view class="mh_trading_spnr_list_05">
+                        <text class="mh_trading_spnr_list_05_01">交易</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
